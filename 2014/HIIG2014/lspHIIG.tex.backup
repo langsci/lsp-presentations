@@ -1,0 +1,98 @@
+\documentclass[handout]{beamer}
+
+\usepackage[utf8x]{inputenc}
+\usepackage{textcomp} 
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{08.09.2014 Open-Access-Tage 2014 Köln}
+
+\usepackage{eurosym} 
+\usepackage{ogonek}  % Dabrowska
+% \usepackage{libertine}
+
+% Irgendein Font definiert mir das \dh wieder über.
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{Language Science Press}
+% \institute{FU Berlin}
+\author{Sebastian Nordhoff}
+
+
+
+\usepackage{qtree} 
+\begin{document}
+\lspbeamertitle
+
+
+\frame{
+\frametitle{\mbox{Humanities $\leftrightarrow$ Linguistics $\leftrightarrow$ Sciences}}
+\begin{tabular}{m{.3\textwidth}m{.3\textwidth}m{.3\textwidth}}
+\includegraphics[width=3cm]{pics/Scroll.jpg}
+&
+  \parbox{.3\textwidth}{\tiny
+  \Tree [.IP [ Roses ].NP_i [.I\1 [ are ].I\0
+  [.VP t_i [ [ going ].V\0 \qroof{out of style}.PP ].V\1 ].VP
+  ].I\1 ]
+  } 
+&
+\parbox{.3\textwidth}{
+\includegraphics[width=3cm]{pics/genome.jpg}
+\vspace{3cm}
+}
+\end{tabular}
+}
+
+\frame{
+\frametitle{Community}
+ 
+}
+
+\frame{
+\frametitle{World wide network}
+ 
+}
+
+\frame{
+\frametitle{Prestige}
+ 
+}
+
+
+
+\frame{
+\frametitle{Open Access, Open Source, Open Data}
+ latex github python OA LLOD OKFN
+}
+ 
+
+\setcounter{framenumber}{\thelastpagemainpart}
+
+
+
+\end{document}
