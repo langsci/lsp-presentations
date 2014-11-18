@@ -29,7 +29,8 @@
 \setbeamercolor{author in title}{fg=white}
 \setbeamercolor{date in title}{fg=white}
 
-\setbeamertemplate{itemize items}{{\bf\small\textrangle}}
+%\setbeamertemplate{itemize items}{{\bf\small⟩}}
+\setbeamertemplate{itemize items}{{\bf\small〉}}
 \setlength{\itemindent}{.1cm}
 \setbeamertemplate{navigation symbols}{}
 
@@ -78,10 +79,10 @@
   \hspace{-.22cm}
 %  \vspace{-.7cm}
 %  \includegraphics[width=2cm,height=1.1cm]{logo-gimp.png} 
-  \vspace{-0.7cm}
+%  \vspace{-0.7cm}
   \raisebox{-3.5mm}{\includegraphics[height=0.9cm]{langsci_logo_nocolor.pdf}}
   &
-  \parbox{5cm}{\large \insertframetitle}
+  \parbox{5cm}{\ifx\insertframetitle\undefined\else {\large \insertframetitle}\fi }
   &
   \parbox{2cm}{
 
