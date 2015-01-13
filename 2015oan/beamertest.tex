@@ -36,54 +36,130 @@
 \renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
 
 
-\title{\mbox{Title}}
+\title{\mbox{Open Monograph Press}}
 % \institute{FU Berlin}
-\author[LangSci]{Author Name}
+\author[Nordhoff]{Sebastian Nordhoff}
 
 
 
 \begin{document}
 \lspbeamertitle
 
+\section{Was ist OMP}
 
-\section{some section}
+\frame{ 
+\frametitle{Was ist OMP}
+\begin{itemize}
+ \item  Plattform zur Veröffentlichung von Monographien
+ \item  angelehnt an OJS (Zeitschriften)
+ \item  webbasiert  
+ \item  Open Source
+\end{itemize}
+}
+
+\frame{ 
+\frametitle{Was ist OMP}
+\includegraphics[\width=\textwidth]{./pics/ompdev.png}
+}
+
+\frame{ 
+\frametitle{Was ist OMP}
+\begin{itemize}
+ \item von PKP in Kanada entwickelt
+ \item weltweit eingesetzt
+ \item PHP+js+CSS/LESS 
+ \item kann auch für Closed Access eingesetzt werden, mit Vertriebsregionen
+\end{itemize}
+}
+
+\section{Was leistet OMP}
+
+\frame{ 
+\frametitle{Was leistet OMP}
+\begin{itemize}
+ \item   Dokumentenverwaltung
+ \item   Begleitung durch den Publikationsprozess in 5 Phasen
+ \item   Benutzerverwaltung mit verschiedenen Rollen
+ \item   Pluginsystem
+\end{itemize}
+}
+
+\frame{ 
+\frametitle{Was leistet OMP}
+\includegraphics[\width=\textwidth]{./pics/omporigsubmission.png}
+}
+
+\frame{ 
+\frametitle{Was leistet OMP}
+\includegraphics[\width=\textwidth]{./pics/omphandschuh.png}
+}
+
+
+
+\frame{ 
+\frametitle{Was leistet OMP}
+\begin{itemize}
+ \item   Veröffentlichung
+ \item   Metadaten
+ \item   Verbreitung (OAI-PMH, Onyx, )
+ \item   Datenbankschnittstelle 
+\end{itemize}
+}
+
+\frame{ 
+\frametitle{Was leistet OMP}
+\includegraphics[\width=\textwidth]{./pics/omphandschuh.png}
+}
+
  
+
+\section{Grenzen von OMP}
+ 
+
+\frame{ 
+\frametitle{Grenzen von OMP}
+\begin{itemize}
+ \item    von Programmierern entwickelt
+ \item    Benutzerfreundlichkeit ausbaufähig
+ \item    allgemein dürftige Dokumentation 
+ \item    ohne Programmierkenntnisse nicht wirklich anpassbar 
+\end{itemize}
+}
+
+\frame{ 
+\frametitle{Grenzen von OMP}
+\begin{itemize}
+ \item    Rollensystem unklar 
+ \item    Stakeholderoverkill
+ \item    ISBN, DOI 
+ \item    Sammelbände (mehrere Autoren, DOIs pro Beitrag)
+\end{itemize}
+}
+
+\frame{ 
+\frametitle{Grenzen von OMP}
+\begin{itemize}
+ \item   Keine echte Versionierung
+ \item   diverse Bugs
+ \item   Blog extern
+\end{itemize}
+}
+
+ 
+
+
+\section{Weiterentwicklung von OMP}
+
+
+
 \frame{
 \frametitle{Frametitle1}
   \begin{itemize}
-    \item
+    \item  Höchstwahrscheinlich Orientierung an OJS 
+    \item  Einbindung von Weiterentwicklungen Dritter
   \end{itemize}
 } 
-
-
-
-
-\section{another section}
-
-\frame{
-\frametitle{Frametitle2}
-
-\begin{columns}
-  \begin{column}{6cm}
-%     \includegraphics{./path/to/graphicsfile}
-  \end{column}
-  \begin{column}{3cm}
-    \begin{itemize}
-      \item    
-    \end{itemize}
-  \end{column}
-\end{columns}
-
-}
-
-\frame{
-\frametitle{Frametitle3}
-%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-  \begin{itemize}
-    \item  
-    \item 
-  \end{itemize}
-}
+  
 
 %\setcounter{framenumber}{\thelastpagemainpart}
 \end{document}
