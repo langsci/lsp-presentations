@@ -29,7 +29,7 @@
 \let\footnotesize=\oldfnsize}
 
 
-\date{\today}
+\date{\mbox{24.1.2015 Open Access Netzwerk Berlin, TU Berlin}}
 
 \usepackage{eurosym}  
  
@@ -45,10 +45,10 @@
 \begin{document}
 \lspbeamertitle
 
-\section{Was ist OMP}
+\section{Was ist OMP?}
 
 \frame{ 
-\frametitle{Was ist OMP}
+\frametitle{Was ist OMP?}
 \begin{itemize}
  \item  Plattform zur Veröffentlichung von Monographien
  \item  angelehnt an OJS (Zeitschriften)
@@ -58,24 +58,35 @@
 }
 
 \frame{ 
-\frametitle{Was ist OMP}
-\includegraphics[\width=\textwidth]{./pics/ompdev.png}
+\frametitle{Was ist OMP?}
+\includegraphics[width=\textwidth]{./pics/ompdev.png}
 }
 
 \frame{ 
-\frametitle{Was ist OMP}
+\frametitle{Kontext}
 \begin{itemize}
  \item von PKP in Kanada entwickelt
  \item weltweit eingesetzt
+ \begin{itemize}
+  \item in Deutschland in Heidelberg und ansatzweise in Bochum
+ \end{itemize}
  \item PHP+js+CSS/LESS 
  \item kann auch für Closed Access eingesetzt werden, mit Vertriebsregionen
 \end{itemize}
 }
 
-\section{Was leistet OMP}
+
 
 \frame{ 
-\frametitle{Was leistet OMP}
+\frametitle{Original}
+\includegraphics[width=\textwidth]{./pics/omporigsubmission.png}
+}
+
+
+\section{Was leistet OMP?}
+
+\frame{ 
+\frametitle{Was leistet OMP?}
 \begin{itemize}
  \item   Dokumentenverwaltung
  \item   Begleitung durch den Publikationsprozess in 5 Phasen
@@ -85,30 +96,30 @@
 }
 
 \frame{ 
-\frametitle{Was leistet OMP}
-\includegraphics[\width=\textwidth]{./pics/omporigsubmission.png}
+\frametitle{OMP bei Language Science Press}
+\includegraphics[width=\textwidth]{./pics/workflow.jpg}
 }
 
 \frame{ 
-\frametitle{Was leistet OMP}
-\includegraphics[\width=\textwidth]{./pics/omphandschuh.png}
+\frametitle{Anpassungen}
+\includegraphics[width=\textwidth]{./pics/omphandschuh.png}
 }
 
 
 
 \frame{ 
-\frametitle{Was leistet OMP}
+\frametitle{Weitere Merkmale}
 \begin{itemize}
  \item   Veröffentlichung
  \item   Metadaten
  \item   Verbreitung (OAI-PMH, Onyx, )
- \item   Datenbankschnittstelle 
+ \item Derzeit 19 Bücher von Language Science Press in OMP
 \end{itemize}
 }
 
 \frame{ 
-\frametitle{Was leistet OMP}
-\includegraphics[\width=\textwidth]{./pics/omphandschuh.png}
+\frametitle{Katalogfunktion}
+\includegraphics[width=\textwidth]{./pics/ompcatalog.png}
 }
 
  
@@ -126,21 +137,36 @@
 \end{itemize}
 }
 
+
+
 \frame{ 
 \frametitle{Grenzen von OMP}
 \begin{itemize}
  \item    Rollensystem unklar 
  \item    Stakeholderoverkill
- \item    ISBN, DOI 
- \item    Sammelbände (mehrere Autoren, DOIs pro Beitrag)
+ \item    ISBN, DOI funktionieren noch nicht
+ \item    Sammelbände (mehrere Autoren, DOIs pro Beitrag) nicht gut unterstützt
+ \item derzeit bei LangSci nur von Press Managern verwendet
+ \item Langsame Qualifikation der Reihenherausgeber, dann Reviewer
 \end{itemize}
 }
+
+
+\frame{
+\frametitle{Stakeholderoverkill}
+\includegraphics[width=\textwidth]{./pics/omproles.png}
+}
+
 
 \frame{ 
 \frametitle{Grenzen von OMP}
 \begin{itemize}
- \item   Keine echte Versionierung
+ \item   Keine echte Versionierung der Dokumente
  \item   diverse Bugs
+ \begin{itemize}
+  \item fehlerhafte Benachrichtigungsfunktion
+  \item Interfacefehler (Upload unmöglich, Funktionen nicht zugänglich)
+ \end{itemize}
  \item   Blog extern
 \end{itemize}
 }
@@ -148,18 +174,73 @@
  
 
 
-\section{Weiterentwicklung von OMP}
-
-
+\section[Ausblick OMP]{Weiterentwicklung von OMP}
 
 \frame{
-\frametitle{Frametitle1}
+\frametitle{Weiterentwicklung von OMP}
   \begin{itemize}
     \item  Höchstwahrscheinlich Orientierung an OJS 
     \item  Einbindung von Weiterentwicklungen Dritter
+    \item CeDiS an der FU strebt Kompetenzausbau in diesem Bereich an
   \end{itemize}
 } 
   
+
+\frame{
+\frametitle{Warum trotzdem OMP verwenden?}
+  \begin{itemize}
+    \item Open Source Software kann grundsätzlich verbessert werden
+    \item Software noch in sehr frühem Stadium, Einflussnahmem möglich
+    \item Neuentwicklung wäre technisch zwar möglich, aber Communitybuilding würde lange dauern 
+  \end{itemize}
+} 
+  
+  
+\frame{ 
+\frametitle{Weiterentwicklungen von LangSci}
+\begin{itemize}
+ \item {\bfseries LangSci Pages Plugin} 	Loads the pages needed for static pages
+ \item {\bfseries Hall of Fame Plugin}	Displays Achievements of Reviewers, Typesetters, Proofreaders
+ \item {\bfseries Topnavi Plugin}	Include Template for top navigation.
+ \item {\bfseries Supporter Page Plugin}	Displays all supporters of Languages Science Press
+ \item {\bfseries Register Plugin}		Modifies OMP-Registering
+ \item {\bfseries Series Page Plugin}	Displays all series
+ \item {\bfseries Simplify Workflow Plugin}	A number of smaller modifications to increase usability
+ \item {\bfseries Cite-As Plugin}		Cite as.
+ \item {\bfseries Remove Subtitles Plugin}	Remove subtitles in catalog view.                                
+\end{itemize}
+}
+
+
+\frame{
+\frametitle{Vielen Dank}
+{\Large Fragen?} \hspace*{1em}
+{\large Fragen?} \hspace*{2em}
+{\huge Fragen?} \hspace*{2em}
+{\large Fragen?} \hspace*{1em}
+{\small Fragen?} \hspace*{2em}
+{\huge Fragen?} \hspace*{2em}
+{\large Fragen?} \hspace*{1em}
+{\small Fragen?} \hspace*{2em}
+{\scriptsize Fragen?} \hspace*{2em}
+{\huge Fragen?} \hspace*{2em}
+{\large Fragen?} \hspace*{1em}
+{\small Fragen?} \hspace*{2em}
+{\scriptsize Fragen?} \hspace*{2em}
+{\Huge Fragen?} \hspace*{1em}
+{\huge Fragen?} \hspace*{2em}
+{\large Fragen?} \hspace*{1em}
+{\small Fragen?} \hspace*{2em}
+{\scriptsize Fragen?} \hspace*{2em}
+{\huge Fragen?} \hspace*{2em}
+{\large Fragen?} \hspace*{1em}
+{\small Fragen?} \hspace*{2em}
+{\scriptsize Fragen?} \hspace*{2em}
+{\huge Fragen?} \hspace*{1em}
+{\footnotesize Fragen?} \hspace*{1em}
+{\large Fragen?} \hspace*{2em}
+{\normalsize Fragen?} \hspace*{1em}
+}
 
 %\setcounter{framenumber}{\thelastpagemainpart}
 \end{document}
