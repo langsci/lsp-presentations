@@ -72,29 +72,24 @@
 
 \defbeamertemplate*{headline}{lsp theme}
 {%
+\begin{textblock*}{.5\textwidth}(4.5mm,4.5mm)
+\color{langscicol4}
+\includegraphics[height=0.9cm]{langsci_logo_nocolor.pdf}
+\end{textblock*}  
+
   \pgfuseshading{beamer@treeshade}%
   \vskip-7ex% 
   \begin{tabular}{p{-0.1cm}p{2cm}p{5.55cm}p{4cm}}
-   &
-  \hspace{-.22cm}
-%  \vspace{-.7cm}
-%  \includegraphics[width=2cm,height=1.1cm]{logo-gimp.png} 
-%  \vspace{-0.7cm}
-  \raisebox{-3.5mm}{\includegraphics[height=0.9cm]{langsci_logo_nocolor.pdf}}
-  &
+  &   &
   \parbox{5cm}{\ifx\insertframetitle\undefined\else {\large \insertframetitle}\fi }
   &
   \parbox{2cm}{
-
     \vspace{.2cm} 
-
     \begin{beamercolorbox}[wd=\paperwidth,ht=2.125ex,dp=1.125ex,ignorebg,%
       leftskip=.3cm,rightskip=.3cm plus1fil]{section in head/foot}
       \usebeamerfont{title in head/foot}{\raisebox{-.3em}[.2em]{\rule{.08em}{1.4em}}~\scriptsize\insertsectionhead}
     \end{beamercolorbox}
-
     \vspace{.05cm}
-
     \begin{beamercolorbox}[wd=\paperwidth,ht=2.125ex,dp=1.125ex,ignorebg,%
       leftskip=.3cm,rightskip=.3cm plus1fil]{subsection in head/foot}
       \usebeamerfont{section in head/foot}% 
@@ -104,9 +99,7 @@
         \par{\hskip12pt{\raisebox{-.3em}[.2em]{\rule{.08em}{1.4em}}~\scriptsize\insertsubsectionhead}\strut\par}% 
       \fi%%
     \end{beamercolorbox}
-
     \vspace{.05cm}
-
     \begin{beamercolorbox}[wd=\paperwidth,ht=2.125ex,dp=1.125ex,ignorebg,%
 	leftskip=.3cm,rightskip=.3cm plus1fil]{subsubsection in head/foot}
       \usebeamerfont{subsection in head/foot}%
@@ -116,12 +109,11 @@
         \par{\hskip24pt{\raisebox{-.3em}[.2em]{\rule{.08em}{1.4em}}~\scriptsize\insertsubsubsectionhead}\strut\par}% 
       \fi%%
     \end{beamercolorbox}
-
     \vspace{.1cm}
   }  
 \end{tabular}
 % 
-\parbox{.25cm}{~} \includegraphics[width=.95\textwidth,height=.04cm]{colorbar.png} 
+\parbox{.25cm}{~} \resizebox{.95\textwidth}{.3mm}{\lsptable{.95\textwidth}{1mm}}
 }
  
 \defbeamertemplate*{frametitle}{lsp theme}
