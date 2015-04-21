@@ -1,0 +1,55 @@
+\usepackage{tabularx}
+\usepackage{colortbl}
+\usepackage{lsp-makros}
+\usepackage[absolute,overlay]{textpos}
+
+\newcommand{\lspbeamertitle}{   
+  %{    \usebackgroundtemplate{\includegraphics[width=\paperwidth]{deckblattnologo.png}}%
+%   \usebackgroundtemplate{\includegraphics[width=\paperwidth]{deckblattnologo.pdf}}%
+{
+\setbeamercolor{background canvas}{bg=white}
+    \frame[plain]{   
+
+\begin{textblock*}{.5\textwidth}(.03\paperheight,.03\paperheight)
+\color{langscicol1} \rule{.958\paperwidth}{.94\paperheight}
+\end{textblock*} 
+
+\begin{textblock*}{.5\textwidth}(4.5mm,4.5mm)
+\color{langscicol4}
+\includegraphics[height=0.9cm]{langsci_logo_nocolor.pdf}
+\end{textblock*}  
+
+\begin{textblock*}{.5\textwidth}(.5\textwidth,.03\paperheight)
+\lsptable{.45\textwidth}{3cm}
+\end{textblock*}
+
+\begin{textblock*}{.7\textwidth}(.1\textwidth,.5\paperheight)
+		  { \hspace{-0.1em}% correct for too large indent of title	      
+		    \\\huge\noindent\inserttitle}
+		    \vskip2em	  
+		  \insertauthor
+		  \\ 
+		  \insertdate 
+		  \\ 
+		  \insertinstitute
+\end{textblock*}
+
+%     \raisebox{4.7cm}{\hspace{-.22cm}\includegraphics[height=0.9cm]{langsci_logo_nocolor.pdf} \lsptable{2cm}{5cm}}
+
+% 	      \begin{beamercolorbox}{title}
+% 		\hspace{0.4em}
+% 		\parbox{.7\textwidth}{
+		  { \hspace{-0.1em}% correct for too large indent of title	      
+		    \huge\inserttitle}
+		    \vskip2em	 
+\color{red}
+		  \insertauthor
+		  \\ 
+		  \insertdate 
+		  \\ 
+		  \insertinstitute
+% 		}
+% 	      \end{beamercolorbox}	    
+	  }  
+}
+}
