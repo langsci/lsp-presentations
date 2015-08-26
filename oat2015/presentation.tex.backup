@@ -37,7 +37,7 @@
 \renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
 
 
-\title{\mbox{Auf der Suche nach dem 'Kunden'} \large Globaler Nutzen \& lokale Kosten}
+\title{\mbox{Auf der Suche nach dem `Kunden'} \large Globaler Nutzen \& lokale Kosten}
 
 % \institute{FU Berlin}
 \author[LangSci]{Sebastian Nordhoff \& Debora Siller}
@@ -46,18 +46,19 @@
 \newlength{\distlength}
 \setlength{\distlength}{.7mm}
 
-\newcommand{\saeule}[1]{
-\fbox{\parbox[b][#1\distlength][b]{1cm}{\centering #1\\[1mm]}}
+\newcommand{\saeule}[2][green]{
+\raisebox{-.4cm}{\parbox{0cm}{\parbox{1cm}{\centering #2}}}\colorbox{#1}{\parbox[b][#2\distlength][b]{1cm}{\color{#1}\rule{1cm}{.3pt}}}
 }
 
-\newcommand{\distribution}[4]{
-\parbox[b][\textheight][b]{\textwidth}{
+\newcommand{\distribution}[5]{
+\parbox[b][.9\textheight][b]{\textwidth}{
   \centering 
 \setlength{\fboxsep}{0pt}
-\saeule{#1}
-\saeule{#2}
-\saeule{#3}
-\saeule{#4}
+\saeule[langscicol1]{#1}
+\saeule[langscicol2]{#2}
+\saeule[langscicol3]{#3}
+\saeule[langscicol4]{#4}
+\saeule[langscicol5]{#5}
 }
 }
  
@@ -73,28 +74,30 @@
 
 \section{Einleitung}
 \frame{ 
-\frametitle{Einleitung} 
+\frametitle{Language Science Press} 
 \begin{itemize}
- \item Language Science Press
- \item Sprachwissenschaft
-
-	Bücher zwischen 100 und 800 Seiten. 
-	Tieferes technisches Verständnis kann nicht vorausgesetzt werden
-
- \item Bücher. 9 publiziert, 111 Anfragen
- \item langsci-press.org
- \item Bedingung: Entwicklung eines Geschäftsmodells
+ \item aktiv seit 2014, Anschubfinanzierung durch DFG
+ \item nur Bücher, nur Spitzenforschung, nur Sprachwissenschaft
+ \item international, reihenbasiert
+ \item 9 veröffentlichte Bücher, >100 Interessensbekundungen
+ \item Bücher zwischen 100 und 800 Seiten
+ \item Tieferes technisches Verständnis kann bei den Autoren nicht vorausgesetzt werden
+ \item http://www.langsci-press.org 
 \end{itemize} 
+\begin{itemize}
+ \item Förderungsbedingung: Entwicklung eines Geschäftsmodells
+\end{itemize}
+
 }
  
 \section{Kosten}
 \frame{ 
 \frametitle{Geschäftsmodell} 
 \begin{itemize}
- \item Vision
- \item Kosten 
- \item Akteure 
- \item Einnahmearten 
+ \item Vision: wo wollen wir hin?
+ \item Akteure: wer kommt mit? 
+ \item Kosten: was kostet das?
+ \item Einnahmearten: wie kriegen wir das Geld wieder rein?
  \item Berechnungen
 \end{itemize} 
 }
@@ -103,19 +106,25 @@
 \frame{ 
 \frametitle{Kosten}
 \begin{columns}
-\column{5cm}
+\column{6cm}
 \begin{itemize}
  \item Personal 
  \item Sachkosten
 \end{itemize}
    \begin{itemize}
  \item    Derzeit ca. 10k€/Buch
-\item perspektivisch 3.5k€
+\item perspektivisch 3,5k€
 \item {\LaTeX}-Satz autorenseitig
+ \item Bei 50 Büchern/Jahr:
+\begin{itemize}
+ \item  150k€ Personalkosten
+ \item  40k€ Sachkosten
+\end{itemize} 
 \end{itemize}
-\column{5cm}
-\saeule{60}
-\saeule{40}
+\column{4cm}
+\setlength\distlength{.3mm}
+\saeule[langscicol1]{150}
+\saeule[langscicol2]{40}
 \end{columns}
 }
 
@@ -134,16 +143,16 @@
 \frametitle{Kostenverteilung} 
 \begin{itemize}
  \item Autorenbetreuung 40\% 
- \item Hrsg-Betreuung 8\%
+ \item Herausgeber-Betreuung 8\%
  \item long tail: Feinsatz, Koordinierung PoD, Ausstattung, IT, Design, Marketing, Reise, Rechtsberatung, Steuerberatung, Verbrauchsmaterialien, Dokumentation,  strategische Planung, Mittelakquise, \dots	
 \end{itemize}
  
-\saeule{40}
-\saeule{8}
-\saeule{6}
-\saeule{5}
-\saeule{5} 
-\saeule{4} 	
+\saeule[langscicol1]{40}
+\saeule[langscicol2]{8}
+\saeule[langscicol3]{6}
+\saeule[langscicol4]{5}
+\saeule[langscicol5]{5} 
+\saeule[langscicol6	]{4} 	
 }
  
     
@@ -156,7 +165,7 @@
  \item IT: keine aufwendige Zugangskontrolle, kein DRM, keine Rechnungslegung
  \item http://bjoern.brembs.net/2014/07/are-we-paying-us3000-per-article-just-for-paywalls/
 \end{itemize} 
- \item kalkulatorische Schätzwerte können eingesehen werden   
+ \item kalkulatorische Schätzwerte können nach dem Vortrag eingesehen werden   
 \end{itemize}
 
 }
@@ -164,48 +173,114 @@
      
 
 \section{Gruppen}
+ 
 \frame{ 
 \frametitle{Gruppen} 
 \begin{itemize}
- \item  Autoren
- \item  Leser
- \item  Bibliotheken 
- \item  Universitäten 
- \item  Fachgesellschaften 
- \item  (Staat) 
+ \item  Autoren \pause
+ \item  Leser \pause
+ \item  Bibliotheken \pause 
+ \item  Universitäten  \pause
+ \item  Fachgesellschaften  \pause
+ \item  (Staat)  \pause
 \end{itemize} 
+
+\begin{itemize}
+ \item alle Gruppen sind international 
+ \item collective action problem
+\end{itemize}
+
 } 
  
 
 \section{Wertversprechen}
 \frame{ 
 \frametitle{Wertversprechen}
-\begin{itemize}
- \item  Autoren $\to$
- \item  Leser $\to$
- \item  Bibliotheken  $\to$
- \item  Universitäten  $\to$
- \item  Fachgesellschaften  $\to$
- \item  (Staat)  $\to$
-\end{itemize} 
+\begin{tabular}{lll}
+ \onslide<1-7> Autoren  & $\to$ &  \onslide<7>Sichtbarkeit\\
+ \onslide<1-7> Leser  & $\to$ &  \onslide<6-7>Zugang, Nachnutzung, Karma \\
+ \onslide<1-7> Bibliotheken   & $\to$ &  \onslide<5-7>Zugang zu Wissen, Kostensenkung\\
+ \onslide<1-7> Universitäten   & $\to$ &  \onslide<4-7>Schaffung von Wissen, Kostensenkung \\
+ \onslide<1-7> Fachgesellschaften   & $\to$ &  \onslide<3-7>Förderung wissenschaftlichen Austausches\\
+ \onslide<1-7> (Staat)   & $\to$ &  \onslide<2-7>Volksbildung, Kostensenkung
+\end{tabular}
 }
  
 \section{Einnahmearten}
 
 \frame{ 
-\frametitle{} 
-\begin{itemize}
+\frametitle{Einnahmearten} 
+\begin{enumerate}
  \item  Publikationsgebühren 
  \item  Individualmitgliedschaften 
  \item  institutionelle Mitgliedschaften 
  \item  Spenden 
  \item  Printmarge 
  \item  (Grundfinanzierung)
-\end{itemize} 
+\end{enumerate} 
 Je mehr Einnahmearten, desto mehr Verwaltungsaufwand!
 }
 
  
+\frame{ 
+\frametitle{Publikationsgebühren} 
+\begin{itemize}
+ \item Gruppe \textbf{Autor}
+ \item Höhe 3500€
+ \item no-questions-asked-waiver
+ \item Falls Autoren Zugang zu Fördermitteln haben, sollte man diese nicht verfallen lassen
+\end{itemize} 
+}
+
+ 
+\frame{ 
+\frametitle{Fördermitgliedschaften} 
+\begin{itemize}
+\item Gruppe \textbf{Leser}
+\item regelmäßige Förderung mit frei wählbarem Betrag
+\item vorgeschlagen: 30€/Jahr
+\end{itemize} 
+}
+
+ 
+\frame{ 
+\frametitle{Institutionelle \mbox{Mitgliedschaften}} 
+\begin{itemize}
+ \item Gruppe \textbf{Universitäten}; \textbf{Bibliotheken}
+ \item gestaffelte Preise nach Größe der Institution und Wirtschaftskraft des Landes 
+ \item Modell von OpenLibHums, Arxiv
+\end{itemize} 
+}
+
+ 
+\frame{ 
+\frametitle{Spenden} 
+\begin{itemize}
+ \item Gruppe \textbf{Leser}; \textbf{Autoren}
+ \item einmalige Förderung mit beliebigem Betrag 
+ \item steuerlich absetzbar
+\end{itemize} 
+}
+
+ 
+\frame{ 
+\frametitle{Printmarge} 
+\begin{itemize}
+ \item Gruppe \textbf{Leser}; \textbf{Bibliotheken}
+ \item Kalkuliert: 10€ Nettomarge pro PoD-Buch
+ \item Endkosten pro Buch: 30--60€
+\end{itemize} 
+}
+
+ 
+\frame{ 
+\frametitle{(Grundfinanzierung)} 
+\begin{itemize}
+ \item Nicht Teil dieses Geschäftsmodells
+ \item Begründung: Verbreitung von Forschungsergebnissen sollte eine hoheitliche Aufgabe sein
+\end{itemize} 
+}
+
 
 
 \section{Rechtliches}
@@ -231,10 +306,12 @@ $\Rightarrow$     ab welcher Höhe deckt eine Spende ihren Verwaltungsaufwand?
  \item Die Unternehmung sollte agil handeln können
  \item Die Unternehmung soll betriebswirtschaftlich verantwortlich handeln 
  \item Die Unternehmung soll kostendeckend arbeiten
- \item Die Rechtsform sollte AUF KEINEN FALL profitorientiert arbeiten
+ \item Die Rechtsform sollte AUF KEINEN FALL profitorientiert sein
   \begin{itemize}
     \item Verkauf von Prestige 
+    \item Bei Erfolg durch Profitmaximierung Anhebung der Preise
   \end{itemize}
+ \item gewählte Rechtsform: ``Betrieb gewerblicher Art'' an der Freien Universität Berlin.
 \end{itemize}
 }
 
@@ -242,35 +319,65 @@ $\Rightarrow$     ab welcher Höhe deckt eine Spende ihren Verwaltungsaufwand?
 
 \frame{ 
 \frametitle{Verteilung} 
-\distribution{25}{25}{25}{25}
+\distribution{20}{20}{20}{20}{20}
 }
 
 \frame{ 
 \frametitle{Verteilung}  
-\distribution{10}{30}{20}{40} 
+\distribution{25}{30}{15}{10}{20}
 }
 
 \frame{ 
 \frametitle{Verteilung}   
-\distribution{50}{0}{0}{50} 
+\distribution{10}{80}{0}{5}{5}
 }
 \frame{ 
 \frametitle{Verteilung}   
-\distribution{80}{0}{10}{10} 
+\distribution{13}{24}{18}{29}{16}
+}
+ 
+\frame{ 
+\frametitle{Verteilung}
+\distribution{0}{0}{0}{0}{0}
 }
 
+\frame{ %berechnet nach xls
+\frametitle{Angenommene Verteilung für 2020}   
+\distribution{14}{28}{32}{21}{5}
+}
+  
+\frame{ 
+\frametitle{Übertragbarkeit}
+\begin{itemize}
+ \item scholar-owned publishing 
+    \begin{itemize}
+    \item starke Markenbildung; Marke nicht im Besitz profitorientierter Unternehmen
+    \end{itemize}
+ \item autarkes Reihenmodell 
+ \item Einbindung der Community
+ \item Finanzierungskonzept grundsätzlich übertragbar
+    \begin{itemize}
+      \item allerdings wohl demnächst heißer Wettkampf um Födermitgliedschaften. 
+    \end{itemize}
+ \item kalkulatorische Zahlen als Grundlage für ähnliche Projekte, sobald empirisch unterfüttert. 
+\end{itemize}
+}
 
 \frame{ 
-\frametitle{Verteilung}   
-\distribution{43}{18}{16}{23} 
+\frametitle{Offen heißt offen}
+\begin{itemize}
+ \item Autoren behalten ihr Copyright
+ \item Alle Werke stehen unter freier Lizenz nach opendefintion.org (CC-BY)
+ \item Quellcodes aller Softwarebestandteile sind vollständig auf github zur Nachnutzbarkeit verfügbar
+ \item Betriebswirtschaftliche Zahlen werden veröffentlicht, sobald diese belastbar vorliegen
+ \item Geschäftsprozesse werden in geeigneter Weise zur Nachnutzung bereitgestellt (z.B. heute)
+\end{itemize}
+% \column{5cm}
+% \includegraphics{}
+% \end{columns}
 }
 
-\frame{ 
-\frametitle{Verteilung}   
-\distribution{0}{0}{0}{0} 
-}
-
-\section{Evaluation}
+\section*{Danke}
 
 \frame{ 
 \frametitle{Evaluation} 
@@ -281,8 +388,16 @@ $\Rightarrow$     ab welcher Höhe deckt eine Spende ihren Verwaltungsaufwand?
 \end{itemize} 
 } 
 
+\frame{ 
+\frametitle{Vielen Dank}
+\includegraphics[height=1\textheight]{pics/catalog.png}
+}
 
 % OLH
 % Edition Open Access
  
 \end{document}
+
+
+https://www.flickr.com/photos/librarygeek/4503670035/
+geschuhn
