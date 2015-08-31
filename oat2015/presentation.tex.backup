@@ -137,7 +137,10 @@
  \item Herausgeber-Betreuung 8\%
  \item long tail: Feinsatz, Koordinierung PoD, Ausstattung, IT, Design, Marketing, Reise, Rechtsberatung, Steuerberatung, Verbrauchsmaterialien, Dokumentation,  strategische Planung, Mittelakquise, \dots	
 \end{itemize}
- 
+
+\medskip
+\vspace*{.2cm}
+\hspace*{.7cm} 
 \saeule[langscicol1]{40}
 \saeule[langscicol2]{8}
 \saeule[langscicol3]{6}
@@ -378,6 +381,24 @@ http://flickr.com/photos/thelastminute/97182354/in/set-72057594061270615/
   
 
 \section{Rechtliches}
+
+
+      \frame{ 
+\frametitle{\raggedright Globaler Nutzen, lokale\\ Kosten und Jurisdiktion}
+ 
+
+\includegraphics[height=.95\textheight]{pics/globe.jpg}~
+\includegraphics[height=.95\textheight]{pics/silberlaube.png}
+
+{~\\
+\tiny 
+CC-BY-SA; ODbL  OpenStreetMap Foundation \\ 
+CC-BY-SA https://commons.wikimedia.org/wiki/File:Melik\_Ohanian\_Futuring\_\%28Planet\%29\_2011.jpg
+} 
+
+}
+
+
 
       \frame{ 
 \frametitle{\raggedright Globaler Nutzen, lokale\\ Kosten und Jurisdiktion}

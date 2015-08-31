@@ -72,20 +72,22 @@
 \headcommand {\beamer@framepages {44}{44}}
 \headcommand {\slideentry {7}{0}{2}{45/45}{}{0}}
 \headcommand {\beamer@framepages {45}{45}}
-\headcommand {\sectionentry {8}{Übertragbarkeit}{46}{Übertragbarkeit}{0}}
-\headcommand {\beamer@sectionpages {44}{45}}
-\headcommand {\beamer@subsectionpages {44}{45}}
-\headcommand {\slideentry {8}{0}{1}{46/46}{}{0}}
+\headcommand {\slideentry {7}{0}{3}{46/46}{}{0}}
 \headcommand {\beamer@framepages {46}{46}}
-\headcommand {\slideentry {8}{0}{2}{47/47}{}{0}}
+\headcommand {\sectionentry {8}{Übertragbarkeit}{47}{Übertragbarkeit}{0}}
+\headcommand {\beamer@sectionpages {44}{46}}
+\headcommand {\beamer@subsectionpages {44}{46}}
+\headcommand {\slideentry {8}{0}{1}{47/47}{}{0}}
 \headcommand {\beamer@framepages {47}{47}}
-\headcommand {\sectionentry {9}{Danke}{48}{Danke}{0}}
-\headcommand {\beamer@sectionpages {46}{47}}
-\headcommand {\beamer@subsectionpages {46}{47}}
-\headcommand {\slideentry {9}{0}{1}{48/48}{}{0}}
+\headcommand {\slideentry {8}{0}{2}{48/48}{}{0}}
 \headcommand {\beamer@framepages {48}{48}}
-\headcommand {\beamer@partpages {1}{48}}
-\headcommand {\beamer@subsectionpages {48}{48}}
-\headcommand {\beamer@sectionpages {48}{48}}
-\headcommand {\beamer@documentpages {48}}
-\headcommand {\def \inserttotalframenumber {29}}
+\headcommand {\sectionentry {9}{Danke}{49}{Danke}{0}}
+\headcommand {\beamer@sectionpages {47}{48}}
+\headcommand {\beamer@subsectionpages {47}{48}}
+\headcommand {\slideentry {9}{0}{1}{49/49}{}{0}}
+\headcommand {\beamer@framepages {49}{49}}
+\headcommand {\beamer@partpages {1}{49}}
+\headcommand {\beamer@subsectionpages {49}{49}}
+\headcommand {\beamer@sectionpages {49}{49}}
+\headcommand {\beamer@documentpages {49}}
+\headcommand {\def \inserttotalframenumber {30}}
