@@ -128,16 +128,7 @@
 \end{columns}
 }
 
-\frame{ 
-\frametitle{Kostenberechnung}
-\begin{itemize}
- \item ca. 40 Variablen 
- \item \textbf{bekannt}: Tariftabellen, Steuersätze, Supporter
- \item \textbf{gut schätzbar}: Aufwand einzelner Arbeitschritte, Einreichungszahlen 
- \item \textbf{unbekannt}: Spendenbereitschaft, Fördermitgliedschaften, Autorengebührenquote
-\end{itemize}
-} 
- 
+
 
 \frame{ 
 \frametitle{Kostenverteilung} 
@@ -152,7 +143,7 @@
 \saeule[langscicol3]{6}
 \saeule[langscicol4]{5}
 \saeule[langscicol5]{5} 
-\saeule[langscicol6	]{4} 	
+\saeule[langscicol6]{4} 	
 }
  
     
@@ -172,10 +163,16 @@
 
      
 
-\section{Gruppen}
+\section[Gruppen]{Gruppen: auf der Suche nach dem `Kunden'}
  
 \frame{ 
 \frametitle{Gruppen} 
+
+\begin{itemize}
+ \item Ein Kunde bezahlt etwas und erhält dafür eine Gegenleistung
+\end{itemize}
+
+
 \begin{itemize}
  \item  Autoren \pause
  \item  Leser \pause
@@ -186,8 +183,7 @@
 \end{itemize} 
 
 \begin{itemize}
- \item alle Gruppen sind international 
- \item collective action problem
+ \item \textbf{Bezahler und Nutznießer fallen nicht unbedingt zusammen} 
 \end{itemize}
 
 } 
@@ -197,12 +193,12 @@
 \frame{ 
 \frametitle{Wertversprechen}
 \begin{tabular}{lll}
- \onslide<1-7> Autoren  & $\to$ &  \onslide<7>Sichtbarkeit\\
- \onslide<1-7> Leser  & $\to$ &  \onslide<6-7>Zugang, Nachnutzung, Karma \\
- \onslide<1-7> Bibliotheken   & $\to$ &  \onslide<5-7>Zugang zu Wissen, Kostensenkung\\
- \onslide<1-7> Universitäten   & $\to$ &  \onslide<4-7>Schaffung von Wissen, Kostensenkung \\
- \onslide<1-7> Fachgesellschaften   & $\to$ &  \onslide<3-7>Förderung wissenschaftlichen Austausches\\
- \onslide<1-7> (Staat)   & $\to$ &  \onslide<2-7>Volksbildung, Kostensenkung
+ \onslide<1-7> Autoren  & $\to$ &  \onslide<2-7>Sichtbarkeit\\
+ \onslide<1-7> Leser  & $\to$ &  \onslide<3-7>Zugang, Nachnutzung, Karma \\
+ \onslide<1-7> Bibliotheken   & $\to$ &  \onslide<4-7>Zugang zu Wissen, Kostensenkung\\
+ \onslide<1-7> Universitäten   & $\to$ &  \onslide<5-7>Schaffung von Wissen, Kostensenkung \\
+ \onslide<1-7> Fachgesellschaften   & $\to$ &  \onslide<6-7>Förderung wissenschaftlichen Austausches\\
+ \onslide<1-7> (Staat)   & $\to$ &  \onslide<7>Volksbildung, Kostensenkung
 \end{tabular}
 }
  
@@ -211,84 +207,181 @@
 \frame{ 
 \frametitle{Einnahmearten} 
 \begin{enumerate}
- \item  Publikationsgebühren 
- \item  Individualmitgliedschaften 
- \item  institutionelle Mitgliedschaften 
- \item  Spenden 
- \item  Printmarge 
- \item  (Grundfinanzierung)
+ \pause\item  Publikationsgebühren 
+ \pause\item  Individualmitgliedschaften 
+ \pause\item  institutionelle Mitgliedschaften 
+ \pause\item  Spenden 
+ \pause\item  Printmarge 
+ \pause\item  (Grundfinanzierung)
 \end{enumerate} 
+\pause
 Je mehr Einnahmearten, desto mehr Verwaltungsaufwand!
 }
 
- 
 \frame{ 
-\frametitle{Publikationsgebühren} 
+\frametitle{Publikationsgebühren}
+\begin{columns}
+\column{5cm}
 \begin{itemize}
  \item Gruppe \textbf{Autor}
  \item Höhe 3500€
  \item no-questions-asked-waiver
  \item Falls Autoren Zugang zu Fördermitteln haben, sollte man diese nicht verfallen lassen
 \end{itemize} 
+\column{5cm}
+\includegraphics[width=4cm]{pics/Chomsky.jpg}
+\\
+\tiny 
+CC-BY Duncan Rawlinson
+http://flickr.com/photos/thelastminute/97182354/in/set-72057594061270615/
+\end{columns}
 }
-
+ 
  
 \frame{ 
 \frametitle{Fördermitgliedschaften} 
+\begin{columns}
+\column{5cm}
 \begin{itemize}
 \item Gruppe \textbf{Leser}
 \item regelmäßige Förderung mit frei wählbarem Betrag
 \item vorgeschlagen: 30€/Jahr
 \end{itemize} 
+\column{5cm}
+% \includegraphics[width=4cm]{pics/rausing.jpg}
+\includegraphics[width=4cm]{pics/harald.jpg}\\
+\includegraphics[width=4cm]{pics/dryer.jpg}
+\\
+\tiny CC-BY-NC-ND http://hpsg.fu-berlin.de/~stefan/Bilder/wp-content/gallery/matthew-dryer\_1/20140827-23-34-38.jpg
+\end{columns}
+% rausing
+
 }
 
  
 \frame{ 
 \frametitle{Institutionelle \mbox{Mitgliedschaften}} 
+\begin{columns}
+\column{5cm}
 \begin{itemize}
  \item Gruppe \textbf{Universitäten}; \textbf{Bibliotheken}
  \item gestaffelte Preise nach Größe der Institution und Wirtschaftskraft des Landes 
  \item Modell von OpenLibHums, Arxiv
 \end{itemize} 
+\column{5cm}
+\includegraphics[width=4cm]{pics/loc.jpg}
+\end{columns} 
 }
 
  
 \frame{ 
 \frametitle{Spenden} 
+\begin{columns}
+\column{5cm}
 \begin{itemize}
  \item Gruppe \textbf{Leser}; \textbf{Autoren}
  \item einmalige Förderung mit beliebigem Betrag 
  \item steuerlich absetzbar
 \end{itemize} 
+\column{5cm}
+\includegraphics[width=4cm]{pics/spardose.jpg}
+\\
+\tiny CC-BY-NC https://www.flickr.com/photos/sarahamina/4510470695/in/photolist-3J6EhQ-agwAjL-88vZmn-7SzkWv-7SCC4E-7SzkN8-dazm1i-Q2Ec2-4uPzV6-4uTAqh-5pWZZL-7oG5C5-iGdNBU-qV4kMC
+\end{columns}  
+% spardose
+
+
 }
 
  
 \frame{ 
-\frametitle{Printmarge} 
+\frametitle{Printmarge}  
+\begin{columns}
+\column{5cm}
 \begin{itemize}
  \item Gruppe \textbf{Leser}; \textbf{Bibliotheken}
  \item Kalkuliert: 10€ Nettomarge pro PoD-Buch
  \item Endkosten pro Buch: 30--60€
 \end{itemize} 
+\column{5cm}
+\includegraphics[width=4cm]{pics/enfield.png}
+\end{columns} 
 }
-
+ 
  
 \frame{ 
-\frametitle{(Grundfinanzierung)} 
+\frametitle{(Grundfinanzierung)}  
+\begin{columns}
+\column{7cm}
 \begin{itemize}
  \item Nicht Teil dieses Geschäftsmodells
  \item Begründung: Verbreitung von Forschungsergebnissen sollte eine hoheitliche Aufgabe sein
 \end{itemize} 
+\column{5cm}
+~~~\includegraphics[width=2cm]{pics/bundesadler.png}
+\end{columns} 
+
+}
+
+\frame{ 
+\frametitle{Kosten- und Einnahmeberechnung}
+\begin{itemize}
+ \item ca. 40 Variablen 
+ \item \textbf{bekannt}: Tariftabellen, Steuersätze, Supporter
+ \item \textbf{gut schätzbar}: Aufwand einzelner Arbeitschritte, Einreichungszahlen 
+ \item \textbf{unbekannt}: Spendenbereitschaft, Fördermitgliedschaften, Autorengebührenquote
+\end{itemize}
+} 
+ 
+
+
+\section{Einnahmeverteilung}
+
+\frame{ 
+\frametitle{Einnahmeverteilung}  
+\distribution{20}{20}{20}{20}{20}
+}
+
+\frame{ 
+\frametitle{Einnahmeverteilung}   
+\distribution{25}{30}{15}{10}{20}
+}
+
+\frame{ 
+\frametitle{Einnahmeverteilung}    
+\distribution{10}{80}{0}{5}{5}
+}
+\frame{ 
+\frametitle{Einnahmeverteilung}   
+\distribution{13}{24}{18}{29}{16}
+}
+ 
+\frame{ 
+\frametitle{Einnahmeverteilung: so nicht}
+\distribution{0}{0}{0}{0}{0}
+}
+
+\frame{ %berechnet nach xls
+\frametitle{\mbox{Angenommene Verteilung für 2020}}
+\distribution{14}{28}{32}{21}{5}
 }
 
 
+\frame{ 
+\frametitle{Evaluation} 
+\begin{itemize}
+ \item Die derzeitigen Annahmen sind ungenau
+ \item Nachjustierung, sobald genauere Zahlen verfügbar werden
+ \item Eventuell Anpassung der Strategie
+\end{itemize} 
+} 
+  
 
 \section{Rechtliches}
 
       \frame{ 
-\frametitle{Juristisches Horrorkabinett}
-\begin{itemize}
- \item  sind Gebühren steuerpflichtig?
+\frametitle{\raggedright Globaler Nutzen, lokale\\ Kosten und Jurisdiktion}
+\begin{itemize} 
  \item  können wir Spendenbescheinigungen nach norwegischem Recht ausstellen?
  \item  sind anonyme Spenden via Flattr o.ä. mit deuschen Verwaltungsvorschriften vereinbar?
  \item  wie können Printmargen verbucht werden, wenn diese vom Dienstleister in den USA in USD angewiesen werden, bei der Uni aber in EUR ankommen und der Dienstleister sich weigert, die Kostenstelle in den Betreff der Überweisung zu schreiben?
@@ -306,46 +399,16 @@ $\Rightarrow$     ab welcher Höhe deckt eine Spende ihren Verwaltungsaufwand?
  \item Die Unternehmung sollte agil handeln können
  \item Die Unternehmung soll betriebswirtschaftlich verantwortlich handeln 
  \item Die Unternehmung soll kostendeckend arbeiten
- \item Die Rechtsform sollte AUF KEINEN FALL profitorientiert sein
+ \item \textbf{Die Rechtsform sollte auf keinen Fall profitorientiert sein}
   \begin{itemize}
     \item Verkauf von Prestige 
-    \item Bei Erfolg durch Profitmaximierung Anhebung der Preise
+    \item Bei Erfolg: Profitmaximierung $\to$ Anhebung der Preise
   \end{itemize}
  \item gewählte Rechtsform: ``Betrieb gewerblicher Art'' an der Freien Universität Berlin.
 \end{itemize}
 }
 
-\section{Kostenverteilung}
-
-\frame{ 
-\frametitle{Verteilung} 
-\distribution{20}{20}{20}{20}{20}
-}
-
-\frame{ 
-\frametitle{Verteilung}  
-\distribution{25}{30}{15}{10}{20}
-}
-
-\frame{ 
-\frametitle{Verteilung}   
-\distribution{10}{80}{0}{5}{5}
-}
-\frame{ 
-\frametitle{Verteilung}   
-\distribution{13}{24}{18}{29}{16}
-}
- 
-\frame{ 
-\frametitle{Verteilung}
-\distribution{0}{0}{0}{0}{0}
-}
-
-\frame{ %berechnet nach xls
-\frametitle{Angenommene Verteilung für 2020}   
-\distribution{14}{28}{32}{21}{5}
-}
-  
+\section{Übertragbarkeit}
 \frame{ 
 \frametitle{Übertragbarkeit}
 \begin{itemize}
@@ -363,6 +426,8 @@ $\Rightarrow$     ab welcher Höhe deckt eine Spende ihren Verwaltungsaufwand?
 \end{itemize}
 }
 
+
+
 \frame{ 
 \frametitle{Offen heißt offen}
 \begin{itemize}
@@ -377,16 +442,8 @@ $\Rightarrow$     ab welcher Höhe deckt eine Spende ihren Verwaltungsaufwand?
 % \end{columns}
 }
 
-\section*{Danke}
 
-\frame{ 
-\frametitle{Evaluation} 
-\begin{itemize}
- \item Die derzeitigen Annahmen sind ungenau
- \item Nachjustierung, sobald genauere Zahlen verfügbar werden
- \item Eventuell Anpassung der Strategie
-\end{itemize} 
-} 
+\section*{Danke}
 
 \frame{ 
 \frametitle{Vielen Dank}
