@@ -2,6 +2,8 @@
 
 \usepackage{fontspec} 
 \usepackage{lsp-makros}
+\usepackage{rotate}
+
 \useoutertheme{lsp}
 
 \usepackage{ngerman}
@@ -77,20 +79,42 @@
 \frame{ 
 \frametitle{Language Science Press} 
 \begin{itemize}
- \item aktiv seit 2014, Anschubfinanzierung durch DFG
+  \item aktiv seit 2014, Anschubfinanzierung durch DFG
+    \begin{itemize}
+    \item Förderungsbedingung: Entwicklung eines Geschäftsmodells
+    \end{itemize}
  \item nur Bücher, nur Spitzenforschung, nur Sprachwissenschaft
  \item international, reihenbasiert
  \item 9 veröffentlichte Bücher, >100 Interessensbekundungen
+ \item 16 Reihen 
  \item Bücher zwischen 100 und 800 Seiten
- \item Tieferes technisches Verständnis kann bei den Autoren nicht vorausgesetzt werden
+%  \item Tieferes technisches Verständnis kann bei den Autoren nicht vorausgesetzt werden
  \item http://www.langsci-press.org 
 \end{itemize} 
-\begin{itemize}
- \item Förderungsbedingung: Entwicklung eines Geschäftsmodells
-\end{itemize}
+
 
 }
  
+
+
+
+      \frame{ 
+\frametitle{\raggedright Globaler Nutzen, lokale\\ Kosten und Jurisdiktion}
+ 
+
+\includegraphics[height=.95\textheight]{pics/globe.jpg}~
+\includegraphics[height=.95\textheight]{pics/silberlaube.png}
+
+{~\\
+\tiny 
+CC-BY-SA; ODbL  OpenStreetMap Foundation \\ 
+CC-BY-SA https://commons.wikimedia.org/wiki/File:Melik\_Ohanian\_Futuring\_\%28Planet\%29\_2011.jpg
+} 
+
+}
+
+
+
 \section{Kosten}
 \frame{ 
 \frametitle{Geschäftsmodell} 
@@ -167,10 +191,10 @@
 
      
 
-\section[Gruppen]{Gruppen: auf der Suche nach dem `Kunden'}
+\section[Stakeholder]{Stakeholder: auf der Suche nach dem `Kunden'}
  
 \frame{ 
-\frametitle{Gruppen} 
+\frametitle{Stakeholder} 
 
 \begin{itemize}
  \item Ein Kunde bezahlt etwas und erhält dafür eine Gegenleistung
@@ -188,6 +212,7 @@
 
 \begin{itemize}
  \item \textbf{Bezahler und Nutznießer fallen nicht unbedingt zusammen} 
+ \item Wer ist der `Kunde'? Wer zahlt? 
 \end{itemize}
 
 } 
@@ -216,7 +241,7 @@
  \pause\item  institutionelle Mitgliedschaften 
  \pause\item  Spenden 
  \pause\item  Printmarge 
- \pause\item  (Grundfinanzierung)
+ \pause\item  (staatliche Grundfinanzierung)
 \end{enumerate} 
 \pause
 Je mehr Einnahmearten, desto mehr Verwaltungsaufwand!
@@ -326,7 +351,7 @@ https://www.flickr.com/photos/sarahamina/4510470695/in/photolist-3J6EhQ-agwAjL-8
  
  
 \frame{ 
-\frametitle{(Grundfinanzierung)}  
+\frametitle{(staatliche Grundfinanzierung)}  
 \begin{columns}
 \column{7cm}
 \begin{itemize}
@@ -379,7 +404,25 @@ https://www.flickr.com/photos/sarahamina/4510470695/in/photolist-3J6EhQ-agwAjL-8
 
 \frame{ %berechnet nach xls
 \frametitle{\mbox{Angenommene Verteilung für 2020}}
-\distribution{14}{28}{32}{21}{5}
+\distribution{29}{21}{32}{6}{14}\\[.4em]
+\hspace*{2cm}
+\parbox{1cm}{\centering\tiny Publikations\-gebühren}\hspace*{.3cm}
+\parbox{1cm}{\centering\tiny Förder\-mitglieder}\hspace*{.3cm}
+\parbox{1cm}{\centering\tiny Institutionelle Mitglieder}\hspace*{.3cm}
+\parbox{1cm}{\centering\tiny Spenden\\~}\hspace*{.3cm}
+\parbox{1cm}{\centering\tiny Printmarge\\~}
+% \saeule[langscicol1]{29}\parbox{0cm}{\raisebox{-2cm}{\hspace*{-1cm}\rotate{\hspace*{-1cm}PubGeb}}}
+% \saeule[langscicol2]{21}\parbox{0cm}{\raisebox{-2cm}{\hspace*{-1cm}FM}}
+% \saeule[langscicol3]{32}\parbox{0cm}{\raisebox{-2cm}{\hspace*{-1cm}IM}}
+% \saeule[langscicol4]{6}\parbox{0cm}{\raisebox{-2cm}{\hspace*{-1cm}SP}}
+% \saeule[langscicol5]{14}\parbox{0cm}{\raisebox{-2cm}{\hspace*{-1cm}PM}}
+ 
+
+% Publikationsgebühren 29
+% Fördermitgliedschaften 21
+% Institutionelle Mitgliedschaften 32
+% Spenden 6
+% Printmarge  14
 }
 
 
@@ -396,39 +439,22 @@ https://www.flickr.com/photos/sarahamina/4510470695/in/photolist-3J6EhQ-agwAjL-8
 \section{Rechtliches}
 
 
-      \frame{ 
-\frametitle{\raggedright Globaler Nutzen, lokale\\ Kosten und Jurisdiktion}
- 
 
-\includegraphics[height=.95\textheight]{pics/globe.jpg}~
-\includegraphics[height=.95\textheight]{pics/silberlaube.png}
-
-{~\\
-\tiny 
-CC-BY-SA; ODbL  OpenStreetMap Foundation \\ 
-CC-BY-SA https://commons.wikimedia.org/wiki/File:Melik\_Ohanian\_Futuring\_\%28Planet\%29\_2011.jpg
-} 
-
-}
-
-
-
-      \frame{ 
-\frametitle{\raggedright Globaler Nutzen, lokale\\ Kosten und Jurisdiktion}
-\begin{itemize} 
- \item  können wir Spendenbescheinigungen nach norwegischem Recht ausstellen?
- \item  sind anonyme Spenden via Flattr o.\,ä.\ mit deuschen Verwaltungsvorschriften vereinbar?
- \item  wie können Printmargen verbucht werden, wenn diese vom Dienstleister in den USA in USD angewiesen werden, bei der Uni aber in EUR ankommen und der Dienstleister sich weigert, die Kostenstelle in den Betreff der Überweisung zu schreiben?
-\end{itemize}
-$\Rightarrow$     ab welcher Höhe deckt eine Spende ihren Verwaltungsaufwand?
-   \begin{itemize}
- \item    Reduzierung des Verwaltungsaufwandes durch Gründen eines Fördervereins
-\end{itemize}
-
-}
+%       \frame{ 
+% \frametitle{\raggedright Globaler Nutzen, lokale\\ Kosten und Jurisdiktion}
+% \begin{itemize} 
+%  \item  können wir Spendenbescheinigungen nach norwegischem Recht ausstellen?
+%  \item  sind anonyme Spenden via Flattr o.\,ä.\ mit deuschen Verwaltungsvorschriften vereinbar?
+%  \item  wie können Printmargen verbucht werden, wenn diese vom Dienstleister in den USA in USD angewiesen werden, bei der Uni aber in EUR ankommen und der Dienstleister sich weigert, die Kostenstelle in den Betreff der Überweisung zu schreiben?
+% \end{itemize}
+% $\Rightarrow$     ab welcher Höhe deckt eine Spende ihren Verwaltungsaufwand?
+%    \begin{itemize}
+%  \item    Reduzierung des Verwaltungsaufwandes durch Gründen eines Fördervereins
+% \end{itemize}
+% }
  
 \frame{ 
-\frametitle{Rechtsform}
+\frametitle{Nachhaltigkeit}
 \begin{itemize}
  \item Die Unternehmung sollte agil handeln können
  \item Die Unternehmung soll betriebswirtschaftlich verantwortlich handeln 
@@ -438,28 +464,11 @@ $\Rightarrow$     ab welcher Höhe deckt eine Spende ihren Verwaltungsaufwand?
     \item Verkauf von Prestige 
     \item Bei Erfolg: Profitmaximierung $\to$ Anhebung der Preise
   \end{itemize}
- \item gewählte Rechtsform: {\glqq}Betrieb gewerblicher Art{\grqq} an der Freien Universität Berlin
+%  \item gewählte Rechtsform: {\glqq}Betrieb gewerblicher Art{\grqq} an der Freien Universität Berlin
 \end{itemize}
 }
 
 \section{Übertragbarkeit}
-\frame{ 
-\frametitle{Übertragbarkeit}
-\begin{itemize}
- \item scholar-owned publishing 
-    \begin{itemize}
-    \item starke Markenbildung; Marke nicht im Besitz profitorientierter Unternehmen
-    \end{itemize}
- \item autarkes Reihenmodell 
- \item Einbindung der Community
- \item Finanzierungskonzept grundsätzlich übertragbar
-    \begin{itemize}
-      \item allerdings wohl demnächst heißer Wettkampf um Födermitgliedschaften
-    \end{itemize}
- \item kalkulatorische Zahlen als Grundlage für ähnliche Projekte, sobald empirisch unterfüttert
-\end{itemize}
-}
-
 
 
 \frame{ 
@@ -475,6 +484,26 @@ $\Rightarrow$     ab welcher Höhe deckt eine Spende ihren Verwaltungsaufwand?
 % \includegraphics{}
 % \end{columns}
 }
+
+
+
+\frame{ 
+\frametitle{Übertragbarkeit}
+\begin{itemize}
+ \item scholar-owned publishing 
+    \begin{itemize}
+    \item starke Markenbildung; Marke nicht im Besitz profitorientierter Unternehmen
+    \end{itemize}
+ \item autarkes Reihenmodell 
+ \item Einbindung der Community
+ \item Finanzierungskonzept grundsätzlich übertragbar
+    \begin{itemize}
+      \item allerdings wohl demnächst heißer Wettkampf um Födermitgliedschaften (oder Kooperation)
+    \end{itemize}
+ \item kalkulatorische Zahlen als Grundlage für ähnliche Projekte, sobald empirisch unterfüttert
+\end{itemize}
+}
+
 
 
 \section*{Danke}
