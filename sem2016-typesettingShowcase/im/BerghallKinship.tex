@@ -1,0 +1,207 @@
+%1-mauwake_kinship_system_cart.tex
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}
+
+%	Naming Convention for this Picture
+%	-------------------------------------
+%	Text nodes are in normal letters
+%	Shape notes are in ALLCAPS
+%
+%	Nodes are named 1-n depending on the distance to Ego 
+%	Those left of Ego are preceeded by n, those right of Ego are followed by their indexical n
+
+%	Margin conventions
+%	Horizontally: Within children of the same parents: 1cm
+%		-"-		  Within children of diff. parents: 1.75cm
+%
+%	Vertically:   Within children of diff. parents: 3.5cm
+
+%Padding for family members
+[every rectangle node/.style={inner sep=6pt}]
+%circle size, globally
+% [every circle node/.sytle={minimum size=.6cm}] Doesn't work, why?
+
+%Ego
+\node at (0,0) [rectangle, draw] (ego) {Ego};
+\node [above=.1cm of ego,regular polygon, regular polygon sides=3, draw, fill=gray] (EGO) {}; 
+%Brother of Ego
+\node [left=3cm of ego, rectangle, draw] (1br) {Br};
+\node [above=.1cm of 1br, regular polygon, regular polygon sides=3, draw] (1BR) {};
+%Sister of Ego
+\node [right=3cm of ego, rectangle, draw] (z1) {Z};
+\node [above=.1cm of z1, circle, minimum size=.6cm, draw] (Z1) {};
+
+% Ego's cousins on their mother's side
+\node [right=1.75cm of z1, rectangle, draw] (br1) {Br};
+\node [above=.1cm of br1, regular polygon, regular polygon sides=3, draw] (BR1) {};
+\node [right=1cm of br1, rectangle, draw] (z2) {Z};
+\node [above=.1cm of z2, circle, minimum size=.6cm, draw] (Z2) {};
+
+\node [right=1.75cm of z2, rectangle, draw] (co1) {Co};
+\node [above=.1cm of co1, regular polygon, regular polygon sides=3, draw] (CO1) {};
+\node [right=1cm of co1, rectangle, draw] (co2) {Co};
+\node [above=.1cm of co2, circle, minimum size=.6cm, draw] (CO2) {};
+
+% Ego's cousins on their mother's side
+\node [left=1.75cm of 1br, rectangle, draw] (1z) {Z};
+\node [above=.1cm of 1z, circle, minimum size=.6cm, draw] (1Z) {};
+\node [left=1cm of 1z, rectangle, draw] (2br) {Br};
+\node [above=.1cm of 2br, regular polygon, regular polygon sides=3, draw] (2BR) {};
+
+\node [left=1.75cm of 2br, rectangle, draw] (1co) {Co};
+\node [above=.1cm of 1co, circle, minimum size=.6cm, draw] (1CO) {};
+\node [left=1cm of 1co, rectangle, draw] (2co) {Co};
+\node [above=.1cm of 2co, regular polygon, regular polygon sides=3, draw] (2CO) {};
+
+% Ego's parents
+\node [above left=3.5cm and .5cm of ego, rectangle, draw] (1fr) {Fr};
+\node [above=.1cm of 1fr, regular polygon, regular polygon sides=3, draw] (1FR) {};
+\node [above right=3.5cm and .5cm of ego, rectangle, draw] (mo1) {Mo};
+\node [above=.1cm of mo1, circle, minimum size=.6cm, draw] (MO1) {};
+
+% Marriage smyol of Ego's parents
+\node [above=3.5cm of EGO] (1frmo1) {\huge{=}};
+
+% Ego's Aunties and Uncles
+\node [above=3.5cm of br1, rectangle, draw] (fr1) {Fr};
+\node [above=.1cm of fr1, regular polygon, regular polygon sides=3, draw] (FR1) {};
+\node [right=1cm of fr1, rectangle, draw] (mo2) {Mo};
+\node [above=.1cm of mo2, circle, minimum size=.6cm, draw] (MO2) {};
+\node at ($(MO2) !.5! (FR1)$) (fr1mo2) {\huge{=}};
+
+\node [above=3.5cm of co1, rectangle, draw] (un1) {Un};
+\node [above=.1cm of un1, regular polygon, regular polygon sides=3, draw] (UN1) {};
+\node [right=1cm of un1, rectangle, draw] (au1) {Au};
+\node [above=.1cm of au1, circle, minimum size=.6cm, draw] (AU1) {};
+\node at ($(UN1) !.5! (AU1)$) (un1au1) {\huge{=}};
+
+\node [above=3.5cm of 2br, rectangle, draw] (2fr) {Fr};
+\node [above=.1cm of 2fr, regular polygon, regular polygon sides=3, draw] (2FR) {};
+\node [right=1cm of 2fr, rectangle, draw] (1mo) {Mo};
+\node [above=.1cm of 1mo, circle, minimum size=.6cm, draw] (1MO) {};
+\node at ($(2FR) !.5! (1MO)$) (2fr1mo) {\huge{=}};
+
+\node [above=3.5cm of 2co, rectangle, draw] (1un) {Un};
+\node [above=.1cm of 1un, regular polygon, regular polygon sides=3, draw] (1UN) {};
+\node [right=1cm of 1un, rectangle, draw] (1au) {Au};
+\node [above=.1cm of 1au, circle, minimum size=.6cm, draw] (1AU) {};
+\node at ($(1UN) !.5! (1AU)$) (1un1au) {\huge{=}};
+
+% Ego's Grandparents
+% ... on their father's side
+\node [above=3.5cm of 2fr, rectangle, draw] (1grfa) {GrFa};
+\node [above=.1cm of 1grfa, regular polygon, regular polygon sides=3, draw] (1GRFA) {};
+\node [right=1cm of 1grfa, rectangle, draw] (1grmo) {GrMo};
+\node [above=.1cm of 1grmo, circle, minimum size=.6cm, draw] (1GRMO) {};
+\node at ($(1GRFA) !.5! (1GRMO)$) (1grfa1grmo) {\huge{=}};
+
+% ... on their mother's side
+\node [above=3.5cm of fr1, rectangle, draw] (grfa1) {GrFa};
+\node [above=.1cm of grfa1, regular polygon, regular polygon sides=3, draw] (GRFA1) {};
+\node [right=1cm of grfa1, rectangle, draw] (grmo1) {GrMo};
+\node [above=.1cm of grmo1, circle, minimum size=.6cm, draw] (GRMO1) {};
+\node at ($(GRFA1) !.5! (GRMO1)$) (grfa1grmo1) {\huge{=}};
+
+% Ego's children
+\node [below left=3.5cm and .5cm of ego, regular polygon, regular polygon sides=3, draw] (1SO) {};
+\node [below=.1cm of 1SO, rectangle, draw] (1so) {So};
+\node [right=1cm of 1so, rectangle, draw] (da1) {Da};
+\node [above=.1cm of da1, circle, minimum size=.6cm, draw] (DA1) {};
+
+% Ego's Nephews and Niece
+\node [left=1.75cm of 1so, rectangle, draw] (1da) {Da};
+\node [above=.1cm of 1da, circle, minimum size=.6cm, draw] (1DA) {};
+\node [left=1cm of 1da, rectangle, draw] (2so) {So};
+\node [above=.1cm of 2so, regular polygon, regular polygon sides=3, draw] (2SO) {};
+
+\node [right=1.75cm of da1, rectangle, draw] (ne1) {Ne};
+\node [above=.1cm of ne1, regular polygon, regular polygon sides=3, draw] (NE1) {};
+\node [right=1cm of ne1, rectangle, draw] (ne2) {Ne};
+\node [above=.1cm of ne2, circle, minimum size=.6cm, draw] (NE2) {};
+
+% Ego's female Cousin's children 
+
+\node [below left=3.5cm and .5cm of 1co, regular polygon, regular polygon sides=3, draw] (3SO) {};
+\node [below=.1cm of 3SO, rectangle, draw] (3so) {So};
+\node [right=1cm of 3so, rectangle, draw] (2da) {Da};
+\node [above=.1cm of 2da, circle, minimum size=.6cm, draw] (2DA) {};
+
+
+% In-Generation Connections
+
+% Usage of in-generation connections:
+% We are using Node Coordinate System, see Section 13.2.3 of the PGF manual
+% \draw (node cs:name=NAME, anchor=north) |- +(0,.5) -| (node cs:name=2ndNAME);
+% note: We use anchor=north in order to prevent PGF from choosing any other, just in case. We will probably not need it in the second node, though
+% note 2: +(0,.5) is a relative position, meaning .5 vertical positive change
+% |- means: Go vertical first and then horizontally
+
+% Ego & their immediate Br & Z
+\draw (node cs:name=EGO, anchor=north) |- +(0,.5) -| (node cs:name=Z1);
+\draw (node cs:name=EGO, anchor=north) |- +(0,.5) -| (node cs:name=1BR);
+
+% Ego's cousins on their mother's side
+\draw (node cs:name=BR1, anchor=north) |- +(0,.5) -| (node cs:name=Z2) node [pos=.25] (MBR1Z2) {};
+\draw (node cs:name=CO1, anchor=north) |- +(0,.5) -| (node cs:name=CO2) node [pos=.25] (MCO1CO2) {};
+
+% Ego's cousins on their father's side
+\draw (node cs:name=1Z, anchor=north) |- +(0,.5) -| (node cs:name=2BR) node [pos=.25] (M1Z2BR) {};
+\draw (node cs:name=1CO, anchor=north) |- +(0,.5) -| (node cs:name=2CO) node [pos=.25] (M1CO2CO) {};
+
+% Ego's fathers and his brother and sister
+\draw (node cs:name=1FR, anchor=north) |- +(0,.5) -| (node cs:name=1AU);
+\draw (node cs:name=1FR, anchor=north) |- +(0,.5) -| (node cs:name=2FR) node [pos=.25] (M1FR2FR) {};
+
+% Ego's mother and her brother and sister
+\draw (node cs:name=UN1, anchor=north) |- +(0,.5) -| (node cs:name=MO2);
+\draw (node cs:name=UN1, anchor=north) |- +(0,.5) -| (node cs:name=MO1) node [pos=.25] (MUN1NO1) {};
+
+% Ego's children and nephews/nieces
+\draw (node cs:name=1SO, anchor=north) |- +(0,.5) -| (node cs:name=DA1) node [pos=.25] (M1SODA1) {};
+\draw (node cs:name=NE1, anchor=north) |- +(0,.5) -| (node cs:name=NE2) node [pos=.25] (MNE1NE2) {}; % relative positioning. Not sure why it's 1/4, tough. 
+\draw (node cs:name=2SO, anchor=north) |- +(0,.5) -| (node cs:name=1DA) node [pos=.25] (M2SO1DA) {};
+\draw (node cs:name=3SO, anchor=north) |- +(0,.5) -| (node cs:name=2DA) node [pos=.25] (M3SO2DA) {};
+
+
+% Between-Generation Connections
+
+% The old way was \draw (node cs:name=grfa1grmo1, anchor=south) -- ($(grfa1grmo1)-(0,3.225)$); This was extremly messy.
+% The new way is to use |- and a seperate node on the |--| specified above. A little tricky, but it should be reliable.
+
+
+\draw (node cs:name=1frmo1, anchor=south) -- (node cs:name=EGO, anchor=north);
+\draw (node cs:name=fr1mo2, anchor=south) |- (node cs:name=MBR1Z2, anchor=center);
+\draw (node cs:name=un1au1, anchor=south) |- (node cs:name=MCO1CO2, anchor=center);
+\draw (node cs:name=2fr1mo, anchor=south) |- (node cs:name=M1Z2BR, anchor=center);
+\draw (node cs:name=1un1au, anchor=south) |- (node cs:name=M1CO2CO, anchor=center);
+\draw (node cs:name=grfa1grmo1, anchor=south) |- (node cs:name=MUN1NO1, anchor=center);
+\draw (node cs:name=1grfa1grmo, anchor=south) |- (node cs:name=M1FR2FR, anchor=center);
+\draw (node cs:name=1co, anchor=south) |- (node cs:name=M3SO2DA, anchor=center);
+\draw (node cs:name=ego, anchor=south) |- (node cs:name=M1SODA1, anchor=center);
+
+\draw (node cs:name=1br, anchor=south) |- (node cs:name=M2SO1DA, anchor=center); %This is precise
+\draw (node cs:name=z1, anchor=south) |- (node cs:name=MNE1NE2, anchor=center); %This is precise
+
+
+\end{tikzpicture}}
+
+% \vspace{\baselineskip}
+% 
+% \begin{centering}
+% \begin{tabular}{llllll}
+% 	
+% 	
+% 	\toprule\toprule
+% 	
+% 	Ego 	& \multicolumn{2}{l}{Subject of chart (male)} &&& 		\\		
+% 	GrFa	& grandfather	& {\itshape kae} & 	Br &	brother 	& {\itshape yomokowa}\\
+% 	GrMo	& grandmother	& {\itshape kome} &	Z &		sister		& {\itshape ekera}\\
+% 	Fr		&	father		& {\itshape auwa} &	Co &	cousin		& {\itshape yomar}\\
+% 	Mo		&	mother		& {\itshape aite} &	So &	son			& {\itshape muuka}\\
+% 	Un		&	uncle		& {\itshape yaaya} & Da &	daughter	& {\itshape wiipa}\\
+% 	Au		&	aunt		& {\itshape paapan} & Ne &	nephew/nice & {\itshape eremena}\\
+% 	
+% 	\bottomrule\bottomrule
+% 	
+% \end{tabular}
+% \end{centering}
