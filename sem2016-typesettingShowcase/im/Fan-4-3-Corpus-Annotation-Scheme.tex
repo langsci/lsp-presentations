@@ -1,0 +1,28 @@
+%4-3-Corpus-Annotation-Scheme.tex
+\begin{tikzpicture}
+[every rectangle node/.style={inner sep=6pt, rounded corners=5, draw}]
+
+
+\node at (0,0) [rectangle] (appraisal) {Appraisal};
+\node [below=5mm of appraisal, rectangle] (appreciation) {Appreciation};
+\node [right=20mm of appreciation.east, rectangle] (judgement) {Jugdement};
+\node [left=20mm of appreciation.west, rectangle] (affect) {Affect};
+
+\draw [thick] (node cs:name=appraisal, anchor=south) -| (node cs:name=appreciation);
+\draw [thick] (node cs:name=affect, anchor=north) |- +(0,.275) -| (node cs:name=judgement);
+
+
+\node [below right=10mm and 0mm of affect.west, rectangle, text width=40mm, align=center] (features) {Features for each type}; 
+\node [below right=4mm and 10mm of features.south, rectangle, text width=40mm, align=center] (implicit) {implicit/explicit};
+\node [below=4mm of implicit, rectangle, text width=40mm, align=center] (irony) {irony};
+\node [below=4mm of irony, rectangle, text width=40mm, align=center] (indirect) {indirect/direct};
+\node [below=4mm of indirect, rectangle, text width=40mm, align=center] (polarity) {polarity};
+\node [below=4mm of polarity, rectangle, text width=40mm, align=center] (strength) {strength};
+
+\draw [thick] (node cs:name=features, anchor=south) |- (node cs:name=implicit);
+\draw [thick] (node cs:name=features, anchor=south) |- (node cs:name=irony);
+\draw [thick] (node cs:name=features, anchor=south) |- (node cs:name=indirect);
+\draw [thick] (node cs:name=features, anchor=south) |- (node cs:name=polarity);
+\draw [thick] (node cs:name=features, anchor=south) |- (node cs:name=strength);
+
+\end{tikzpicture}

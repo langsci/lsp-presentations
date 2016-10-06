@@ -1,0 +1,100 @@
+\pgfdeclarelayer{bg}
+\pgfdeclarelayer{bg2}
+\pgfsetlayers{bg2,bg,main}
+\resizebox{\textwidth}{!}{
+\begin{tikzpicture}[baseline]
+
+
+\node	(moro)				at	(0,0)									{Moro};
+\node	(meriman)			[below right=9mm and 21mm of moro]			{Meriman};
+\node	(sapara)			[below right=6mm and 12mm of meriman]		{Sapara};
+\node	(muaka)				[below=20mm of meriman]						{Muaka};
+\node	(amiten)			[below left=20mm and 13mm of moro]			{Amiten};	
+\node	(aketa)				[below=45mm of moro]		{Aketa};
+\node	(saramun)			[right=46.75mm of aketa]						{Saramun};
+\node	(yeipamir)			[below right=9mm and 18mm of aketa]			{Yeipamir};
+\node	(papur)				[below right=24mm and 0mm of aketa]			{Papur};
+\node	(tarigapa)			[right=30mm of papur]						{Tarigapa};
+\node	(ulingan)		  	[right=40mm of muaka]						{Ulingan};
+\node	(meiwok)			[right=30mm of ulingan]						{Meiwok};
+\node	(sikor)				[right=39mm of saramun]		{Sikor};
+
+\node	(susure)			[below=15mm of amiten]						{(Susure)};
+\node	(wakoruma)			[below left=8mm and 17mm of moro]			{(Wakoruma)};
+
+
+% Categories
+\begin{pgfonlayer}{bg}
+\node (kat1) [fill=gray!15, draw, dashed, rounded corners=15, fit=(moro) (meriman) (sapara) (muaka)] {};
+\node (kat2) [fill=gray!15, draw, dashed, rounded corners=15, fit= (ulingan) (sikor) (meiwok)] {};
+\node (kat3) [fill=gray!15, draw, dashed, rounded corners=15, fit= (papur) (yeipamir) (tarigapa)] {}; 
+\end{pgfonlayer}
+\begin{pgfonlayer}{bg2}
+\node (kat4) [fill=gray!5,draw, dotted, rounded corners=15, fit = (kat1) (amiten) (aketa) (saramun), inner sep=10pt]{}; 
+\end{pgfonlayer}
+
+\footnotesize{
+% Moro Relations
+\path	(moro)	edge node [sloped, above] {0.04}							(meriman);
+\path (moro)	edge [bend left] node [sloped, above] {0.06}	(sapara);
+\path (moro)	edge [bend right=10] node [sloped, above] {0.03} (muaka);
+\path (moro) 	edge node [sloped, below] {0.07} (aketa);
+\path (moro)	edge [bend right] node [sloped, above] {0.09} (amiten); 
+
+% Meriman Relations
+\path (meriman) 	edge [sloped, above] node {0.04} (sapara);
+\path (meriman) 	edge node [sloped, above] {0.04} (aketa);
+\path (meriman) 	edge node [sloped, above, pos=0.333] {0.07} (muaka);
+
+% Sapara Relations
+\path (sapara) 	edge [bend right=20] node [sloped, above right] {0.05} (aketa);
+\path (sapara) 	edge node [sloped, above] {0.07} (ulingan);
+\path (sapara) 	edge node [sloped, below left] {0.05} (saramun);
+\path (sapara) 	edge node [sloped, above left] {0.08} (muaka);
+
+% Amiten Relations
+\path (amiten)	edge node [sloped, below] {0.07}	(muaka);
+\path (amiten)	edge [bend right] node [sloped,below left] {0.09}	(aketa);
+
+% Muaka Relations
+\path (muaka)	edge node [sloped, above right] {0.11}	(ulingan);
+\path (muaka)	edge node [sloped, below] {0.08}	(saramun);
+\path (muaka)	edge node [sloped, above] {0.11}	(tarigapa);
+\path (muaka)	edge [bend left=10] node [sloped, below, pos=0.575] {0.10}	(yeipamir);
+\path (muaka)	edge node [sloped, below] {0.11}	(aketa);
+
+% Ulingan Relations
+\path (ulingan) edge node [sloped, below] {0.12}	(saramun);
+\path (ulingan) edge node [sloped, above] {0.15}	(tarigapa);
+\path (ulingan) edge node [sloped, above] {0.02}	(sikor);
+\path (ulingan) edge node [sloped, above] {0.03}	(meiwok);
+
+% Aketa Relations
+\path (aketa) edge node [sloped, below, pos=0.333] {0.08}	(papur);
+\path (aketa) edge node [sloped, above] {0.08}	(yeipamir);
+\path (aketa) edge node [sloped, below] {0.11}	(saramun);
+
+% Saramun Relations
+\path (saramun) edge node [sloped, below] {0.09}	(tarigapa);
+\path (saramun) edge [bend left=35] node [above, sloped] {0.14}	(meiwok);
+\path (saramun) edge node [sloped, above] {0.13}	(sikor);
+
+% Sikor Relations
+\path (sikor) edge node [sloped, above] {0.02}	(meiwok);
+\path (sikor) edge node [sloped, below right] {0.14}	(tarigapa);
+
+% Meiwok Relations
+\path (meiwok) edge [bend left] node [sloped, below right] {0.17}	(tarigapa);
+
+% Yeipamir Relations
+\path (yeipamir) edge node [sloped, above] {0.03} (papur);
+\path (yeipamir) edge node [sloped, below] {0.08} (tarigapa);
+
+% Papur Relations
+\path (papur) edge node [below] {0.11} 	(tarigapa);
+
+% Tarigapa Relations
+% Will be empty for now.
+}
+\end{tikzpicture}
+}

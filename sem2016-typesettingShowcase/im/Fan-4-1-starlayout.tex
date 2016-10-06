@@ -1,0 +1,20 @@
+	\begin{tikzpicture}
+	
+	\node at (0,0) (EN) {English (EN)};
+	\node [below=2cm of EN] (ES) {Spanish (ES)};
+	\node [above=2cm of EN] (EL) {Greek (EL)};
+	
+	\node [above left=1cm and 1cm of EN, color=gray] (TL6) {TL6};
+	\node [above right=1cm and 1cm of EN, color=gray] (TL3) {TL3};
+	\node [below left=1cm and 1cm of EN, color=gray] (TL5) {TL5};
+	\node [below right=1cm and 1cm of EN, color=gray] (TL4) {TL4};
+	
+	\draw [ultra thick, -{Triangle[]}] (node cs:name=EN, anchor=north) -- (node cs:name=EL, anchor=south);
+	\draw [ultra thick, -{Triangle[]}] (EN.south) -- (ES.north);
+	
+	\draw [thick, gray, dotted, -{Triangle[]}] (EN.south west) -- (TL5.north east);
+	\draw [thick, gray, dotted, -{Triangle[]}] (EN.north west) -- (TL6.south east);
+	\draw [thick, gray, dotted, -{Triangle[]}] (EN.north east) -- (TL3.south west);
+	\draw [thick, gray, dotted, -{Triangle[]}] (EN.south east) -- (TL4.north west);
+	
+	\end{tikzpicture}
