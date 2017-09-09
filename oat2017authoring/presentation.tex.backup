@@ -1,0 +1,206 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{Open Authoring}
+% \institute{FU Berlin}
+\author[LangSci]{Sebastian Nordhoff @langscipress}
+
+
+
+\begin{document}
+\lspbeamertitle
+
+
+\section{Language Science Press}
+\frame{
+\frametitle{Language Science Press}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item linguistische Monographien und Sammelbände als CC-BY
+    \item  aktiv seit 2014 (FU Berlin), seit 2017 HU Berlin
+    \item  Ziel: maximale Offenheit des Publikationsprozesses
+  \end{itemize}
+}
+  
+
+\frame{
+\frametitle{Offenheit: Open X}
+   \Huge         \mbox{Open Access}
+   \LARGE        \mbox{Open Source}
+    \huge        \mbox{Open Data }
+    \large       \mbox{Open Hardware}
+    \LARGE       \mbox{Open Government}
+    \Large       \mbox{Open Educational Resources}
+    \huge        \mbox{Open GLAM     }
+    \large       \mbox{Open Labs}
+}
+
+
+\frame{ 
+\frametitle{Open Source}
+\includegraphics[width=2cm]{starofficelogo.png}$\to$
+\includegraphics[width=2cm]{openofficelogo.png}$\to$
+\includegraphics[width=2cm]{libreofficelogo.png}
+\\
+\includegraphics[width=7cm]{firefoxiceweasel.png}
+} 
+
+ 
+    
+\frame{
+\frametitle{Open Data}
+
+\begin{columns}
+  \begin{column}{6cm}
+    \includegraphics{zellescherweg.png}
+  \end{column}
+  \begin{column}{3cm}
+    \includegraphics{transportr.png}
+  \end{column}
+\end{columns}
+
+}
+
+   
+\frame{
+\frametitle{Und Open Access? }
+\begin{itemize}
+ \item `Read-only'-Ausprägung von Offenheit
+ \item Hauptanwendungsfall der Nachnutzung: Text Mining
+ \item Im allgemeinen wenig Interesse, das Werk an sich zu verändern
+ \begin{itemize}
+  \item anders als in Open Source, Open Hardware, Open GLAM, OER
+  \item dort Modifikation ein Hauptantriebsfaktor
+ \end{itemize}
+ \item Neuzusammenstellung (Arrangement) zB auf Science Open
+\end{itemize}
+}
+ 
+ 
+\frame{ 
+\frametitle{Technische Anforderungen für mehr Offenheit}
+\begin{itemize}
+ \item Produktionsseite
+ \begin{itemize}
+  \item Versionierungssystem
+  \begin{itemize}
+   \item commits, branches, forks, merges, issues
+  \end{itemize}
+ \end{itemize}
+ \item Rezeptionsseite
+ \begin{itemize}
+  \item kollaborative Annotationssoftware
+  \begin{itemize}
+   \item online
+  \end{itemize}
+ \end{itemize}
+\end{itemize}
+}
+
+
+ 
+    
+\frame{
+\frametitle{Versionierungssystem: Git(Hub)}
+
+\begin{columns}
+  \begin{column}{3cm}
+    \begin{itemize}
+   \item commits
+   \item branches
+   \item forks
+   \item merges
+   \item issues
+  \end{itemize}
+  \end{column}
+  \begin{column}{3cm}
+    \includegraphics{gittree.png}
+  \end{column}
+\end{columns}
+
+}
+
+\frame{ 
+\frametitle{Online-Annotation mit Paperhive: Open Review}
+\includegraphics[width=.35\textwidth]{openreview.png}
+}
+
+\frame{ 
+\frametitle{Online-Annotation mit Paperhive: Open Review}
+\includegraphics[width=.35\textwidth]{communityproofreading.png}
+}
+
+\frame{ 
+\frametitle{Online-Annotation mit Paperhive: Open Review}
+\includegraphics[width=.35\textwidth]{postpublicationcomments.png}
+}
+
+\frame{
+\frametitle{Was fehlt: die Ehe}
+\begin{itemize}
+ \item Verbindung von Rezipientenseite und Autorenseite
+ \item Verbindung von Online-Annotation und Issue-Tracking
+ \item Verbindung von Paperhive und GitHub
+\end{itemize}
+    \includegraphics{marriage.png}
+}
+
+ 
+\frame{
+\frametitle{Prototypefund: docloop-OER}
+\includegraphics[width=.35\textwidth]{prototypefund.png}
+\url{https://rhotep.github.io/docLoop/}
+
+\includegraphics[width=.35\textwidth]{pittrich.jpg}
+}
+
+ 
+ 
+ 
+% \frame{
+% \frametitle{Frametitle3}
+% %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+%   \begin{itemize}
+%     \item  
+%     \item 
+%   \end{itemize}
+% }
+
+%\setcounter{framenumber}{\thelastpagemainpart}
+\end{document}
