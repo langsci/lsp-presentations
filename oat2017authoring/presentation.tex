@@ -39,7 +39,7 @@
 
 \title{Open Authoring}
 % \institute{FU Berlin}
-\author[LangSci]{Sebastian Nordhoff @langscipress}
+\author[LangSci]{Sebastian Nordhoff @langscipress, HU Berlin}
 
 
 
@@ -74,8 +74,8 @@
 
 \frame{ 
 \frametitle{Open Source}
-\includegraphics[width=2.5cm]{starofficelogo.png}~$\to$
-\includegraphics[width=4cm]{openofficelogo.png}~$\to$
+\includegraphics[width=2.5cm]{starofficelogo.png}~$\Longrightarrow$~%
+\includegraphics[width=4cm]{openofficelogo.png}~$\Longrightarrow$~%
 \includegraphics[width=3cm]{libreofficelogo.png}
 \\[2em]
 \includegraphics[width=5cm]{firefoxiceweasel.png}
@@ -101,7 +101,7 @@
 \frame{
 \frametitle{Und Open Access? }
 \begin{itemize}
- \item `Read-only'-Ausprägung von Offenheit
+ \item ``Read-only''-Ausprägung von Offenheit
  \item Hauptanwendungsfall der Nachnutzung: Text Mining
  \begin{itemize}
   \item explorativ
@@ -116,34 +116,32 @@
 }
  
  \frame{
-\frametitle{\raggedright Technische Anforderungen für mehr Offenheit und Veränderbarkeit}
+\frametitle{\raggedright Technische Anforderungen\\	 für mehr Offenheit und\\ Veränderbarkeit}
 
-\begin{columns}
-  \begin{column}{5cm}
-\begin{itemize}
- \item Produktionsseite
+\begin{tabular}{l||l} 
+Produktionsseite & Rezeptionsseite\\
+ \\
+ \parbox{5cm}{
  \begin{itemize}
   \item Versionierungssystem
   \begin{itemize}
    \item commits, branches, forks, merges, issues
   \end{itemize}
  \end{itemize}
-\end{itemize}
-\vfill
-  \end{column}
-  \begin{column}{5cm}
+}&
+\parbox{5cm}{
  \begin{itemize}
- \item Rezeptionsseite
- \begin{itemize}
-  \item kollaborative Annotationssoftware
+ \item kollaborative Annotationssoftware
   \begin{itemize}
    \item online
   \end{itemize}
  \end{itemize}
-\end{itemize}
-\vfill
-  \end{column}
-\end{columns}
+}\\
+\hline
+\\
+\includegraphics[height=1cm]{github.png}&\includegraphics[height=1cm]{paperhive.png} \\
+\end{tabular}
+
 }
    
     
@@ -209,13 +207,20 @@
  
 \frame{
 \frametitle{Prototypefund:\\ docloop-OER}
-\includegraphics[width=.35\textwidth]{prototypefund.png}
-\parbox{7cm}{Das BMBF fördert über den Prototypefund das Projekt docLoop-OER mit 30.000 EUR
-
-\url{https://rhotep.github.io/docLoop/}
+\parbox{.35\textwidth}{
+\includegraphics[width=.35\textwidth]{prototypefund.png}\\
+~~~\includegraphics[width=.3\textwidth]{pittrich.jpg}
+}
+\parbox{7cm}{
+\begin{itemize}
+ \item Das BMBF fördert über den Prototypefund das Projekt docLoop-OER mit 30.000 EUR
+ \item Zurückspielen von Leserkommentaren in das Issue-Tracking-System auf Autorenseite
+ \item Für OER, aber im Prinzip auf beliebige Inhalte übertragbar
+ \item Start: 1.9.2017\\ \url{https://rhotep.github.io/docLoop/}
+\end{itemize}
 }
 
-~~~\includegraphics[width=.3\textwidth]{pittrich.jpg}
+
 }
 
  

@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.7.7)  10 SEP 2017 00:15
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.7.7)  11 SEP 2017 10:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1612,20 +1612,15 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [6
 
 ]
+File: github.png Graphic file (type QTm)
+ <use  "github.png" >
+File: paperhive.png Graphic file (type QTm)
+ <use  "paperhive.png" >
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
- <use  "langsci_logo_nocolor.pdf" >
+
+<use  "langsci_logo_nocolor.pdf" >
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]\EU1/lmss/m/n/12 Technische Anforderungen
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-\EU1/lmss/m/n/12 für mehr Offenheit und
  []
 
 
@@ -1648,12 +1643,12 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 ]
 File: gittree.png Graphic file (type QTm)
  <use  "gittree.png" >
-Overfull \hbox (221.85828pt too wide) in paragraph at lines 168--168
+Overfull \hbox (221.85828pt too wide) in paragraph at lines 166--166
 [][]  
  []
 
 
-Overfull \vbox (3.73749pt too high) detected at line 168
+Overfull \vbox (3.73749pt too high) detected at line 166
  []
 
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1742,7 +1737,7 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 ]
 File: communityproofreading.png Graphic file (type QTm)
  <use  "communityproofreading.png" >
-Overfull \vbox (29.37137pt too high) detected at line 192
+Overfull \vbox (29.37137pt too high) detected at line 190
  []
 
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1776,7 +1771,7 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 ]
 File: postpublicationcomments.png Graphic file (type QTm)
  <use  "postpublicationcomments.png" >
-Overfull \vbox (35.31139pt too high) detected at line 197
+Overfull \vbox (35.31139pt too high) detected at line 195
  []
 
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1836,16 +1831,15 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 ]
 File: prototypefund.png Graphic file (type QTm)
  <use  "prototypefund.png" >
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 219
+File: pittrich.jpg Graphic file (type QTm)
+ <use  "pittrich.jpg" >
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 224
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-File: pittrich.jpg Graphic file (type QTm)
-
-<use  "pittrich.jpg" >
-Overfull \vbox (38.43271pt too high) detected at line 219
+Overfull \vbox (22.45654pt too high) detected at line 224
  []
 
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1881,20 +1875,20 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 239.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 239.
  (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 234.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 234.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 234.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 239.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 239.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 239.
  ) 
 Here is how much of TeX's memory you used:
- 34943 strings out of 493710
- 698260 string characters out of 6145917
- 731904 words of memory out of 5000000
- 37709 multiletter control sequences out of 15000+600000
- 9822 words of font info for 65 fonts, out of 8000000 for 9000
+ 34915 strings out of 493710
+ 697258 string characters out of 6145917
+ 731962 words of memory out of 5000000
+ 37682 multiletter control sequences out of 15000+600000
+ 9806 words of font info for 63 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 56i,26n,59p,10382b,766s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,26n,59p,10382b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on presentation.pdf (14 pages).
