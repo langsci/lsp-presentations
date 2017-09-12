@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.7.7)  12 SEP 2017 21:32
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.7.7)  12 SEP 2017 22:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1619,12 +1619,12 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 ]
 File: gittree.png Graphic file (type QTm)
  <use  "gittree.png" >
-Overfull \hbox (221.85828pt too wide) in paragraph at lines 171--171
+Overfull \hbox (221.85828pt too wide) in paragraph at lines 170--170
 [][]  
  []
 
 
-Overfull \vbox (3.73749pt too high) detected at line 171
+Overfull \vbox (3.73749pt too high) detected at line 170
  []
 
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1656,6 +1656,35 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [7
 
 ]
+File: issues.png Graphic file (type QTm)
+ <use  "issues.png" >
+Overfull \vbox (3.73749pt too high) detected at line 178
+ []
+
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+<use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[8
+
+]
 File: openreview.png Graphic file (type QTm)
  <use  "openreview.png" >
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1684,46 +1713,12 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [][]
  []
 
-[8
+[9
 
 ]
 File: communityproofreading.png Graphic file (type QTm)
  <use  "communityproofreading.png" >
-Overfull \vbox (29.37137pt too high) detected at line 196
- []
-
-File: langsci_logo_nocolor.pdf Graphic file (type QTm)
-<use  "langsci_logo_nocolor.pdf" >
-Overfull \hbox (2.84544pt too wide) has occurred while \output is active
-[]|| 
- []
-
-
-Overfull \hbox (22.68825pt too wide) has occurred while \output is active
-[][]
- []
-
-
-Overfull \hbox (250.38434pt too wide) has occurred while \output is active
-[]|$[]$| 
- []
-
-
-Overfull \hbox (12.43404pt too wide) has occurred while \output is active
-[][]
- []
-
-
-Overfull \hbox (4.84525pt too wide) has occurred while \output is active
-[][]
- []
-
-[9
-
-]
-File: postpublicationcomments.png Graphic file (type QTm)
- <use  "postpublicationcomments.png" >
-Overfull \vbox (35.31139pt too high) detected at line 201
+Overfull \vbox (29.37137pt too high) detected at line 204
  []
 
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1755,6 +1750,40 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [10
 
 ]
+File: postpublicationcomments.png Graphic file (type QTm)
+ <use  "postpublicationcomments.png" >
+Overfull \vbox (35.31139pt too high) detected at line 209
+ []
+
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+<use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (22.68825pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[11
+
+]
 File: marriage.png Graphic file (type QTm)
  <use  "marriage.png" >
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1778,20 +1807,20 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [][]
  []
 
-[11
+[12
 
 ]
 File: prototypefund.png Graphic file (type QTm)
  <use  "prototypefund.png" >
 File: pittrich.jpg Graphic file (type QTm)
  <use  "pittrich.jpg" >
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 232
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 240
 .
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \vbox (22.45654pt too high) detected at line 232
+Overfull \vbox (22.45654pt too high) detected at line 240
  []
 
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1815,7 +1844,7 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [][]
  []
 
-[12
+[13
 
 ]
 \tf@nav=\write6
@@ -1827,20 +1856,20 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 247.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 247.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 255.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 255.
  (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 247.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 247.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 247.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 255.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 255.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 255.
  ) 
 Here is how much of TeX's memory you used:
- 34917 strings out of 493710
- 697274 string characters out of 6145917
- 732044 words of memory out of 5000000
- 37684 multiletter control sequences out of 15000+600000
+ 34921 strings out of 493710
+ 697310 string characters out of 6145917
+ 732068 words of memory out of 5000000
+ 37687 multiletter control sequences out of 15000+600000
  9806 words of font info for 63 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  56i,26n,59p,10382b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation.pdf (12 pages).
+Output written on presentation.pdf (13 pages).
