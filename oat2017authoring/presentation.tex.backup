@@ -39,7 +39,7 @@
 
 \title{Open Authoring}
 % \institute{FU Berlin}
-\author[LangSci]{Sebastian Nordhoff @langscipress}
+\author[LangSci]{Sebastian Nordhoff @langscipress, HU Berlin}
 
 
 
@@ -74,24 +74,24 @@
 
 \frame{ 
 \frametitle{Open Source}
-\includegraphics[width=2cm]{starofficelogo.png}$\to$
-\includegraphics[width=2cm]{openofficelogo.png}$\to$
-\includegraphics[width=2cm]{libreofficelogo.png}
-\\
-\includegraphics[width=7cm]{firefoxiceweasel.png}
+\includegraphics[width=2.5cm]{starofficelogo.png}~$\Longrightarrow$~%
+\includegraphics[width=4cm]{openofficelogo.png}~$\Longrightarrow$~%
+\includegraphics[width=3cm]{libreofficelogo.png}
+\\[2em]
+\includegraphics[width=5cm]{firefoxiceweasel.png}
 } 
 
  
     
 \frame{
-\frametitle{Open Data}
+\frametitle{Open Data \\(hier: Open Transport Data)}
 
 \begin{columns}
-  \begin{column}{6cm}
-    \includegraphics{zellescherweg.png}
+  \begin{column}{7cm}
+    \includegraphics[width=7.5cm]{zellescherweg.png}
   \end{column}
   \begin{column}{3cm}
-    \includegraphics{transportr.png}
+    \includegraphics[height=.85\textheight]{transportr.png}
   \end{column}
 \end{columns}
 
@@ -101,74 +101,97 @@
 \frame{
 \frametitle{Und Open Access? }
 \begin{itemize}
- \item `Read-only'-Ausprägung von Offenheit
+ \item ``Read-only''-Ausprägung von Offenheit
  \item Hauptanwendungsfall der Nachnutzung: Text Mining
+ \begin{itemize}
+  \item explorativ
+ \end{itemize}
  \item Im allgemeinen wenig Interesse, das Werk an sich zu verändern
  \begin{itemize}
   \item anders als in Open Source, Open Hardware, Open GLAM, OER
   \item dort Modifikation ein Hauptantriebsfaktor
  \end{itemize}
- \item Neuzusammenstellung (Arrangement) zB auf Science Open
+ \item weiterer Anwendungsfall: Neuzusammenstellung (Arrangement) z.B. auf Science Open
 \end{itemize}
 }
  
- 
-\frame{ 
-\frametitle{Technische Anforderungen für mehr Offenheit}
-\begin{itemize}
- \item Produktionsseite
+ \frame{
+\frametitle{\raggedright Technische Anforderungen\\	 für mehr Offenheit und\\ Veränderbarkeit}
+
+\begin{tabular}{l||l} 
+Produktionsseite & Rezeptionsseite\\
+ \\
+ \parbox{5cm}{
  \begin{itemize}
   \item Versionierungssystem
   \begin{itemize}
    \item commits, branches, forks, merges, issues
   \end{itemize}
  \end{itemize}
- \item Rezeptionsseite
+}&
+\parbox{5cm}{
  \begin{itemize}
-  \item kollaborative Annotationssoftware
+ \item kollaborative Annotationssoftware
   \begin{itemize}
    \item online
   \end{itemize}
  \end{itemize}
-\end{itemize}
+}\\
+\hline
+\\
+\includegraphics[height=1cm]{github.png}&\includegraphics[height=1cm]{paperhive.png} \\
+\end{tabular}
+
 }
-
-
- 
+   
     
 \frame{
 \frametitle{Versionierungssystem: Git(Hub)}
-
 \begin{columns}
-  \begin{column}{3cm}
+  \begin{column}{2.5cm}
     \begin{itemize}
    \item commits
    \item branches
    \item forks
    \item merges
+   \item releases\\\medskip 
    \item issues
   \end{itemize}
   \end{column}
-  \begin{column}{3cm}
-    \includegraphics{gittree.png}
+  \begin{column}{8cm}
+    \includegraphics[height=\textheight]{gittree.png}
   \end{column}
 \end{columns}
 
 }
 
 \frame{ 
-\frametitle{Online-Annotation mit Paperhive: Open Review}
-\includegraphics[width=.35\textwidth]{openreview.png}
+\frametitle{Rezipientenseite}
+\begin{itemize}
+ \item ``User-Generated Improvement''
+ \begin{itemize}
+  \item Open Review
+  \item Community Proofreading
+  \item Post-Publication Comments
+ \end{itemize}
+
+\end{itemize}
+
+
+}
+\frame{ 
+\frametitle{\mbox{Online-Annotation mit Paperhive:} Open Review}
+\includegraphics[width=\textwidth]{openreview.png}
 }
 
 \frame{ 
-\frametitle{Online-Annotation mit Paperhive: Open Review}
-\includegraphics[width=.35\textwidth]{communityproofreading.png}
+\frametitle{\mbox{Online-Annotation mit Paperhive:}  Community Proofreading}
+\includegraphics[width=\textwidth]{communityproofreading.png}
 }
 
 \frame{ 
-\frametitle{Online-Annotation mit Paperhive: Open Review}
-\includegraphics[width=.35\textwidth]{postpublicationcomments.png}
+\frametitle{\mbox{Online-Annotation mit Paperhive:} Post Publication Comments}
+\includegraphics[width=\textwidth]{postpublicationcomments.png}
 }
 
 \frame{
@@ -178,16 +201,26 @@
  \item Verbindung von Online-Annotation und Issue-Tracking
  \item Verbindung von Paperhive und GitHub
 \end{itemize}
-    \includegraphics{marriage.png}
+  \hspace*{4cm}  \includegraphics[height=.7\textheight]{marriage.png}
 }
 
  
 \frame{
-\frametitle{Prototypefund: docloop-OER}
-\includegraphics[width=.35\textwidth]{prototypefund.png}
-\url{https://rhotep.github.io/docLoop/}
+\frametitle{Prototypefund:\\ docloop-OER}
+\parbox{.35\textwidth}{
+\includegraphics[width=.35\textwidth]{prototypefund.png}\\
+~~~\includegraphics[width=.3\textwidth]{pittrich.jpg}
+}
+\parbox{7cm}{
+\begin{itemize}
+ \item Das BMBF fördert über den Prototypefund das Projekt docLoop-OER mit 30.000 EUR
+ \item Zurückspielen von Leserkommentaren in das Issue-Tracking-System auf Autorenseite
+ \item Für OER, aber im Prinzip auf beliebige Inhalte übertragbar
+ \item Start: 1.9.2017\\ \url{https://rhotep.github.io/docLoop/}
+\end{itemize}
+}
 
-\includegraphics[width=.35\textwidth]{pittrich.jpg}
+
 }
 
  
