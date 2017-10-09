@@ -1,0 +1,3 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Kriterien}{2}{0}{1}
+\beamer@sectionintoc {2}{Ablauf}{13}{0}{2}
