@@ -1,3 +1,8 @@
-\beamer@endinputifotherversion {3.33pt}
-\beamer@sectionintoc {1}{some section}{2}{0}{1}
-\beamer@sectionintoc {2}{another section}{3}{0}{2}
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Language Science Press}{2}{0}{1}
+\beamer@sectionintoc {2}{Problemstellung}{4}{0}{2}
+\beamer@sectionintoc {3}{Marke}{6}{0}{3}
+\beamer@sectionintoc {4}{Community}{7}{0}{4}
+\beamer@sectionintoc {5}{Offenheit}{11}{0}{5}
+\beamer@sectionintoc {6}{Kosten}{14}{0}{6}
+\beamer@sectionintoc {7}{Finanzierung}{19}{0}{7}
