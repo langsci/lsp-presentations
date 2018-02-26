@@ -1,4 +1,4 @@
-\documentclass[handout]{beamer}
+\documentclass{beamer}
 
 \usepackage{fontspec} 
 % \usepackage{lsp-makros}
@@ -48,6 +48,10 @@
 \begin{document}
 \lspbeamertitle
 
+\frame{
+\frametitle{Outline}
+\tableofcontents
+}
 \section{Hintergrund}
 \frame{
 \frametitle{Sprachwissenschaft}
@@ -57,6 +61,7 @@
  \item   Bücher und Zeitschriften
  \item Buchpreise 100-200 EUR 
  \item Auflage ca. 200
+ \item Druckkostenzuschüsse unüblich
  \item   Peer Review 
  \item   ``Die naturwissenschaftlichste unter den Geisteswissenschaften''
 \end{itemize}
@@ -85,7 +90,7 @@
 } 
 
 
-\section{Language Science Press}
+% \section{Language Science Press}
 \frame{
 \frametitle{Language Science Press}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
@@ -296,6 +301,7 @@ mit dem ersten Buch 7 Tage nach Projektbeginn
 \frame{
 \frametitle{Formale Qualität}
 \begin{itemize}
+\item Einheitliches reihenübergreifendes Erscheinungsbild 
 \item \LaTeX
 \item Ligaturen 
 \parbox{.3\textwidth}{\includegraphics[width=.3\textwidth]{pics/affin.png}}
@@ -305,11 +311,12 @@ mit dem ersten Buch 7 Tage nach Projektbeginn
 \item Alleinstellungsmerkmale
 \begin{itemize}
  \item  c\&p-fähiges Unicode, á statt \'{}a
- \item  CI Font (Libertine)
+% %  \item  CI Font (Libertine)
  \item  neue Glyphen
  
 \parbox{.3\textwidth}{\includegraphics[width=.3\textwidth]{pics/schwaengma.png}}
  \end{itemize}
+ \item recht strenges Stylesheet
 \end{itemize}
 }
 
@@ -336,10 +343,19 @@ mit dem ersten Buch 7 Tage nach Projektbeginn
 \begin{itemize}
  \item organisiert vom Reihenherausgeber zusammen mit Editorial Board
 \end{itemize}
-\item keine Dissertationen (Selektivität) 
+\item keine Dissertationen (Selektivität)
+\item proaktive Kommunikation von Annahme-/Ablehnungraten
 \end{itemize}
 }
 
+\frame{
+\frametitle{Innovation}
+\begin{itemize}
+ \item GitHub 
+ \item Overleaf 
+ \item PaperHive
+\end{itemize}
+}
 \section{Finanzierung}
 
 \frame{
@@ -350,11 +366,14 @@ mit dem ersten Buch 7 Tage nach Projektbeginn
  \item Overhead pro Kostenart
  \item Benötigt: ca. 100\,000 EUR p/a
  \item Finanzierungsmöglichkeiten \pause
- \item \Huge Consortia\pause\\
- \large Printmarge \pause \\
- \normalsize Autorengebühren\pause \\
- \tiny Spenden,\pause\\
- Mitgliedschaften  
+ \begin{itemize}
+
+ \item Consortia\pause
+ \item Printmarge \pause 
+ \item Autorengebühren\pause 
+ \item Spenden\pause
+ \item Mitgliedschaften  
+ \end{itemize}
 \end{itemize}
 }
 
@@ -363,24 +382,25 @@ mit dem ersten Buch 7 Tage nach Projektbeginn
 \begin{itemize}
  \item Verteilte Finanzierung: 100 Bibliotheken weltweit zu 1000 EUR/Jahr 
  \item Leistung: 30 Bücher/Jahr, peer-reviewed, CC-BY
+ \item 3-jährige Perioden
  \item je nach Bibliothek sehr schnell oder sehr langwierig
 \end{itemize}
 \includegraphics[width=10cm]{pics/funding.png}
 }
 \section{Übertragbarkeit}
 
-\frame{
-\frametitle{Voraussetzungen} 
-  \begin{itemize}
-  \item Community-Building
-  \item keine Gewinnerzielungsabsicht
-  \item kein Anspruch auf Verwertungsrechtemonopol
-  \item verteilte Finanzierung (konkret: Knowledge Unlatched)
-  \item klares inhaltliches Profil
-  \item Buchmenge überschaubar und vorhersagbar 
-  \item Anerkennungskultur      
-  \end{itemize} 
-}
+% \frame{
+% \frametitle{Voraussetzungen} 
+%   \begin{itemize}
+%   \item Community-Building
+%   \item keine Gewinnerzielungsabsicht
+%   \item kein Anspruch auf Verwertungsrechtemonopol
+%   \item verteilte Finanzierung (konkret: Knowledge Unlatched)
+%   \item klares inhaltliches Profil
+%   \item Buchmenge überschaubar und vorhersagbar 
+%   \item Anerkennungskultur      
+%   \end{itemize} 
+% }
 
 \frame{
 \frametitle{Language Science Press zum Nachkochen}
@@ -391,6 +411,7 @@ mit dem ersten Buch 7 Tage nach Projektbeginn
  \item HowTo zum Nachbauen als CC-BY
  \item Geschäftszahlen (Downloads, Verkäufe) als CC-0
  \item Spreadsheet zum Nachrechnen
+ \item Verfügbar 2018/06
  \end{itemize}
 \end{itemize}
 \includegraphics[width=2cm]{pics/openaire.png}
@@ -413,7 +434,7 @@ mit dem ersten Buch 7 Tage nach Projektbeginn
   \item Sprachwissenschaft (LingOA, Glossa, Language Science Press)
   \item ???
  \end{itemize}
- \item Organsisation und Struktur des Erwerbs in Bibliotheken
+ \item Sammlungsauftrag von Bibliotheken vs. dezentrale Finanzierung von Publikationsplattformen
 \end{itemize}
 }
 
