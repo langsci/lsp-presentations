@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.7.7)  13 SEP 2017 11:42
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015) (preloaded format=xelatex 2015.7.7)  2 NOV 2017 17:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1467,11 +1467,26 @@ Overfull \hbox (301.08705pt too wide) in alignment at lines 47--47
 [][][][][][][][][][][][][][][][][][][][] 
  []
 
+
+Overfull \hbox (12.04057pt too wide) in paragraph at lines 47--47
+[]  
+ []
+
 [1
 
 ]
+File: WORLDMAPDOTSdots.png Graphic file (type QTm)
+ <use  "WORLDMAPDOTSdots.png" >
+Overfull \hbox (7.71973pt too wide) in paragraph at lines 61--61
+[][]  
+ []
+
+
+Overfull \vbox (25.33894pt too high) detected at line 61
+ []
+
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
- <use  "langsci_logo_nocolor.pdf" >
+<use  "langsci_logo_nocolor.pdf" >
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
  []
@@ -1494,17 +1509,12 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [2
 
 ]
-File: starofficelogo.png Graphic file (type QTm)
- <use  "starofficelogo.png" >
-File: openofficelogo.png Graphic file (type QTm)
- <use  "openofficelogo.png" >
-File: libreofficelogo.png Graphic file (type QTm)
+File: ./cumulativeallmonograph.png Graphic file (type QTm)
+ <use  "./cumulativeallmonograph.png" >
+Overfull \vbox (28.70776pt too high) detected at line 74
+ []
 
-<use  "libreofficelogo.png" >
-File: firefoxiceweasel.png Graphic file (type QTm)
- <use  "firefoxiceweasel.png" >
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
-
 <use  "langsci_logo_nocolor.pdf" >
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
@@ -1528,19 +1538,26 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [3
 
 ]
-File: zellescherweg.png Graphic file (type QTm)
- <use  "zellescherweg.png" >
-Overfull \hbox (14.22638pt too wide) in paragraph at lines 99--99
-[][]  
- []
+File: payne.png Graphic file (type QTm)
+ <use  "payne.png" >
+File: torrence.png Graphic file (type QTm)
+ <use  "torrence.png" >
+File: Persohn.png Graphic file (type QTm)
+ <use  "Persohn.png" >
+File: schrock.png Graphic file (type QTm)
 
-File: transportr.png Graphic file (type QTm)
-<use  "transportr.png" >
-Overfull \hbox (3.41042pt too wide) in paragraph at lines 99--99
-[][]  
- []
+<use  "schrock.png" >
+File: brindle.png Graphic file (type QTm)
+ <use  "brindle.png" >
+File: Friesen.png Graphic file (type QTm)
+ <use  "Friesen.png" >
+File: roettger.png Graphic file (type QTm)
 
+<use  "roettger.png" >
+File: stenzel.png Graphic file (type QTm)
+ <use  "stenzel.png" >
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+
 <use  "langsci_logo_nocolor.pdf" >
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
@@ -1588,13 +1605,8 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [5
 
 ]
-File: github.png Graphic file (type QTm)
- <use  "github.png" >
-File: paperhive.png Graphic file (type QTm)
- <use  "paperhive.png" >
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
-
-<use  "langsci_logo_nocolor.pdf" >
+ <use  "langsci_logo_nocolor.pdf" >
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
  []
@@ -1617,13 +1629,8 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [6
 
 ]
-File: issues.png Graphic file (type QTm)
- <use  "issues.png" >
-Overfull \vbox (3.73749pt too high) detected at line 157
- []
-
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
-<use  "langsci_logo_nocolor.pdf" >
+ <use  "langsci_logo_nocolor.pdf" >
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
  []
@@ -1646,25 +1653,18 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [7
 
 ]
-File: gittree.png Graphic file (type QTm)
- <use  "gittree.png" >
-Overfull \hbox (221.85828pt too wide) in paragraph at lines 176--176
-[][]  
- []
-
-
-Overfull \vbox (3.73749pt too high) detected at line 176
- []
-
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
-<use  "langsci_logo_nocolor.pdf" >
+ <use  "langsci_logo_nocolor.pdf" >
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
  []
 
+LaTeX Font Info:    Font shape `EU1/lmss/m/it' in size <12> not available
+(Font)              Font shape `EU1/lmss/m/sl' tried instead on input line 163.
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[]\EU1/lmss/m/n/12 Versionierungssystem:
+
+Underfull \hbox (badness 3977) has occurred while \output is active
+[]\EU1/lmss/m/n/12 Was bedeutet \EU1/lmss/m/sl/12 community-
  []
 
 
@@ -1694,11 +1694,6 @@ Overfull \hbox (2.84544pt too wide) has occurred while \output is active
  []
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
- []
-
-
 Overfull \hbox (250.38434pt too wide) has occurred while \output is active
 []|$[]$| 
  []
@@ -1718,7 +1713,7 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 ]
 File: communityproofreading.png Graphic file (type QTm)
  <use  "communityproofreading.png" >
-Overfull \vbox (29.37137pt too high) detected at line 203
+Overfull \vbox (29.37137pt too high) detected at line 173
  []
 
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1728,8 +1723,8 @@ Overfull \hbox (2.84544pt too wide) has occurred while \output is active
  []
 
 
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
+Overfull \hbox (44.30423pt too wide) has occurred while \output is active
+[]\EU1/lmss/m/n/12 Community: [] 
  []
 
 
@@ -1750,20 +1745,15 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [10
 
 ]
-File: postpublicationcomments.png Graphic file (type QTm)
- <use  "postpublicationcomments.png" >
-Overfull \vbox (35.31139pt too high) detected at line 208
+File: halloffame.png Graphic file (type QTm)
+ <use  "halloffame.png" >
+Overfull \vbox (40.65721pt too high) detected at line 179
  []
 
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
 <use  "langsci_logo_nocolor.pdf" >
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
- []
-
-
-Underfull \hbox (badness 10000) has occurred while \output is active
-[][]
  []
 
 
@@ -1784,10 +1774,28 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [11
 
 ]
-File: marriage.png Graphic file (type QTm)
- <use  "marriage.png" >
+File: omp.png Graphic file (type QTm)
+ <use  "omp.png" >
+File: github.png Graphic file (type QTm)
+ <use  "github.png" >
+File: paperhive.png Graphic file (type QTm)
+ <use  "paperhive.png" >
+File: overleaf.png Graphic file (type QTm)
+
+<use  "overleaf.png" >
+File: ctan.png Graphic file (type QTm)
+ <use  "ctan.png" >
+File: oapen.png Graphic file (type QTm)
+ <use  "oapen.png" >
+File: doab.png Graphic file (type QTm)
+
+<use  "doab.png" >
+Overfull \hbox (25.60727pt too wide) in paragraph at lines 198--198
+[][][][][]  
+ []
+
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
- <use  "langsci_logo_nocolor.pdf" >
+<use  "langsci_logo_nocolor.pdf" >
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
  []
@@ -1810,17 +1818,14 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [12
 
 ]
-File: prototypefund.png Graphic file (type QTm)
- <use  "prototypefund.png" >
-File: pittrich.jpg Graphic file (type QTm)
- <use  "pittrich.jpg" >
-LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 239
-.
+File: codingdavinci.png Graphic file (type QTm)
+ <use  "codingdavinci.png" >
+Overfull \hbox (72.97342pt too wide) in paragraph at lines 206--206
+ []|  [] 
+ []
 
-(/usr/local/texlive/2015/texmf-dist/tex/latex/euenc/eu1lmtt.fd
-File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-Overfull \vbox (22.45654pt too high) detected at line 239
+
+Overfull \vbox (3.73749pt too high) detected at line 206
  []
 
 File: langsci_logo_nocolor.pdf Graphic file (type QTm)
@@ -1847,6 +1852,382 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [13
 
 ]
+File: languini.png Graphic file (type QTm)
+ <use  "languini.png" >
+Overfull \vbox (24.82748pt too high) detected at line 215
+ []
+
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+<use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[14
+
+]
+File: Kuchen.png Graphic file (type QTm)
+ <use  "Kuchen.png" >
+Overfull \hbox (37.63327pt too wide) in paragraph at lines 223--223
+[][]  
+ []
+
+
+Overfull \vbox (3.73749pt too high) detected at line 223
+ []
+
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+<use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[15
+
+]
+File: calculation.png Graphic file (type QTm)
+ <use  "calculation.png" >
+Overfull \hbox (19.78905pt too wide) in paragraph at lines 235--235
+ []|  [][][] 
+ []
+
+
+Overfull \vbox (2.25325pt too high) detected at line 235
+ []
+
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+<use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[16
+
+]
+File: calculation.png Graphic file (type QTm)
+ <use  "calculation.png" >
+Overfull \hbox (19.78905pt too wide) in paragraph at lines 235--235
+ []|  [][][][] 
+ []
+
+
+Overfull \vbox (2.25325pt too high) detected at line 235
+ []
+
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+<use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[17
+
+]
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+ <use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[18
+
+]
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+ <use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[19
+
+]
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+ <use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[20
+
+]
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+ <use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[21
+
+]
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+ <use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[22
+
+]
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+ <use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[23
+
+]
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+ <use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[24
+
+]
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+ <use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[25
+
+]
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+ <use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[26
+
+]
+File: supportinginstitutions.png Graphic file (type QTm)
+ <use  "supportinginstitutions.png" >
+Overfull \vbox (7.07274pt too high) detected at line 285
+ []
+
+File: langsci_logo_nocolor.pdf Graphic file (type QTm)
+<use  "langsci_logo_nocolor.pdf" >
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[27
+
+]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -1856,20 +2237,20 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 254.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 254.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
  (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 254.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 254.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 254.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 290.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 290.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 290.
  ) 
 Here is how much of TeX's memory you used:
- 34921 strings out of 493710
- 697310 string characters out of 6145917
- 733178 words of memory out of 5000000
- 37687 multiletter control sequences out of 15000+600000
+ 34954 strings out of 493710
+ 697757 string characters out of 6145917
+ 734128 words of memory out of 5000000
+ 37709 multiletter control sequences out of 15000+600000
  9806 words of font info for 63 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 56i,26n,59p,10382b,562s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,26n,59p,10382b,568s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation.pdf (13 pages).
+Output written on presentation.pdf (27 pages).

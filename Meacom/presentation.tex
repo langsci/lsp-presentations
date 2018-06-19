@@ -1,0 +1,212 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{\mbox{Collaboration and Mobilization}}
+% \institute{FU Berlin}
+\author[LangSci]{Sebastian Nordhoff}
+
+
+
+\begin{document}
+\lspbeamertitle
+
+\section{Meacom}
+\frame{
+\frametitle{Language Science Press}
+\begin{itemize}
+ \item publisher
+ \item  open access books
+ \item Flagship series \textit{Studies in Diversity Linguistics}
+ \begin{itemize}
+    \item   16 published books; 4 forthcoming; total 78 expressions of interest
+ \end{itemize}
+\end{itemize}
+~\includegraphics[width=1.2cm]{1.png}
+~\includegraphics[width=1.2cm]{2.png}
+~\includegraphics[width=1.2cm]{3.png}
+~\includegraphics[width=1.2cm]{4.png}
+~\includegraphics[width=1.2cm]{5.png}
+~\includegraphics[width=1.2cm]{6.png}
+~\includegraphics[width=1.2cm]{7.png}
+~\includegraphics[width=1.2cm]{8.png}
+~% \includegraphics[width=1.2cm]{9.png}
+
+~\includegraphics[width=1.2cm]{10.png}
+~\includegraphics[width=1.2cm]{11.png}
+~\includegraphics[width=1.2cm]{12.png}
+~\includegraphics[width=1.2cm]{13.png}
+~\includegraphics[width=1.2cm]{14.png}
+~\includegraphics[width=1.2cm]{15.png}
+~\includegraphics[width=1.2cm]{16.png}
+~\includegraphics[width=1.2cm]{17.png}
+  }
+  
+
+\frame{
+\frametitle{On this and other worlds}
+\begin{columns}
+  \begin{column}{5cm}
+    \includegraphics[width=5cm]{amazon.png}
+  \end{column}
+  \begin{column}{5cm}
+\begin{itemize}
+ \item  12 Amazonian languages 
+ \item 12 interlinearized stories with anthropological commentary\\
+\end{itemize}
+\begin{itemize}
+ \item   mobilization
+ \item collaborative approach
+\end{itemize}
+  \end{column}
+\end{columns}
+ }
+ 
+ 
+
+\frame{
+\frametitle{Mobilization}
+\begin{itemize}
+ \item  get stuff into the archive $\longleftarrow$
+ \item  get stuff out of the archive again $\longrightarrow$
+ \item  c\&p from Toolbox/ELAN into chapter templates provided (*tex)
+ \item  add anthropological and lingistic introduction
+ \item  15 academics, 29 native speakers;\\ 1 coordinator/typesetter/illustrator at LangSci
+ \item  12/2015 -- 10/2017
+\end{itemize}
+}
+
+
+
+\frame{
+\frametitle{Collaborative approach}
+\begin{itemize}
+  \item \textbf{text}: the authors
+  \item \textbf{metadata}: some authors, typesetter
+  \begin{itemize}
+   \item title, affiliations, DOIs, ISBN
+  \end{itemize}
+  \item \textbf{graphics}: some authors, illustrator
+  \item \textbf{formatting}: even fewer authors, typesetter  
+\end{itemize}
+}
+
+\frame{
+\frametitle{Editing}
+  \begin{itemize}
+   \item Overleaf 
+   \item git bridge
+  \end{itemize}
+}
+
+\frame{ 
+\frametitle{Overleaf}
+\includegraphics[width=.95\textwidth]{overleaf.png}
+}
+
+\frame{ 
+\frametitle{git bridge}
+\includegraphics[width=1.05\textwidth]{versionhistory.png}
+}
+
+\frame{
+\frametitle{Parallels to collection\vphantom{j}\\ management?}
+\begin{itemize}
+ \item common storage format (*tex)
+ \begin{itemize}
+  \item division of labour
+  \item GUI for linguists for text editing
+  \item command line tools for power users for formatting etc  
+ \end{itemize}
+ \item permanent synchronisation
+\end{itemize}
+}
+  
+\frame{ 
+\frametitle{Thank you!}
+\huge
+\begin{itemize}
+ \item mobilization 
+ \item collaboration and synchronisation
+\end{itemize}
+
+}
+ 
+
+
+% \section{some section}
+%  
+% \frame{
+% \frametitle{Frametitle1}
+%   \begin{itemize}
+%     \item
+%   \end{itemize}
+% } 
+% 
+% 
+% 
+% 
+% \section{another section}
+% 
+% \frame{
+% \frametitle{Frametitle2}
+% 
+% \begin{columns}
+%   \begin{column}{6cm}
+% %     \includegraphics{./path/to/graphicsfile}
+%   \end{column}
+%   \begin{column}{3cm}
+%     \begin{itemize}
+%       \item    
+%     \end{itemize}
+%   \end{column}
+% \end{columns}
+% 
+% }
+% 
+% \frame{
+% \frametitle{Frametitle3}
+% %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+%   \begin{itemize}
+%     \item  
+%     \item 
+%   \end{itemize}
+% }
+
+%\setcounter{framenumber}{\thelastpagemainpart}
+\end{document}
