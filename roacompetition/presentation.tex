@@ -1,0 +1,90 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{Outcompeting Gold: sharing basics for collaborative approaches to publishing}
+% \institute{FU Berlin}
+\author[LangSci]{Sebastian Nordhoff}
+
+
+
+\begin{document}
+\lspbeamertitle
+% 20 min
+
+\section{some section}
+ 
+\frame{
+\frametitle{Frametitle1}
+  \begin{itemize}
+    \item
+  \end{itemize}
+} 
+
+
+
+
+\section{another section}
+
+\frame{
+\frametitle{Frametitle2}
+
+\begin{columns}
+  \begin{column}{6cm}
+%     \includegraphics{./path/to/graphicsfile}
+  \end{column}
+  \begin{column}{3cm}
+    \begin{itemize}
+      \item    
+    \end{itemize}
+  \end{column}
+\end{columns}
+
+}
+
+\frame{
+\frametitle{Frametitle3}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  
+    \item 
+  \end{itemize}
+}
+
+%\setcounter{framenumber}{\thelastpagemainpart}
+\end{document}
