@@ -1,3 +1,6 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{some section}{2}{0}{1}
-\beamer@sectionintoc {2}{another section}{3}{0}{2}
+\beamer@sectionintoc {1}{Metallurgy}{2}{0}{1}
+\beamer@sectionintoc {2}{Full disclosure}{6}{0}{2}
+\beamer@sectionintoc {3}{Data}{7}{0}{3}
+\beamer@sectionintoc {4}{Spreadsheet}{10}{0}{4}
+\beamer@sectionintoc {5}{Business model}{11}{0}{5}
+\beamer@sectionintoc {6}{Cookbook}{13}{0}{6}

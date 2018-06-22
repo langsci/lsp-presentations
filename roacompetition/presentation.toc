@@ -1,3 +1,10 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{some section}{2}{0}{1}
-\beamer@sectionintoc {2}{another section}{3}{0}{2}
+\beamer@sectionintoc {1}{Background}{2}{0}{1}
+\beamer@sectionintoc {2}{Subscription model}{6}{0}{2}
+\beamer@sectionintoc {3}{Gold}{7}{0}{3}
+\beamer@subsectionintoc {3}{1}{Commodification}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Threats}{9}{0}{3}
+\beamer@sectionintoc {4}{Competition}{10}{0}{4}
+\beamer@sectionintoc {5}{Principles}{11}{0}{5}
+\beamer@sectionintoc {6}{Metallurgy}{16}{0}{6}
+\beamer@sectionintoc {7}{Full disclosure}{17}{0}{7}
+\beamer@sectionintoc {8}{Conclusion}{18}{0}{8}
