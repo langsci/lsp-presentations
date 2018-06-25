@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.11.27)  25 JUN 2018 13:25
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.11.27)  25 JUN 2018 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1711,6 +1711,12 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [9
 
 ]
+File: competition.jpg Graphic file (type bmp)
+<competition.jpg>
+
+Overfull \vbox (24.05225pt too high) detected at line 293
+ []
+
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
 
@@ -1736,6 +1742,12 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [10
 
 ]
+File: Pyrite_elbe.jpg Graphic file (type bmp)
+<Pyrite_elbe.jpg>
+
+Overfull \vbox (16.16911pt too high) detected at line 299
+ []
+
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
 
@@ -1761,8 +1773,12 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [11
 
 ]
-File: halloffame.png Graphic file (type bmp)
-<halloffame.png>
+File: collaboration.jpg Graphic file (type bmp)
+<collaboration.jpg>
+
+Overfull \vbox (19.39386pt too high) detected at line 306
+ []
+
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
 
@@ -1790,8 +1806,6 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 ]
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
-File: langsci_logo_nocolor.pdf Graphic file (type pdf)
-<use langsci_logo_nocolor.pdf>
 
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
@@ -1815,6 +1829,8 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [13
 
 ]
+File: halloffame.png Graphic file (type bmp)
+<halloffame.png>
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
 
@@ -1842,6 +1858,8 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 ]
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
+File: langsci_logo_nocolor.pdf Graphic file (type pdf)
+<use langsci_logo_nocolor.pdf>
 
 Overfull \hbox (2.84544pt too wide) has occurred while \output is active
 []|| 
@@ -1865,15 +1883,6 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [15
 
 ]
-File: jscaux.jpg Graphic file (type bmp)
-<jscaux.jpg>
-LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 417.
-
-Overfull \hbox (5.81413pt too wide) in paragraph at lines 417--417
-[][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]  
- []
-
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
 
@@ -1899,18 +1908,6 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [16
 
 ]
-File: cookbook.png Graphic file (type bmp)
-<cookbook.png>
-File: 5y.png Graphic file (type bmp)
-<5y.png>
-File: downloadfigures.png Graphic file (type bmp)
-<downloadfigures.png>
-File: businessmodel.png Graphic file (type bmp)
-<businessmodel.png>
-
-Overfull \vbox (0.80357pt too high) detected at line 433
- []
-
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
 
@@ -1936,6 +1933,15 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [17
 
 ]
+File: jscaux.jpg Graphic file (type bmp)
+<jscaux.jpg>
+LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 432.
+
+Overfull \hbox (5.81413pt too wide) in paragraph at lines 432--432
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]  
+ []
+
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
 
@@ -1961,6 +1967,68 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [18
 
 ]
+File: cookbook.png Graphic file (type bmp)
+<cookbook.png>
+File: 5y.png Graphic file (type bmp)
+<5y.png>
+File: downloadfigures.png Graphic file (type bmp)
+<downloadfigures.png>
+File: businessmodel.png Graphic file (type bmp)
+<businessmodel.png>
+
+Overfull \vbox (23.03543pt too high) detected at line 450
+ []
+
+File: langsci_logo_nocolor.pdf Graphic file (type pdf)
+<use langsci_logo_nocolor.pdf>
+
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[19
+
+]
+File: langsci_logo_nocolor.pdf Graphic file (type pdf)
+<use langsci_logo_nocolor.pdf>
+
+Overfull \hbox (2.84544pt too wide) has occurred while \output is active
+[]|| 
+ []
+
+
+Overfull \hbox (250.38434pt too wide) has occurred while \output is active
+[]|$[]$| 
+ []
+
+
+Overfull \hbox (12.43404pt too wide) has occurred while \output is active
+[][]
+ []
+
+
+Overfull \hbox (4.84525pt too wide) has occurred while \output is active
+[][]
+ []
+
+[20
+
+]
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
 
@@ -1970,19 +2038,19 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 463.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 463.
  (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 446.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 446.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 463.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 463.
  ) 
 Here is how much of TeX's memory you used:
- 33269 strings out of 493010
- 675059 string characters out of 6134663
- 814099 words of memory out of 5000000
- 36688 multiletter control sequences out of 15000+600000
- 537662 words of font info for 74 fonts, out of 8000000 for 9000
+ 33288 strings out of 493010
+ 675373 string characters out of 6134663
+ 814193 words of memory out of 5000000
+ 36702 multiletter control sequences out of 15000+600000
+ 537670 words of font info for 75 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  56i,26n,59p,10414b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on presentation.pdf (18 pages).
+Output written on presentation.pdf (20 pages).
