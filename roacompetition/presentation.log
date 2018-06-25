@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.11.27)  21 JUN 2018 20:29
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017) (preloaded format=xelatex 2017.11.27)  25 JUN 2018 13:25
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1085,7 +1085,7 @@ Package: colortbl 2012/02/13 v1.0a Color table columns (DPC)
 \everycr=\toks45
 \minrowclearance=\skip65
 )
-(/usr/local/texlive/2017/texmf-dist/tex/xelatex/langsci/langsci-colors.def)
+(./langsci-colors.def)
 (/usr/local/texlive/2017/texmf-dist/tex/latex/textpos/textpos.sty
 Package: textpos 2016/06/07 v1.8
 
@@ -1761,6 +1761,8 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [11
 
 ]
+File: halloffame.png Graphic file (type bmp)
+<halloffame.png>
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
 
@@ -1786,6 +1788,8 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [12
 
 ]
+File: langsci_logo_nocolor.pdf Graphic file (type pdf)
+<use langsci_logo_nocolor.pdf>
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
 
@@ -1864,9 +1868,9 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 File: jscaux.jpg Graphic file (type bmp)
 <jscaux.jpg>
 LaTeX Font Info:    Font shape `TU/lmss/m/it' in size <9> not available
-(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 402.
+(Font)              Font shape `TU/lmss/m/sl' tried instead on input line 417.
 
-Overfull \hbox (5.81413pt too wide) in paragraph at lines 402--402
+Overfull \hbox (5.81413pt too wide) in paragraph at lines 417--417
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]  
  []
 
@@ -1895,6 +1899,18 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 [16
 
 ]
+File: cookbook.png Graphic file (type bmp)
+<cookbook.png>
+File: 5y.png Graphic file (type bmp)
+<5y.png>
+File: downloadfigures.png Graphic file (type bmp)
+<downloadfigures.png>
+File: businessmodel.png Graphic file (type bmp)
+<businessmodel.png>
+
+Overfull \vbox (0.80357pt too high) detected at line 433
+ []
+
 File: langsci_logo_nocolor.pdf Graphic file (type pdf)
 <use langsci_logo_nocolor.pdf>
 
@@ -1954,17 +1970,17 @@ Overfull \hbox (4.84525pt too wide) has occurred while \output is active
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 431.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 431.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 446.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 446.
  (./presentation.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 431.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 431.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 446.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 446.
  ) 
 Here is how much of TeX's memory you used:
- 33250 strings out of 493010
- 674885 string characters out of 6134663
+ 33269 strings out of 493010
+ 675059 string characters out of 6134663
  814099 words of memory out of 5000000
- 36673 multiletter control sequences out of 15000+600000
+ 36688 multiletter control sequences out of 15000+600000
  537662 words of font info for 74 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  56i,26n,59p,10414b,707s stack positions out of 5000i,500n,10000p,200000b,80000s
