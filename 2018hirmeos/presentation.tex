@@ -1,4 +1,4 @@
-\documentclass[handout]{beamer}
+\documentclass{beamer}
 \usepackage{pgfplots}
 \usepackage{fontspec} 
 \usepackage{langsci-optional}
@@ -59,7 +59,7 @@
 \begin{itemize}
  \item  ca.\ 25,000 linguists worldwide
  \item  both monographs and articles 
- \item  longer publication cycles 
+ \item  rather long publication cycles 
  \item  less output than for instance biology
  \begin{itemize}
   \item possibility to keep track
@@ -222,6 +222,7 @@ individual placement      \newline
  \end{itemize}          
 \end{itemize}
 }
+
 \frame{
 \frametitle{Goals}
 \begin{itemize} 
@@ -238,7 +239,7 @@ individual placement      \newline
 \frame{
 \frametitle{Relevant knowledge bases}
 \begin{itemize}
- \item The following knowledge basis can be seen as resources for disambiguation
+ \item The following knowledge bases can be seen as resources for disambiguation
 
 \begin{itemize}
  \item         
@@ -278,11 +279,20 @@ individual placement      \newline
 
 \frame{
 \frametitle{Person names}
-\begin{tabular}{cc}
-        \includegraphics[height=3cm]{saussure-cover.png} & \includegraphics[height=3.5cm]{saussure-bnf.png}\\
-              &     \includegraphics[height=3cm]{weiwang.png}
-\end{tabular}
+
+\begin{columns}
+  \begin{column}{4cm}
+ \includegraphics[height=\textheight]{saussure-cover.png}
+  \end{column}
+  \begin{column}{5cm}
+    \begin{itemize}
+      \item    GND
+      \item ORCID
+    \end{itemize}
+  \end{column}
+\end{columns}
 }
+        
 
  
 
@@ -294,22 +304,13 @@ individual placement      \newline
 \includegraphics[width=1\textwidth]{komnzo-glottolog.png}\\ 
 \end{itemize}
 }
-
-\frame{
-\frametitle{Language names: OLAC}
-\begin{itemize}
- \item        \textit{A grammar of   Komnzo}\\
- \noindent\hspace*{-1cm}
-\includegraphics[width=1.2\textwidth]{wara-olac.png}
-\end{itemize}
-}
-
+ 
 \frame{
 \frametitle{Linguistic concepts}
 \begin{itemize}
  \item          cross-linguistic categories don't exist\pause
  \item          cross-linguistic categories don't exist\pause
- \item          cross-linguistic categories don't exist
+ \item          cross-linguistic categories don't exist\pause
  \item something called ``dative'' in language X cannot be equated with something called ``dative'' in language Y
  \begin{itemize}
   \item General Ontology for Linguistic Description (GOLD) tried and failed 
@@ -378,7 +379,7 @@ individual placement      \newline
  \begin{itemize}
   \item Recall is good
  \end{itemize}
- \item NERD also retrieved a lot of irrelevant concepts (``South America'') or lookalikes (business names)
+ \item NERD also retrieved a lot of irrelevant concepts (``South America'') or lookalikes (business names, radio stations)
  \item NERD was rather aggressive and colored whole pages.
  \item the system seems to have understood that the book is about linguistics and often selects a linguistic concept. However, sometimes, the concept chosen is off the mark (Australia). 
  \begin{itemize}
@@ -413,5 +414,20 @@ individual placement      \newline
   \end{itemize}
 \end{itemize}
 }
+
+\frame{
+\frametitle{Goals (reprise)}
+\begin{itemize} 
+ \item  stated goals (Hirmeos):
+ \begin{enumerate}
+  \item   enhance discoverability: better than curated series?
+  \item   aggregation (word clouds): better than index? 
+  \item   generate collections: better than curated series? 
+  \item   highlighting: is color a value in itself? 
+ \end{enumerate}           
+\end{itemize}
+}
+
+
 %\setcounter{framenumber}{\thelastpagemainpart}
 \end{document}
