@@ -98,7 +98,7 @@
 \frame{
 \frametitle{Starting your own publishing project, Lesson I}
 \pause
-% \includegraphics{whocares.jpg}
+\includegraphics{whocares.jpg}
 }
 
 \frame{
@@ -125,6 +125,10 @@
 \frametitle{Business model: projections}
   \begin{tikzpicture}
     \begin{axis}[
+      scaled y ticks = false,
+	y tick label style={/pgf/number format/fixed,
+	/pgf/number format/1000 sep = \thinspace % Optional if you want to replace comma as the 1000 separator 
+	},    
 	xlabel={Revenue stream},  
 	ylabel={EUR}, 
 	axis lines*=left, 
@@ -154,9 +158,13 @@
 
 
 \frame{
-\frametitle{Business Evaluation}
+\frametitle{Business model: Evaluation}
   \begin{tikzpicture}
     \begin{axis}[
+    scaled y ticks = false,
+      y tick label style={/pgf/number format/fixed,
+      /pgf/number format/1000 sep = \thinspace % Optional if you want to replace comma as the 1000 separator 
+      },
 	xlabel={Revenue stream},  
 	ylabel={EUR}, 
 	axis lines*=left, 
@@ -187,11 +195,15 @@
   \end{tikzpicture} 
 }
 
-
+\section{Evaluation}
 \frame{
-\frametitle{Evaluation}
+\frametitle{Business model: Evaluation}
   \begin{tikzpicture}
     \begin{axis}[
+    scaled y ticks = false,
+      y tick label style={/pgf/number format/fixed,
+      /pgf/number format/1000 sep = \thinspace % Optional if you want to replace comma as the 1000 separator 
+      },
 	scaled y ticks=false
 	tick label style={/pgf/number format/fixed}
 	xlabel={Revenue stream},  
@@ -224,15 +236,41 @@
   \end{tikzpicture} 
 }
 
+
+
 \frame{
-\frametitle{Sharing is caring} 
+\frametitle{Sharing is caring: GitHub} 
 \includegraphics[width=\textwidth]{github.png}
 }
 
 
 \frame{
-\frametitle{Sharing is caring} 
+\frametitle{Sharing is caring:\newline spreadsheet} 
 \includegraphics[width=\textwidth]{spreadsheet.png}
+}
+
+\frame{
+\frametitle{But what if this does not work for me?}
+\begin{itemize}
+ \item work on alternatives
+ \item specify the alternatives 
+ \item evaluate the alternatives 
+ \item share the alternatives
+ \begin{itemize}
+  \item best practices, lessons learned
+ \end{itemize}
+\end{itemize}
+}
+
+\frame{
+\includegraphics[width=.4\textwidth]{businessmodel.png}\hfill\includegraphics[width=.4\textwidth]{cookbook.png}\hfill
+~
+\url{langsci-press.org/opendata}
+}
+
+\frame{
+\frametitle{Thank you}
+\includegraphics[width=\textwidth]{nature.png}
 }
 
 %\setcounter{framenumber}{\thelastpagemainpart}
