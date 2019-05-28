@@ -35,7 +35,7 @@
 \usepackage{eurosym}  
  
 \renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
-
+\newcommand{\highlight}{\mdseries\color{red!80!black}}
 
 \title{Book publications
 and sustainability}
@@ -50,12 +50,18 @@ and sustainability}
 \section{Introduction}
 
 \frame{
+\frametitle{Frametitle3}
+\tableofcontents
+}
+
+\frame{
 \frametitle{Sebastian Nordhoff}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
     \item PhD 2009 \textit{A grammar of Upcountry Sri Lanka Malay}
     \item 3 edited volumes, about 30 research articles
     \item 2009-2012 Glottolog.org at the Max Planck Institute for Evolutionary Anthropology
+    \item advocate for Open Source, Open Access, Open Data, Open Everything 
     \item since 2014 coordinator for Language Science Press
     \item involved in the publication of 100+ books since 2014
   \end{itemize}
@@ -75,25 +81,30 @@ and sustainability}
   \end{itemize}
 }
 
-\frame{
-\frametitle{Production of a book:\\ traditional model}
-%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-  \begin{itemize}
-    \item inquiry
-	\item book proposal
-	\item proposal approval
-	\item contract
-	\item first submission
-	\item review
-	\item first decision
-	\item revision
-	\item final decision
-	\item copyediting
-	\item first proofs
-	\item typesetting
-	\item final proofs
-  \end{itemize}
-}
+% \frame{
+% \frametitle{Language Science Press}
+% \includegraphics[height=\textheight]{catalog.png}
+% }
+% 
+% \frame{
+% \frametitle{Production of a book:\\ traditional model}
+% %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+%   \begin{enumerate}
+%     \item inquiry
+% 	\item book proposal
+% 	\item proposal approval
+% 	\item contract
+% 	\item first submission
+% 	\item review
+% 	\item first decision
+% 	\item revision
+% 	\item final decision
+% 	\item copyediting
+% 	\item first proofs
+% 	\item typesetting
+% 	\item final proofs
+%   \end{enumerate}
+% }
 
 
 \section{Technical aspects}
@@ -273,14 +284,14 @@ and sustainability}
 \frame{
 \frametitle{Recommendations for\\ technical sustainability}
   \begin{itemize}
-  \color{red}\bfseries
+  \highlight
     \item conceptually separate your data, code, and prose text   
     \item make sure you can replicate all steps of your analysis
     \item ideally, specify automated pipelines for your analysis
     \item do not hardwire data and code
     \item use a citation manager 
     \item use a versioning tool 
-    \begin{itemize}
+    \begin{itemize}\highlight
       \item local or university or cloud
     \end{itemize}
     \item use a preprint server
@@ -353,9 +364,9 @@ and sustainability}
 \frame{ 
 \frametitle{Recommendations for legal sustainability}
   \begin{itemize}
-  \color{red}\bfseries
+  \highlight
     \item Publish your works under a Creative Commons license, preferably CC-BY 
-    \begin{itemize}
+    \begin{itemize}\highlight
       \item see the Berlin|Budapest|Bethesda declarations on Open Access 
     \end{itemize}
     \item This license clearly states who the copyright holder is and how the content can be reused (typically requiring only the attribution of the original author)
@@ -435,7 +446,7 @@ and sustainability}
     \item \textit{Scielo} (Brazil) charges 90 USD for one article
     \item \textit{Nature Communications} charges 5200 USD for one article
     \item this explains the profit margins of 30-40\% of the large publishers (Springer, Wiley, Elsevier)
-    \item book costs are estimated between 3,500 and 130\,000 EUR
+    \item book costs are estimated between 3\,500 and 130\,000 EUR
   \end{itemize}
 }
 
@@ -472,7 +483,7 @@ and sustainability}
 }
 
 \frame{
-\frametitle{More figures}
+\frametitle{More figures and calculations}
 \includegraphics[height=\textheight]{cookbook.png}
 \includegraphics[height=\textheight]{businessmodel.png}
 }
@@ -481,11 +492,11 @@ and sustainability}
 \frametitle{Financial aspects:\\ recommendations}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-  \color{red}\bfseries
+  \highlight
     \item go for discipline-pays
-    \begin{itemize}
+    \begin{itemize}\highlight
     \item else go for author-pays if funds are available 
-      \begin{itemize}
+      \begin{itemize}\highlight
           \item else go for reader-pays and deposit preprints/postprints in repositories. 
       \end{itemize}
     \end{itemize}
@@ -504,10 +515,10 @@ and sustainability}
   \begin{enumerate}
     \item  registration \only<2->{$\to$\hfill preprint server} 
     \item   certification \only<3->{$\to$\hfill ???}
-    \item   dissemination  \only<4->{$\to$\hfill repository, social media, print on demand}
+    \item   dissemination  \only<4->{$\to$\hfill repository, social media, print-on-demand}
     \item   archiving    \only<5->{$\to$\hfill Zenodo}
   \end{enumerate}
-\uncover<6->{The main function remains certification of quality.}
+\uncover<6->{The main function which is difficult to substitute remains certification of quality.}
 } 
 
 \frame{
@@ -575,8 +586,8 @@ and sustainability}
     \item But this sucks money out of research, which could better be used to improve teaching, fund postdocs or develop vaccines. 
     \item Two solutions:
     \begin{itemize}
-      \item decouple research evaluation from the place of publication 
-      \item move the brands from the for-profit-sphere to the non-profit-sphere 
+      \item decouple research evaluation from the place of publication (DORA)
+      \item move the brands from the for-profit-sphere to the non-profit-sphere (Fair OA) 
     \end{itemize}
   \end{itemize}
 }
@@ -599,10 +610,10 @@ and sustainability}
 \frametitle{Recommendations for\\ financial aspects}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-  \color{red}\bfseries
+  \highlight
     \item choose a scholar-led community-owned publisher 
     \item             do not exacerbate libraries' burden
-   \item          lobby agains stupid criteria of research assesement like the Journal Impact Factor
+   \item          lobby against stupid criteria of research assesement like the Journal Impact Factor
   \end{itemize}
 }
 
@@ -643,17 +654,21 @@ and sustainability}
 \frametitle{Wrap-up: recommendations\\ \mbox{for sustainable book publications}}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize} 
-  \color{red}\bfseries
+  \highlight
     \item separate data, code, and text 
     \item use a versioning system
-    \item backup
+    \item backup\\~
     \item publish all your data in appropriate repositories
-    \item use preprint servers
+    \item use preprint servers\\~
     \item use the CC-0 license for data and the CC-BY license for text
-    \item do not sign away your copyright
+    \item do not sign away your copyright\\~
     \item care for your discipline, go for scholar-led community-owned publishers
   \end{itemize}
 }
     
-%\setcounter{framenumber}{\thelastpagemainpart}
+\frame{
+\frametitle{Thank you}
+  \includegraphics[width=\textwidth]{nebrija.jpg}
+}    
+
 \end{document}
