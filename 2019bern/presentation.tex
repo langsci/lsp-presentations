@@ -1,0 +1,599 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{Book publications
+and sustainability}
+% \institute{FU Berlin}
+\author[Nordhoff]{Sebastian Nordhoff}
+\date{Center for the Study of Language and Society Berne, 2019-05-29}
+
+
+\begin{document}
+\lspbeamertitle
+
+\section{Introduction}
+
+\frame{
+\frametitle{Introduction}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  PhD 2009 A grammar of Upcountry Sri Lanka Malay
+    \item 2009-2012 Glottolog.org at the Max Planck Institute for Evolutionary Anthropology
+    \item since 2014 coordinator for Language Science Press
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Language Science Press}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  scholar-owned, community-based publisher 
+    \item Open Access
+    \item free to read 
+    \item free to publish 
+    \item 25 series 
+    \item 30 books a year (monographs and edited volumes)
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Production of a book: traditional model}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item inquiry
+	\item book proposal
+	\item proposal approval
+	\item contract
+	\item first submission
+	\item review
+	\item first decision
+	\item revision
+	\item final decision
+	\item copyediting
+	\item first proofs
+	\item typesetting
+	\item final proofs
+  \end{itemize}
+}
+
+
+\section{Technical aspects}
+\frame{
+\frametitle{Components}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  Data (recordings, surveys, samples)
+    \item  Code (scripts in R, python, praat)
+    \item Prose (The text surrounding your data)
+    \item Bibliography
+    \item Proportions of these may vary
+    \item Do keep them separate and well-organized
+    \begin{itemize}
+      \item do use a references manager like Zotero
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Versioning}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Versioning is crucial for large projects 
+    \item Back-up 
+    \item Roll-back
+    \item Fork
+    \item Collaborate 
+    \item Merge
+    \item Automated tests
+    \item Get feedback
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Versioning: history}
+  \includegraphics[height=\textheight]{juskancommits.png}
+}
+
+
+\frame{
+\frametitle{Versioning: diffs}
+  \includegraphics[height=\textheight]{juskansplit.png}
+}
+
+
+\frame{
+\frametitle{Versioning: internal}
+  \includegraphics[height=\textheight]{bodowinter.png}
+  }
+
+\frame{
+\frametitle{Versioning and neat project structure}
+  \includegraphics[height=\textheight]{pngR.png}
+}  
+
+
+
+\frame{
+\frametitle{Versioning and neat project structure}
+  \includegraphics[height=\textheight]{folderstructure.png}
+}  
+
+\frame{
+\frametitle{Versioning and neat project structure}
+  \includegraphics[height=\textheight]{NitzkecsvLO.png}
+}  
+
+
+\frame{
+\frametitle{Versioning: releases}
+  \includegraphics[height=\textheight]{unicodecookbook.png}
+}  
+
+\frame{
+\frametitle{Versioning: releases}
+  \includegraphics[height=\textheight]{releases.png}
+}  
+
+
+\frame{
+\frametitle{Repositories}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Repositories collect documents and research data 
+      \begin{itemize}
+        \item discpline-specific or general purpose
+        \item preprint or postprint 
+        \item text or data 
+      \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+   \includegraphics[height=\textheight]{figshare.png}
+}
+
+% \frame{
+%    \includegraphics[height=\textheight]{dryad.png}
+% }
+
+\frame{
+   \includegraphics[height=\textheight]{trolling.png}
+}
+
+\frame{
+   \includegraphics[height=\textheight]{lingbuzz.png}
+}
+
+\frame{
+   \includegraphics[height=\textheight]{semanticsarchive.png}
+}
+
+\frame{
+   \includegraphics[height=\textheight]{roa.png}
+}
+
+\frame{
+   \includegraphics[height=\textheight]{zenodo.png}
+}
+
+\frame{
+   \includegraphics[height=\textheight]{github.png}
+}
+
+
+\frame{
+\frametitle{Academia and Researchgate}
+  \begin{itemize}
+    \item  Academia.edu and researchgate are NOT repositories
+    \item both make money from restricting access
+    \end{itemize}
+}                    
+
+\frame{
+\frametitle{A note on scopping}
+  \begin{itemize}
+    \item  Scooping means that someone ``steals'' your research while you are still finalising it
+    \item that fear is by and large unwarranted 
+    \item you can count yourself happy if anybody IS actually interested in your data!
+    \item most research actually struggles a lot more with a lack of interest to outsiders rather than scooping 
+    \item preprint servers allow you to register your data and establish primacy
+  \end{itemize}
+}
+            
+
+\frame{
+\frametitle{Recommendations for technical sustainability}
+  \begin{itemize}
+    \item conceptually separate your data, code, and prose text   
+    \item make sure you can replicate all steps of your analysis
+    \item ideally, specify automated pipelines for your analysis
+    \item do not hardwire data and code
+    \item use a citation manager 
+    \item use a versioning tool 
+    \begin{itemize}
+      \item local or university or cloud
+    \end{itemize}
+    \item use a preprint server
+    \item backup\pause
+    \item backup\pause
+    \item backup
+    \end{itemize}
+}
+
+
+            
+\section{Legal aspects}
+
+\frame{
+\frametitle{Legal sustainability}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+}
+
+\frame{
+\frametitle{Intellectual Property Rights}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  ``Copyright'' in the Anglo-Saxon countries
+    \item  ``Urheberrecht'' in continental Europe 
+    \item These are different!
+    \item Once you create somehting, you can decide who can use it and how
+    \item Choose wisely and be explicit!
+  \end{itemize}
+}
+
+\frame{
+\frametitle{License}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  Usage rights can be differentiated as follows
+    \begin{itemize}
+      \item geographical restriction (only for Europe)
+      \item type restrictions (only for print) 
+      \item exclusive (no-one else has the right) vs. non-exclusive (other people may also get the rights)
+      \item copyright transfer agreement
+      \item total buy-out
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+\includegraphics[height=\textheight]{copyrighttransfer.pdf}
+}
+
+\frame{
+\frametitle{Contracts}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  Publisher contracts restrict everybody, including yourself 
+    \item once you sign away your copyright, you have no longer the right to use your own material 
+    \item to reuse tables or graphics in subsequent works of yours, you must first ask the new rights holder for permission 
+    \item chasing rights is incredibly annoying
+    \item publishers will put your content behind a paywall, meaning that it can actually be more difficult to access once it is officially published than before
+    \item publisher vary as to whether and when they allow books to be hosted in repositories  
+  \end{itemize}
+    }
+
+\frame{
+\includegraphics[height=\textheight]{brillnordhoff.png}
+ }
+
+\frame{ 
+\frametitle{Recommendations for legal sustainability}
+  \begin{itemize}
+    \item Publish your works under a Creative Commons license, preferably CC-BY 
+    \begin{itemize}
+      \item see the Berlin|Budapest|Bethesda declarations on Open Access 
+    \end{itemize}
+    \item This license clearly states who the copyright holder is and how the content can be reused (typically requiring only the attribution of the original author)
+    \item do not sign away your copyright \pause
+    \item do not sign away your copyright \pause 
+    \item do not sign away your copyright
+  \end{itemize}
+}
+                
+%                 The editor hereby assigns to the Publisher the full copyright in the Work [...]. Consequently, the Publisher shall have the exclusive right \textbf{throughout the world} to publish and sell th Work in \textbf{all languages}, in whole or in part, including, \textbf{without limitation}, \textbf{any} abridgement and substantial part thereof, in book form and in \textbf{any other form} including, without limitation, mechanical, digital electronic, and visual reproduction, electronic storage and retrieval systems, including internet and intranet delivery and \textbf{all other forms of electronic publication now known or hereinafter invented}. 
+                
+\section{Financial aspects}
+\frame{
+\frametitle{Financial aspects of sustainability}
+  \includegraphics[height=\textheight]{calculation.jpg}
+ {\tiny CC-BY-ND Dennis Skley \url{https://www.flickr.com/photos/dskley/14895278831}}
+ }
+ 
+\frame{
+\frametitle{Print run}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  How many books does a publisher print? 
+  \end{itemize}
+} 
+
+\frame{
+\includegraphics[height=\textheight]{printingcosts.png}
+}
+
+\frame{
+\frametitle{Print run}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  How many books does a publisher sell?
+    \item How much does the author typicall earn?
+  \end{itemize}
+} 
+
+\frame{
+  \includegraphics[height=\textheight]{royalty.pdf}
+}        
+
+\frame{
+\frametitle{Business models: reader pays}
+\includegraphics[height=.2\textheight]{brillnordhoff.png}
+  \begin{itemize}
+    \item  item-based
+    \item  bundle 
+    \item  patron driven acquisition
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Services provided by publishers}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item review facilitation (or not)
+    \item  language polishing (or not)
+    \item  copy-editing (or not)
+    \item  typesetting (or not)
+    \item  indexing (or not)
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Business models: author pays}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  Article processing charges (APCs)
+    \item  Book processing charges (BPCs)
+    \item Book chapter processing charges (BCPCs)
+    \item What is the cost of publishing an article? \pause
+    \item What is the cost of publishing a book? \pause
+    \item \textit{Scielo} (Brazil) charges 90 USD for one article
+    \item \textit{Nature Communications} charges 5200 USD for one article
+    \item this explains the profit margins of 30-40\% of the large publishers (Springer, Wiley, Elsevier)
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Business model: discipline pays}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item institutional funding 
+    \begin{itemize}
+      \item Uni Bern: \url{https://bop.unibe.ch/linguistik-online}
+      \item Uni Hawaii: Journal of Language Documentation and Conservation
+      \item Uni Dartmouth: Linguistic Discovery 
+      \item MIT/LSA: Semantics and Pragmatics
+    \end{itemize}
+    \item no fees for readers, no fees for authors
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Business model: decentralized funding}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  Open Library of Humanities (300+ supporting institutions)
+    \begin{itemize}
+      \item Glossa 
+      \item Journal of Portuguese Linguistics 
+      \item Laboratory Phonology
+      \item Italian Journal of Linguistics 
+    \end{itemize}
+    \item Language Science Press (100+ supporters)
+    \item Open Library Politikwissenschaft (40+ supporting institutions)
+  \end{itemize}
+}
+
+\frame{
+\frametitle{More figures}
+\includegraphics[height=.2\textheight]{cookbook.png}
+\includegraphics[height=.2\textheight]{businessmodel.png}
+}
+
+\frame{
+\frametitle{Financial aspects: recommendations}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item go for discpline-pays  
+    \item else go for author pays if fund are available 
+    \item else go for reader pays and deposit preprints/postprints in repositories. 
+  \end{itemize}
+}
+
+\section{Sociological aspects}
+\frame{
+\frametitle{Sociological aspects}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+}
+
+\frame{
+\frametitle{Functions of a publisher}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{enumerate}
+    \item  registration \only<2->{preprint server} 
+    \item   certification \only<2->{???}
+    \item   dissemination  \only<2->{repository, social media, print on demand}
+    \item   archiving    \only<2->{Zenodo}
+  \end{enumerate}
+} 
+
+\frame{
+\includegraphics[height=.2\textheight]{facebook.png}
+}
+
+\frame{
+\includegraphics[height=.2\textheight]{cumulativeall10000.png}
+}
+
+\frame{
+\frametitle{Certification of scientific quality is outsourced to commercial entities}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Universities want to hire good researchers  
+    \item The amount of research produced by all candidates combined is too much for the committee to read
+    \item The committee use some proxy to judge quality: the brand of the publisher of the journal 
+    \item good publishers, regular publishers, bad publishers, ...
+    \item NB: quality selection is done by the editors, not by the publishers
+    \item the process is more or less the same for all publishers
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Brands}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item One a publisher is perceived as prestigious, a self-reinforcing loop starts: 
+    \begin{itemize}
+      \item researchers present better manuscripts to the publisher 
+      \item the publisher has more material to choose from 
+      \item the average quality of the publisher gets better 
+      \item prestige goes up
+      \item start over 
+    \end{itemize}
+    \item Crucially, there is not necessarily more work being done by prestigious publishers 
+    \item But since the brand is owned by a company, they increase the prices beyond proportion
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Proofs by a prestigious publisher}
+  \includegraphics[height=\textheight]{dg.png}
+  \includegraphics[height=.2\textheight]{semf.png}
+  }
+
+\frame{
+\frametitle{Errors and Journal Impact Factor}
+\includegraphics[height=\textheight]{jif.png}
+}  
+  
+\frame{
+\frametitle{It's the employability, stupid}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Being employed as a professor between 40 and 65 years gives you 3\,000\,000 EUR income. 
+    \item It is economically rational for each individual researcher to spend 5\,000+ EUR for an article in Nature if this improves your chances to become a professor
+    \item It is economically rational for Nature to charge as much as they can since they are a public company
+    \item But this sucks money out of research, which could better be used to improve teaching, fund postdocs or develop vaccines. 
+    \item Two solutions:
+    \begin{itemize}
+      \item decouple research evaluation from the place of publication 
+      \item move the brands from the for-profit-sphere to the non-profit-sphere 
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Recommendations for financial aspects}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Choose a scholar-led community-owned publisher 
+    \item             do not exacerbate libaries' burden
+   \item          lobby agains stupid criteria of research assesement like the Journal Impact Factor
+  \end{itemize}
+}
+
+
+
+            
+\section{Political aspects}
+\frame{
+\frametitle{Political aspects}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+}
+
+\frame{
+\frametitle{Political initiatives}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  DEAL: Germany negotiates national OA licensing programmes with big publishers 
+    \item  Plan S: Research funders will require 100\% Open Access from projects they fund 
+    \begin{itemize}
+    \item There are indications that both actions probably lead to an increase in authory-pays publishing fees
+    \end{itemize}
+    \item Sci-Hub and LibGen allow you to access paywalled content and are probably more successful an instrument than all political initiatives 
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Pollitical miscellanea}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  Swiss National Fund pays generous processing charges 
+    \item Austrian FWF is more on the repository side 
+    \item The San Francisco Declaration on Research Assessment (DORA) calls for a move away from journals/publishers as proxies for research evaluation. 
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Choice of publisher according to JS Caux}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Gold: Content is free for readers  
+    \item Platinum: as above, and free for authors 
+    \item Palladium: As above, and all financial statements are disclosed\\\pause
+    \item Iron: pay-to-read\pause
+    \item Lead: editorial and financial aspects are not hermetically decoupled
+  \end{itemize}
+}
+            
+\frame{
+\frametitle{Wrap-up: recommendations for sustainable book publications}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item separate data, code, and text 
+    \item use a versioning system
+    \item publish all your data in appropriate repositories
+    \item use preprint servers
+    \item use the CC-0 license for data and the CC-BY license for text
+    \item do not sign away your copyright
+    \item care for your discipline, go for scholar-led community-owned publishers
+  \end{itemize}
+}
+    
+%\setcounter{framenumber}{\thelastpagemainpart}
+\end{document}
