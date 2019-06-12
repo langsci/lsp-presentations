@@ -1,0 +1,4 @@
+\beamer@sectionintoc {1}{Linguistics}{3}{0}{1}
+\beamer@sectionintoc {2}{Language Science Press}{5}{0}{2}
+\beamer@sectionintoc {3}{NERD and linguistics}{8}{0}{3}
+\beamer@sectionintoc {4}{Testing NERD}{21}{0}{4}

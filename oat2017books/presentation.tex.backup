@@ -1,0 +1,249 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{Community-basierte Verlagsformen}
+% \institute{FU Berlin}
+\author[LangSci]{Sebastian Nordhoff}
+
+
+
+\begin{document}
+\lspbeamertitle
+
+
+\section{Language Science Press}
+\frame{
+\frametitle{Language Science Press}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item linguistische Monographien und Sammelbände als CC-BY
+    \item  aktiv seit 2014 (FU Berlin), seit 2017 HU Berlin
+    \item  20 Reihen,  160 Herausgeber weltweit 
+    \item 40 Bücher, 300 Interessensbekundungen
+    \item  911 \textit{public supporters} + 305 ``anonyme Unterstützer''
+    \item Plan ab 2018: 30 Bücher pro Jahr
+  \end{itemize}
+}
+
+
+
+\frame{ 
+\frametitle{Was wir publizieren:}
+\begin{tabular}{ll}
+\includegraphics[width=.35\textwidth]{gutman.png}& 
+\parbox{.65\textwidth}{
+\fbox{
+\includegraphics[width=.6\textwidth]{nena.png}  
+}
+ 
+\vspace*{6cm}  
+}
+\end{tabular}
+}
+
+
+\frame{ 
+\frametitle{Was wir publizieren:}
+\begin{tabular}{ll}
+\includegraphics[width=.35\textwidth]{nerbonne.png}& 
+\parbox{.65\textwidth}{
+\fbox{
+\includegraphics[width=.6\textwidth]{picklmap.png}  
+}
+ 
+\vspace*{53mm}  
+}
+\end{tabular}
+}
+
+ 
+
+
+\frame{ 
+\frametitle{Was wir publizieren:} 
+\begin{tabular}{ll}
+\includegraphics[width=.35\textwidth]{mueller.png}& 
+\parbox{.65\textwidth}{
+\fbox{
+\includegraphics[width=.6\textwidth]{lfg.png}  
+}
+ 
+\vspace*{50mm}  
+}
+\end{tabular}
+}
+
+
+\section{Prinzipien}
+\subsection{Prinzip der Offenheit}
+
+\frame{
+\frametitle{Prinzip der Offenheit}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  Nur FLOSS, nur CC-BY, transparente Kalkulationen
+  \end{itemize}
+  
+  \includegraphics[width=3cm]{omp.png} 
+  \includegraphics[width=3.5cm]{github.png} 
+  \includegraphics[width=4cm]{paperhive.png}
+  
+  \includegraphics[width=3cm]{overleaf.png}
+  \includegraphics[width=3cm]{ctan.png}
+  \includegraphics[width=3cm]{oapen.png}
+  \includegraphics[width=3cm]{doab.png}
+}
+ 
+
+\subsection{Prinzip der Community}
+weltweit
+own the brands
+share the code
+    structure
+        cls Brazil/Nerbonne
+    content
+        Vowel chart
+        syntactic tree
+        dictionary entries
+    stats
+        downloads
+        reviewing time
+        rejection rates
+    costs and calculations
+
+
+\subsection{Prinzip der Schlankheit}    
+
+\frame{
+\frametitle{Prinzip der Schlankheit}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item   keine Lagerhaltung
+    \item   kein Vertrieb
+    \item   keine IT für Paywalls, Registrierung
+    \item   keine Buchstände
+    \item   kein Marketing 
+    \item   keine Autorenverträge 
+    \item keine Legacy-Software
+    \item keine Tantiemen
+  \end{itemize}
+}
+
+
+\section{Workflow}    
+
+\frame{
+\frametitle{Workflow}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  
+    \item 
+  \end{itemize}
+  stages
+    submission
+    (open) peer review
+    revision
+    conversion
+    (community) proofreading
+    typesetting
+    publication
+    further editions
+    
+}
+
+
+\frame{
+\frametitle{Voraussetzungen}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  
+    \item 
+  \end{itemize}
+  Voraussetzungen
+      no commercial interest
+      community building
+      vorhersagbar
+      überschaubar
+      Anerkennungskultur
+      "geht nur, wenn man nicht den Plan hat, mit der Exklusivität der Werke Geld zu machen, weil ja z.B. schon x Korrekturleser das gelesen haben"   
+}
+
+
+
+\frame{
+\frametitle{Diskussion}
+
+Ist es überhaupt ein Buch? 
+Ist es überhaupt 1 Buch? 
+Finanzierung 
+
+}
+
+    
+    
+
+ 
+    
+\frame{
+\frametitle{Frametitle2}
+
+\begin{columns}
+  \begin{column}{6cm}
+%     \includegraphics{./path/to/graphicsfile}
+  \end{column}
+  \begin{column}{3cm}
+    \begin{itemize}
+      \item    
+    \end{itemize}
+  \end{column}
+\end{columns}
+
+}
+
+\frame{
+\frametitle{Frametitle3}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  
+    \item 
+  \end{itemize}
+}
+
+%\setcounter{framenumber}{\thelastpagemainpart}
+\end{document}

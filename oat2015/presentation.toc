@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Einleitung}{2}{0}{1}
+\beamer@sectionintoc {2}{Kosten}{3}{0}{2}
+\beamer@sectionintoc {3}{Stakeholder: auf der Suche nach dem `Kunden'}{6}{0}{3}
+\beamer@sectionintoc {4}{Wertversprechen}{13}{0}{4}
+\beamer@sectionintoc {5}{Einnahmearten}{20}{0}{5}
+\beamer@sectionintoc {6}{Einnahmeverteilung}{35}{0}{6}
+\beamer@sectionintoc {7}{Rechtliches}{42}{0}{7}
+\beamer@sectionintoc {8}{Nachhaltigkeit}{42}{0}{8}

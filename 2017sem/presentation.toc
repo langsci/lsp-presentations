@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.36pt}
+\beamer@sectionintoc {1}{Books}{2}{0}{1}
+\beamer@sectionintoc {2}{Community}{6}{0}{2}
+\beamer@sectionintoc {3}{IT}{9}{0}{3}
+\beamer@sectionintoc {4}{Outreach}{10}{0}{4}
+\beamer@sectionintoc {5}{Funding}{11}{0}{5}
+\beamer@sectionintoc {6}{Today}{12}{0}{6}

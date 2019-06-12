@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Was ist OMP?}{2}{0}{1}
+\beamer@sectionintoc {2}{Was leistet OMP?}{6}{0}{2}
+\beamer@sectionintoc {3}{Grenzen von OMP}{11}{0}{3}
+\beamer@sectionintoc {4}{Weiterentwicklung von OMP}{15}{0}{4}

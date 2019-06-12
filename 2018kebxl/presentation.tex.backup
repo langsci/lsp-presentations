@@ -1,0 +1,140 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+\title{Author engagement}
+\institute{KE Workshop on Open Access Monographs}
+\date{2018-11-7/8}
+\author[LangSci]{Sebastian Nordhoff}
+
+
+
+\begin{document}
+\lspbeamertitle
+
+\frame{
+\frametitle{Language Science Press}
+\begin{itemize}
+ \item  Language Science Press
+ \item   since 2014
+ \item   82 books 
+ \item   monographs and edited volumes 
+ \item   somewhere around 3-400 authors
+ \item   987 public supporters
+ \item   340 community proofreaders 
+ \item   up to 20.000+ downloads per book
+\end{itemize}
+}
+
+\frame{
+\frametitle{Author engagement}
+\begin{itemize}
+ \item publisher in need of an author 
+ \item author in need of a publisher 
+ \begin{itemize}
+  \item linguists were unhappy with the publishing landscape, so they set up the Glossa journal and Language Science Press for books
+ \end{itemize}
+ \item other fields might have a different culture and a different level of organization
+\end{itemize}
+}
+
+\frame{
+\frametitle{}
+\includegraphics[height=\textheight]{mounce.png}
+}
+
+\frame{
+\frametitle{Community engagement}
+\begin{itemize}
+ \item autonomous series
+ \item initial 7 submissions
+ \item  supporter list 
+ \item  community proofreading 
+ \item  community typesetting 
+ \item  conference ambassadors
+\end{itemize}
+}
+
+ \frame{
+\frametitle{Branding}
+\begin{enumerate}
+ \item \textbf{community-based} 
+ \item \textbf{open} (Open Access, Open Source, Open Data, ...)
+ \item \textbf{lean} (no paywalls, no warehousing, no rights management, no royalties, no marketing ...)
+\end{enumerate}
+}
+ 
+\frame{
+\frametitle{Prestige}
+\begin{itemize}
+ \item by big names
+ \item by crowd attracted by the crowd
+ \item by quality 
+ \item by innovation
+\end{itemize}
+} 
+
+\frame{
+\frametitle{Organizational issues}
+\begin{itemize}
+ \item Collaborative approach 
+ \item ``continuous integration'' instead of first proofs/final proofs 
+ \item GitHub/Overleaf/PaperHive/docloop
+\end{itemize}
+}
+ 
+\frame{
+\frametitle{Author concerns}
+\begin{itemize}
+ \item Is there a printed copy? 
+ \item does it have an ISBN? 
+ \item {\LaTeX} Aaaaaarghhhh!!!!?!
+ \item do you accept MS Word? 
+ \item is it indexed in SCOPUS? (Eastern Europe)
+ \item do you do festschrifts?
+ \item why can't I submit a sloppy bibliography? 
+\end{itemize}
+\begin{itemize}
+ \item Open Access does not have to be advocated for in linguistics, it is the authors who demand it.
+\end{itemize}
+
+} 
+
+% Which challenges around engaging with authors/author concerns have you experienced and can you describe some of the tactics you have used at Language Science Press to address these.
+
+%\setcounter{framenumber}{\thelastpagemainpart}
+\end{document}

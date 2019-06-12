@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Hintergrund}{3}{0}{1}
+\beamer@sectionintoc {2}{Prinzipien}{10}{0}{2}
+\beamer@sectionintoc {3}{Prestige}{13}{0}{3}
+\beamer@sectionintoc {4}{Finanzierung}{21}{0}{4}
+\beamer@sectionintoc {5}{Übertragbarkeit}{23}{0}{5}
+\beamer@sectionintoc {6}{Diskussion}{24}{0}{6}

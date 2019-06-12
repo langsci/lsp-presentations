@@ -1,0 +1,67 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{Language Science Press}
+% \institute{FU Berlin}
+\author[S. Nordhoff]{Sebastian Nordhoff}
+
+
+
+\begin{document}
+\lspbeamertitle
+  
+
+
+
+\frame{
+    \frametitle{\mbox{Linked data in linguistic typology}}
+    \includegraphics[height=3cm]{./springer}
+    \parbox[b]{5.3cm}{
+    \begin{itemize}
+      \item[$\leftarrow$]\textit{Linked Data in Linguistics}\\~ 
+      \item[]Language Science Press $\rightarrow$\\~
+      \item[]Glottolog $\downarrow$
+    \end{itemize}
+
+    }
+    \includegraphics[height=3cm]{./sidl}
+\includegraphics[width=13cm]{./glottolog}
+}
+%\setcounter{framenumber}{\thelastpagemainpart}
+\end{document}

@@ -1,0 +1,194 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{Titel}
+% \institute{FU Berlin}
+\author[LangSci]{Author Name}
+
+
+
+\begin{document}
+\lspbeamertitle
+
+
+\section{Published works} 
+\frame{
+\frametitle{Published works} 
+bisang.png
+bowern.png
+brindle.png 
+enfield.png
+friesen.png
+kieviet.png
+klamer.png
+kluge.png 
+menzel.png
+michaud.png
+payne.png
+persohn.png
+roettger.png
+roussarie.png
+santos.png
+schaefer.png
+schrock.png 
+shimelman.png
+song.png
+stenzel.png
+tc3ii.png
+tc3i.png
+trips.png
+}
+
+\frame{
+\frametitle{}
+\begin{itemize}
+ \item Expressions of interest in 2017: 80 (2016: 73)
+ \item duration of publication
+ \begin{itemize}
+  \item reviewing: 91 days median, 253 days max
+  \item submission$\to$publication: 244d median, 1145d max
+ \end{itemize}
+\end{itemize}
+}
+
+\frame{
+\frametitle{Community}
+\includegraphics{WORLDMAPDOTSdots.png}
+\begin{itemize}
+ \item well distributed
+ \item not all equally responsive
+ \item 1269 OMP users, 916 supporters, 1297 Twitter followers, 1324 Facebook followers
+\end{itemize}
+}
+
+\frame{
+\frametitle{Downloads since 2014}
+\begin{itemize}
+ \item total edited volumes: 61825
+ \item total monographs: 89340
+ \item Tonal placement in Tashlhiyt 178 $\leftrightarrow$ The future of dialects 20913
+\end{itemize}
+}
+
+\frame{
+\frametitle{Print}
+\begin{itemize}
+ \item change of service provider from CreateSpace to BoD
+ \item worldwide, softcover, cheap, easier handling, no customs issues 
+\end{itemize}
+}
+
+\frame{
+\frametitle{IT}
+\begin{itemize}
+ \item Zenodo used as a DOI provider 
+ \item Paperhive now used for all proofreading 
+ \begin{itemize}
+  \item  now regularly over 1000 comments in proofreading
+  \item   unbalance between typology++ and the rest
+\end{itemize}
+ \item all books directly linked from LangSci site
+ \item docloop
+\end{itemize}
+}
+ 
+\frame{
+\frametitle{Conferences/workshops}
+\begin{itemize}
+ \item Open-Access-Tage Dresden
+ \item 
+ \item 
+ \item 
+\end{itemize}
+} 
+     
+    
+  
+     
+    OAT
+      prominently featured
+    FFM
+    Marburg
+    Cologne
+    DFG
+    BMBF
+  Mitarbeiter
+    Sebastian and Felix
+  funding
+    KU
+      69/100
+    BPC 
+      1*1000 EUR, 1*1500 EUR
+    print margin
+      3,500 EUR
+
+
+
+
+
+
+\section{another section}
+
+\frame{
+\frametitle{Frametitle2}
+
+\begin{columns}
+  \begin{column}{6cm}
+%     \includegraphics{./path/to/graphicsfile}
+  \end{column}
+  \begin{column}{3cm}
+    \begin{itemize}
+      \item    
+    \end{itemize}
+  \end{column}
+\end{columns}
+
+}
+
+\frame{
+\frametitle{Frametitle3}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  
+    \item 
+  \end{itemize}
+}
+
+%\setcounter{framenumber}{\thelastpagemainpart}
+\end{document}

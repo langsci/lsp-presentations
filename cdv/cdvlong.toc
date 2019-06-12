@@ -1,0 +1,7 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Language Science Press}{2}{0}{1}
+\beamer@sectionintoc {2}{Cross-Linguistic Linked Data}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{Typologische Datenbanken}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{Lexikalische Datenbanken}{6}{0}{2}
+\beamer@subsectionintoc {2}{3}{Literaturdatenbank}{8}{0}{2}
+\beamer@sectionintoc {3}{Zusammenfassung}{9}{0}{3}

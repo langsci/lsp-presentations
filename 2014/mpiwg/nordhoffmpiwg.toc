@@ -1,0 +1,9 @@
+\beamer@endinputifotherversion {3.33pt}
+\beamer@sectionintoc {1}{Einleitung}{2}{0}{1}
+\beamer@sectionintoc {2}{Prinzipien}{7}{0}{2}
+\beamer@sectionintoc {3}{Umsetzung}{8}{0}{3}
+\beamer@subsectionintoc {3}{1}{Prestige}{8}{0}{3}
+\beamer@subsectionintoc {3}{2}{Rückhalt in der Community}{15}{0}{3}
+\beamer@subsectionintoc {3}{3}{Betriebswirtschaftliche Fundiertheit}{17}{0}{3}
+\beamer@sectionintoc {4}{Annotation}{21}{0}{4}
+\beamer@sectionintoc {5}{Schluss}{27}{0}{5}

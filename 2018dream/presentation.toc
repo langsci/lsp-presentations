@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{Use case}{2}{0}{1}
+\beamer@sectionintoc {2}{Background}{3}{0}{2}
+\beamer@sectionintoc {3}{Walkthrough}{4}{0}{3}
+\beamer@sectionintoc {4}{Expansion}{24}{0}{4}
+\beamer@sectionintoc {5}{Technical background}{25}{0}{5}
+\beamer@sectionintoc {6}{Conceptual issues}{26}{0}{6}
