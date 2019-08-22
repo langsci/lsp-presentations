@@ -1,0 +1,2 @@
+\beamer@sectionintoc {1}{Reviewer fatigue}{3}{0}{1}
+\beamer@sectionintoc {2}{Reviewer recognition}{4}{0}{2}
