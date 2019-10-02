@@ -66,18 +66,18 @@
       \item Open protocols
       \item Open bookkeeping 
       \item Open peer review
-      \item Community proofreading
+      \item \textbf{Community proofreading}
     \end{itemize}    
   \end{itemize}
 }
 
 \section{Community}
 \frame{
-\frametitle{\mbox{Bibliodiversität (Pierre Mounier)}}
+\frametitle{Bibliodiversität}
 \begin{columns}
-  \begin{column}{3cm}
-  \includegraphics[height=.6\textheight]{mounier.jpg}
-  \end{column}
+%   \begin{column}{3cm}
+%   \includegraphics[height=.6\textheight]{mounier.jpg}
+%   \end{column}
 \begin{column}{7cm}
   \begin{itemize}
     \item Forschende nehmen je nach Uhrzeit ganz verschiedene Rollen ein
@@ -168,7 +168,7 @@
 \frametitle{Westedt (2018)}
 \begin{itemize}
   \item 
-Westedt hat eine Stichprobe von Kapiteln hinsichtlich der Kommentare analysiert:
+Westedt hat in ihrer BA-Arbeit eine Stichprobe von Kapiteln hinsichtlich der Kommentare analysiert:
 \end{itemize}
 
 \centering 
@@ -192,9 +192,10 @@ Sonstiges&3.41\\
 \frametitle{Quantitative Analyse}
 %   \includegraphics[height=.6\textheight]{./path/to/graphicsfile}
   \begin{itemize}
+    \item nach der qualitativen Analyse Westedts jetzt eine quantitative Analyse
     \item  52 Bücher (2016--2018)
     \item Paperhive-Kommentare wurden per API in eine Datenbank überführt
-    \item 19\,004 Seiten 
+    \item 19\,004 pdf-Seiten
     \item 43\,370 Kommentare
     \item Datenbasis verfügbar auf \url{https://doi.org/10.5281/zenodo.3063004}
   \end{itemize}
@@ -241,9 +242,14 @@ Sonstiges&3.41\\
 }
 
 \section{Hypothesen}
-\subsection{Typologie}
 \frame{
-\frametitle{Hypothesen zu Proofreadern}
+\frametitle{Forschungsfragen an die Daten}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Community Proofreading liefert einen Datensatz an Kommentaren von beträchtlicher Größe und Güte
+    \item  Anhand des Datensatzes können verschiedene Hypothesen getestet werden
+  \end{itemize}
+  
 %   \includegraphics[height=.6\textheight]{./path/to/graphicsfile}
   \begin{enumerate}
     \item \textbf{Proofreader fallen in zwei Klassen: Typ 1 konzentriert sich auf kleine Details; Typ 2 sieht das Werk als Ganzes}
@@ -306,7 +312,7 @@ Typ 1: viele Kommentare, dafür kurz (``comma missing'')
     \item Hypothese \#1 bestätigt
     \begin{itemize}
       \item Proofreader mit mehr Kommentaren haben kürzere Kommentare
-      \item Proofreaders with längeren Kommentaren haben weniger Kommentare
+      \item Proofreader mit längeren Kommentaren haben weniger Kommentare
     \end{itemize}
   \end{itemize}
 }
@@ -377,7 +383,8 @@ Typ 1: viele Kommentare, dafür kurz (``comma missing'')
 \section{Das Ökosystem}
 \frame{
 \frametitle{Nehmen Forschende in der Tat verschiedene Rollen an?}
-%   \includegraphics[height=.6\textheight]{./path/to/graphicsfile}
+\begin{columns}
+  \begin{column}{5cm}
   \begin{itemize}
     \item  908 Forschende mit Rolle ``author'' bei Language Science Press
     \item 228 Forschende mit Rolle ``proofreader'' 
@@ -389,6 +396,11 @@ Typ 1: viele Kommentare, dafür kurz (``comma missing'')
       \item Bindung an den Verlag
     \end{itemize}
   \end{itemize}
+  \end{column}
+  \begin{column}{5cm}
+  \includegraphics[width=\textwidth]{exchange.png}
+  \end{column}
+\end{columns}
 }
 
   
@@ -401,6 +413,8 @@ Typ 1: viele Kommentare, dafür kurz (``comma missing'')
 Community proofreading ist eine neuer Weg zur Einbindung der Community
     \item 
 nur möglich bei OA
+\item
+nur möglich bei Fachcommunitys (nicht bei Uni-Verlagen)
 \item 
 Implementation für 50+ Bücher und 200+ Teilnehmer getestet
 \item 
@@ -416,7 +430,7 @@ Nebenprodukte können für weitere Forschungsfragestellungen verwendet werden
 \frametitle{Fragen}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item Welche anderen Fragestellungen könnte man anhand dieser Daten beantworten
+    \item Welche anderen Fragestellungen könnte man anhand dieser Daten beantworten?
     \item Welche anderen wissenschaftlichen Disziplinen könnten interessiert sein? 
   \end{itemize}
 }
