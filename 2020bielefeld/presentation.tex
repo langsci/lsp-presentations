@@ -1,0 +1,145 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{Aufgaben im Verlagswesen und der (nicht)kommerzielle Sektor}
+% \institute{FU Berlin}
+\author[LangSci]{Felix Kopecky}
+
+
+
+\begin{document}
+\lspbeamertitle
+
+\frame{
+\frametitle{Arbeitsschritte in der Buchproduktion}
+\begin{enumerate}
+  \item konzipieren
+  \item forschen
+  \item schreiben
+  \item formatieren
+  \item begutachten 
+  %
+  \item Korrektorat
+  \item Satz
+  \item Druck 
+  \item Vertrieb
+  \item Archivierung
+  \item Rechnungslegung 
+  \item Steuer 
+  \item Marketing 
+  \end{enumerate}
+}
+
+\frame{
+\frametitle{Verteilung der Arbeitsschritte auf den akademischen und den privatwirtschaftlichen Bereich}
+Verben in der letzten Folie = derzeit akademisch
+
+Nomina in der letzten Folie = derzeit privatwirtschaftlich
+
+Verben in der letzten Folie = zentrale wissenschaftliche Erkenntnisleistung
+
+Nomina in der letzten Folie = Hilfstätigkeiten. 
+}
+
+\frame{
+\frametitle{Arbeitsteilung ist sinnvoll}
+Forscherinnen wollen gar nicht die beste Tinte aussuchen. 
+
+Verlagsmitarbeiterinnen wollen gar nicht ins Labor.
+}
+
+
+\frame{
+\frametitle{Zentraler strategischer Punkt: Substituierbarkeit}
+Die Wissenschaft sollte nur dann Arbeitsschritte an Dienstleister auslagern, wenn diese \textbf{substituierbar} sind. 
+
+DHL ist zu langsam? Vertrieb über Hermes!
+
+Epubli druckt schlecht? Wechsel zu BoD!
+
+Fast alles ist substituierbar, NUR DIE MARKE NICHT. 
+
+Science ist zu teuer? Publizier beim Universitätsverlag Neustadt!
+}
+
+
+\frame{
+\frametitle{It's the brand economy, stupid}
+Wissenschaftliche Publikationsprojekte sind gut beraten, Arbeitsschritte an spezialisierte Unternehmen zu vergeben. 
+
+Was auf keinen Fall aus der Hand gegeben werden darf, ist die Marke. 
+
+Das Prestige der Marke wird wesentlich durch die zentrale wissenschaftliche Erkenntnisleistung bestimmt. 
+
+Die Qualität der Tinte oder die Geschwindigkeit der Auslieferung sind im Vergleich dazu unwichtig. Niemand reicht einen Artikel bei einem Verlag ein, weil dieser so schöne Tinte hat.
+
+[Bild von Bill Clinton]
+
+}
+
+\frame{
+\frametitle{It's the brand economy, stupid}
+Verlage verkaufen Prestige, das als symbolisches Kapital auf CVs in Lebenseinkommen umgewandelt werden kann 
+
+Je höher der Zuwachs an versprochenem Lebenseinkommen, desto höher der Preis, den der Verlag aufrufen kann
+
+Das Prestige rührt zu einem großen Teil aus der zentralen wissenschaftlichen Erkenntnisleistung
+Nur ein kleiner Teil des Prestiges rührt aus Hilfstätigkeiten
+
+Aber: die Früchte des Prestiges (\$\$\$) werden derzeit nicht von der Wissenschaft geerntet, sondern von den Hilfstätigkeiten-Dienstleistern (aka Verlage). 
+
+Diese sabotieren Verbesserungen im Sinne der Wissenschaft (Lingua/Glossa)
+}
+
+\frame{
+\frametitle{Hinweise für Community-Based-Projekte}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Dienstleister sind gut 
+    \item Nicht das Rad neu erfinden
+    \item Fragen Sie jemanden, der sich damit auskennt
+    \item Lean Startup/Zero Stack
+    \item Lord, we gotta keep the brand!
+    \item Lord, we gotta keep the brand!
+    \item Lord, we gotta keep the brand!
+  \end{itemize}
+}
+ 
+%\setcounter{framenumber}{\thelastpagemainpart}
+\end{document}
