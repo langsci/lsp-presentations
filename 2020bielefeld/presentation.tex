@@ -10,10 +10,10 @@
 \def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
 
 
-\usepackage{xspace,multicol}
+\usepackage{xspace,multicol,booktabs}
 \newcommand{\latex}{\LaTeX\xspace}
 \usepackage{tikz}
-
+\usetikzlibrary{graphs,arrows,arrows.meta}
 
 \newcounter{lastpagemainpart}
 \footnotesep0pt
@@ -38,7 +38,7 @@
 
 
 \title{Aufgaben im Verlagswesen und der (nicht)kommerzielle Sektor}
-% \institute{FU Berlin}
+\institute{Language Science Press}
 \author[LangSci]{Felix Kopecky}
 
 
@@ -46,36 +46,83 @@
 \begin{document}
 \lspbeamertitle
 
-\frame{
-\frametitle{Arbeitsschritte in der Buchproduktion}
-\begin{enumerate}
-  \item konzipieren
-  \item forschen
-  \item schreiben
-  \item formatieren
-  \item begutachten 
-  %
-  \item Korrektorat
-  \item Satz
-  \item Druck 
-  \item Vertrieb
-  \item Archivierung
-  \item Rechnungslegung 
-  \item Steuer 
-  \item Marketing 
-  \end{enumerate}
+\frame{\frametitle{Über uns}
+\begin{itemize}
+ \item aktiv seit 2014
+ \begin{itemize}
+   \item 2014--2016 FU Berlin 
+   \item 2016--2018 HU Berlin
+   \item 2019--gemeinnützige UG
+ \end{itemize}
+
+ \item Monographien und Sammelbände in der Linguistik
+ \item alle Bücher Open Access (CC-BY 4.0)
+ \item Stand heute 102 Bücher veröffentlicht
+ \item Ziel: 30 Bücher/Jahr
+ \item 25 Reihen; 1017 Supporter; 350 Community Proofreader
+ \item Neben Linguisten und Programmierinnen auch eine Betriebswirtin in der Anfangsphase
+ \item Finanziert durch Konsortial-Modell von Bibliotheken und Wissenschaftlichen Gesellschaften
+\end{itemize}
+}
+
+\frame{\frametitle{Wer ist Language Science Press?}
+\centering\begin{tikzpicture}
+\node at (0:0mm) {\includegraphics[scale=.75]{langsci_logo_nocolor.pdf}};
+\node at (0:3cm) {Authors};
+\node at (45:3cm) {Proofreaders};
+\node at (90:3cm) {Typesetters};
+\node at (135:3cm) {Coordinators};
+\node at (180:3cm) {Reviewers};
+\node at (240:3cm) {Series editors};
+\node at (300:3cm) {Press directors};
+\end{tikzpicture}
 }
 
 \frame{
-\frametitle{Verteilung der Arbeitsschritte auf den akademischen und den privatwirtschaftlichen Bereich}
-Verben in der letzten Folie = derzeit akademisch
-
-Nomina in der letzten Folie = derzeit privatwirtschaftlich
-
-Verben in der letzten Folie = zentrale wissenschaftliche Erkenntnisleistung
-
-Nomina in der letzten Folie = Hilfstätigkeiten. 
+\frametitle{Arbeitsteilung bisher}
+\centering
+\begin{tabular}{ll}
+\bfseries Wiss. Community & \bfseries Ext. Verlage\\\midrule
+  Konzipieren   &    Korrektorat       \\
+  Forschen      &    Satz              \\
+  Schreiben     &    Druck             \\
+  Formatieren   &    Vertrieb          \\
+  Begutachten   &    Archivierung      \\
+                &    Rechnungslegung   \\
+                &    Steuer            \\
+                &    Marketing         \\
+                &    (mit ext. Dienstl.) 
+\end{tabular}
 }
+
+\frame{
+\frametitle{Arbeitsteilung neu}
+\centering
+\begin{tabular}{ll}
+\multicolumn{2}{c}{\bfseries Wiss. Community}\\\midrule
+  Konzipieren   &    Korrektorat       \\
+  Forschen      &    Satz              \\
+  Schreiben     &    Druck             \\
+  Formatieren   &    Vertrieb          \\
+  Begutachten   &    Archivierung      \\
+                &    Rechnungslegung   \\
+                &    Steuer            \\
+                &    Marketing         \\
+                &    (mit ext. Dienstl.)
+\end{tabular}
+}
+
+
+% \frame{
+% \frametitle{Verteilung der Arbeitsschritte auf den akademischen und den privatwirtschaftlichen Bereich}
+% Verben in der letzten Folie = derzeit akademisch
+% 
+% Nomina in der letzten Folie = derzeit privatwirtschaftlich
+% 
+% Verben in der letzten Folie = zentrale wissenschaftliche Erkenntnisleistung
+% 
+% Nomina in der letzten Folie = Hilfstätigkeiten. 
+% }
 
 \frame{
 \frametitle{Arbeitsteilung ist sinnvoll}
@@ -86,16 +133,21 @@ Verlagsmitarbeiterinnen wollen gar nicht ins Labor.
 
 
 \frame{
-\frametitle{Zentraler strategischer Punkt: Substituierbarkeit}
-Die Wissenschaft sollte nur dann Arbeitsschritte an Dienstleister auslagern, wenn diese \textbf{substituierbar} sind. 
+\frametitle{Stragie: Substituierbarkeit}
+\begin{block}{Die Wissenschaft sollte nur dann Arbeitsschritte an Dienstleister auslagern, wenn diese \textbf{substituierbar} sind.}
 
-DHL ist zu langsam? Vertrieb über Hermes!
+\begin{itemize}
+\item Vertrieb A ist zu langsam? Vertrieb über B!
+\item Druckerei A druckt schlecht? Wechsel zu B!
+\end{itemize}
+\end{block}
 
-Epubli druckt schlecht? Wechsel zu BoD!
+\begin{block}{Fast alles ist substituierbar, \textbf{nur die Marke nicht}.}
 
-Fast alles ist substituierbar, NUR DIE MARKE NICHT. 
-
-Science ist zu teuer? Publizier beim Universitätsverlag Neustadt!
+\begin{itemize}
+\item \emph{Science} ist zu teuer? Publizier bei \emph{The Local Journal of a Single Research Group}!
+\end{itemize}
+\end{block}
 }
 
 
