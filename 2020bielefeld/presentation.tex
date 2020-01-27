@@ -1,51 +1,18 @@
-\documentclass[handout]{beamer}
-
-\usepackage{fontspec} 
-% \usepackage{lsp-makros}
+\documentclass{beamer}
 \useoutertheme{lsp}
 
-\usepackage{lsptitle}
-
-\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
-\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
-
-
-\usepackage{xspace,multicol,booktabs}
+\usepackage{fontspec,lsptitle,fontawesome,xspace,multicol,booktabs,tikz,eurosym}
 \usepackage[normalem]{ulem}
-\newcommand{\latex}{\LaTeX\xspace}
-\usepackage{tikz}
 \usetikzlibrary{graphs,arrows,arrows.meta}
 
-\newcounter{lastpagemainpart}
-\footnotesep0pt
-\renewcommand{\footnoterule}{}
-\usefootnotetemplate{
-  \noindent
-  \insertfootnotemark\insertfootnotetext}
-
-\let\beamerfn=\footnote
-\renewcommand{\footnote}[1]{%
-\let\oldfnsize=\footnotesize%
-\let\footnotesize=\tiny%
-\beamerfn<\thebeamerpauses->{#1}%
-\let\footnotesize=\oldfnsize}
-
-
-\date{\today}
-
-\usepackage{eurosym}  
- 
-\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
-
+\date{28. Januar 2020}
 
 \title{Aufgaben im Verlagswesen und der (nicht)kommerzielle Sektor}
-\institute{Language Science Press}
 \author[LangSci]{Felix Kopecky}
-
-
 
 \begin{document}
 \lspbeamertitle
+\section{Motivation}
 
 \frame{\frametitle{Über uns}
 \begin{itemize}
@@ -57,7 +24,7 @@
  \end{itemize}
 
  \item Monographien und Sammelbände in der Linguistik
- \item alle Bücher Diamond Open Access (CC-BY 4.0) (\sout{APC})
+ \item alle Bücher Diamond Open Access (CC-BY 4.0) (keine BPC)
  \item Stand heute 114 Bücher veröffentlicht
  \item Ziel: 30 Bücher/Jahr
  \item 25 Reihen; 1017 Supporter; 350 Community Proofreader
@@ -66,7 +33,7 @@
 \end{itemize}
 }
 
-\frame{\frametitle{Wer ist Language Science Press?}
+\frame{\frametitle{\textit{Wer} steckt dahinter?}
 \centering\begin{tikzpicture}
 \node at (0:0mm) {\includegraphics[scale=.75]{langsci_logo_nocolor.pdf}};
 \node at (0:3cm) {Authors};
@@ -79,8 +46,38 @@
 \end{tikzpicture}
 }
 
-\frame{
-\frametitle{Arbeitsteilung bisher}
+\frame{\frametitle{Motivation: Preise}
+\begin{block}{Gedankenexperiment (von Martin Haspelmath)}\vspace{\baselineskip}
+\centering\begin{tabular}{@{}l@{\hspace{4\tabcolsep}}lllll@{}}
+$t_1$& \faBicycle & → & \faWrench & = & €\\
+$t_2$& \faBicycle & → & \faWrench & = & €€\\
+\multicolumn{6}{c}{$\vdots$}\\
+$t_n$& \faBicycle & → & \faWrench & = & €€€€€\\
+\end{tabular}
+\end{block}\vfill
+\begin{block}{Weder \faBicycle\ noch \faWrench\ verändern sich wesentlich.}Ab einem gewissen $t_n$ ist die einzige rationale Reaktion, das \faWrench\ selbst in die Hand zu nehmen!\end{block}
+}
+
+\frame{\frametitle{Motivation: Verfügbarkeit}
+\begin{block}{Zugriff auf ein OA-Buch kann eingeschränkt sein durch:}
+\begin{itemize}
+\item schlecht formatierte, nicht zitierfähige HTML-Darstellung
+\item nur einzelne Kapitel werden als PDF bereitgestellt, nicht das gesamte Buch
+\item verpflichtende, aber sinnlose, Apps zum Lesen der Bücher
+\end{itemize}
+\end{block}
+\begin{block}{WissenschaftlerInnen wollen die Inhalte in \textbf{normalen} Formaten!}
+\begin{itemize}
+\item Buch als PDF
+\item Bibliographie als \texttt{.bib} o.ä.
+\item Rohdaten, ...
+\end{itemize}
+\end{block}
+}
+
+\section{Arbeitsteilung}
+\frame{\frametitle{Arbeitsteilung bisher}
+\begin{block}{}
 \centering
 \begin{tabular}{ll}
 \bfseries Wiss. Community & \bfseries Ext. Dienstl.\\\midrule
@@ -93,10 +90,12 @@
                 &    Steuer            \\
                 &    Marketing         \\
 \end{tabular}
+\end{block}
 }
 
 \frame{
 \frametitle{Arbeitsteilung neu}
+\begin{block}{}
 \centering
 \begin{tabular}{lll}
 \multicolumn{2}{c}{\bfseries Wiss. Community} & \bfseries Ext. Dienstl. \\\midrule
@@ -106,6 +105,7 @@
   Formatieren   &    Steuer            \\
   Begutachten   &    Marketing         \\
 \end{tabular}
+\end{block}
 }
 
 
@@ -120,16 +120,16 @@
 % Nomina in der letzten Folie = Hilfstätigkeiten. 
 % }
 
-\frame{
-\frametitle{Arbeitsteilung ist sinnvoll}
-Forscherinnen wollen gar nicht die beste Tinte aussuchen. 
+\frame{\frametitle{Arbeitsteilung ist sinnvoll}
+\begin{block}{ForscherInnen wollen gar nicht die beste Tinte aussuchen.}\end{block}
 
-Verlagsmitarbeiterinnen wollen gar nicht ins Labor.
+\begin{block}{VerlagsmitarbeiterInnen wollen gar nicht ins Labor.}\end{block}
+
+\begin{block}{Die optimale Arbeitsteilung kann von Sub-community zu Sub-community unterschiedlich sein.}\end{block}
 }
 
-
-\frame{
-\frametitle{Stragie: Substituierbarkeit}
+\section{Die Marke}
+\frame{\frametitle{Stragie: Substituierbarkeit}
 \begin{block}{Die Wissenschaft sollte nur dann Arbeitsschritte an Dienstleister auslagern, wenn diese \textbf{substituierbar} sind.}
 
 \begin{itemize}
@@ -141,53 +141,108 @@ Verlagsmitarbeiterinnen wollen gar nicht ins Labor.
 \begin{block}{Fast alles ist substituierbar, \textbf{nur die Marke nicht}.}
 
 \begin{itemize}
-\item \emph{Science} ist zu teuer? Publizier bei \emph{The Local Journal of a Single Research Group}!
+\item \emph{Nature} ist zu teuer? Publizier bei \emph{Neuruppin University Press}!
 \end{itemize}
 \end{block}
 }
 
 
-\frame{
-\frametitle{It's the brand economy, stupid}
-Wissenschaftliche Publikationsprojekte sind gut beraten, Arbeitsschritte an spezialisierte Unternehmen zu vergeben. 
+% \frame{\frametitle{Die Marke ist wichtig}
+% Wissenschaftliche Publikationsprojekte sind gut beraten, Arbeitsschritte an spezialisierte Unternehmen zu vergeben. 
+% 
+% Was auf keinen Fall aus der Hand gegeben werden darf, ist die Marke. 
+% 
+% Das Prestige der Marke wird wesentlich durch die zentrale wissenschaftliche Erkenntnisleistung bestimmt. 
+% 
+% Die Qualität der Tinte oder die Geschwindigkeit der Auslieferung sind im Vergleich dazu unwichtig. Niemand reicht einen Artikel bei einem Verlag ein, weil dieser so schöne Tinte hat.
+% 
+% [Bild von Bill Clinton]
+% 
+% }
 
-Was auf keinen Fall aus der Hand gegeben werden darf, ist die Marke. 
-
-Das Prestige der Marke wird wesentlich durch die zentrale wissenschaftliche Erkenntnisleistung bestimmt. 
-
-Die Qualität der Tinte oder die Geschwindigkeit der Auslieferung sind im Vergleich dazu unwichtig. Niemand reicht einen Artikel bei einem Verlag ein, weil dieser so schöne Tinte hat.
-
-[Bild von Bill Clinton]
-
+\frame{\frametitle{Die Marke ist wichtig}
+\begin{block}{Das Prestige einer Marke dient oft als Hinweis für die wissenschaftliche Qualität}
+\begin{itemize}
+\item Das mit der Veröffentlichung einhergende Prestige wird im akademischen CV in Karrierechancen umgerechnet
+\item Eine Veröffentlichung mit hoher Prestige verspricht gute Aussichten für Karriere/Anerkennung
+\item Deshalb \textbf<2->{können} Preise für Marken mit sehr hohem Prestige in exorbitante Höhen getrieben werden
+\item<2-> Aber von WissenschaftlerInnen geführte Verlage \textbf<2->{müssen} die Preise \textbf<2->{nicht} in dieser Art erhöhen.
+\end{itemize}
+\end{block}
 }
 
-\frame{
-\frametitle{It's the brand economy, stupid}
-Verlage verkaufen Prestige, das als symbolisches Kapital auf CVs in Lebenseinkommen umgewandelt werden kann 
-
-Je höher der Zuwachs an versprochenem Lebenseinkommen, desto höher der Preis, den der Verlag aufrufen kann
-
-Das Prestige rührt zu einem großen Teil aus der zentralen wissenschaftlichen Erkenntnisleistung
-Nur ein kleiner Teil des Prestiges rührt aus Hilfstätigkeiten
-
-Aber: die Früchte des Prestiges (\$\$\$) werden derzeit nicht von der Wissenschaft geerntet, sondern von den Hilfstätigkeiten-Dienstleistern (aka Verlage). 
-
-Diese sabotieren Verbesserungen im Sinne der Wissenschaft (Lingua/Glossa)
+\frame{\frametitle{Das Prestige nutzen}
+\begin{block}{Die Früchte des Prestiges werden derzeit größtenteils nicht von der Wissenschaft geerntet\pause{} -- obwohl sie von ihr erarbeitet werden.}\end{block}
+\begin{block}{Neue Marken müssen wissenschaftliches Prestige erhalten.}
+\begin{itemize}
+\item Zum Beispiel, indem sie von einer großen Gruppe erfolgreicher WissenachftlerInnen gegründet werden
+\item und/oder kurz nach Gründung viel-beachete Werke ankündigen und veröffentlichen.
+\item Universitäts-Verlage mit Bindung (1) an einen Ort und (2) zu großem Programm haben es hierbei nicht leicht.
+\end{itemize}
+\end{block}
 }
 
-\frame{
-\frametitle{Hinweise für Community-Based-Projekte}
-%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+\section{Fazit}
+\frame{\frametitle{Zurückgeben}
+\begin{block}{\textit{Community-based} heißt für uns auch, der Community etwas zurückzugeben}
+\begin{itemize}
+\item Der \LaTeX-Quellcode unserer Bücher ist öffentlich und kann von anderen als Vorlage benutzt werden.
+\item Wir verbessern kontinuierlich die Schriftart \textit{Libertinus}, zB ergänzen wir fehlende Glyphen oder verbessern das Kerning.
+\item Entwicklung neuer Software-Pakete, zB für den Textsatz von Merkmalstrukturen (AVMs) in \LaTeX.
+\item OpenAire-Projekt \textit{Full disclosure}: Veröffentlichung unseres Business models und Cookbooks.
+\end{itemize}
+\end{block}
+}
+
+% \frame{
+% \frametitle{It's the brand economy, stupid}
+% Verlage verkaufen Prestige, das als symbolisches Kapital auf CVs in Lebenseinkommen umgewandelt werden kann 
+% 
+% Je höher der Zuwachs an versprochenem Lebenseinkommen, desto höher der Preis, den der Verlag aufrufen kann
+% 
+% Das Prestige rührt zu einem großen Teil aus der zentralen wissenschaftlichen Erkenntnisleistung
+% Nur ein kleiner Teil des Prestiges rührt aus Hilfstätigkeiten
+% 
+% Aber: die Früchte des Prestiges (\$\$\$) werden derzeit nicht von der Wissenschaft geerntet, sondern von den Hilfstätigkeiten-Dienstleistern (aka Verlage). 
+% 
+% Diese sabotieren Verbesserungen im Sinne der Wissenschaft (Lingua/Glossa)
+% }
+
+\frame{\frametitle{Fazit}
   \begin{itemize}
     \item Dienstleister sind gut 
-    \item Nicht das Rad neu erfinden
-    \item Fragen Sie jemanden, der sich damit auskennt
-    \item Lean Startup/Zero Stack
-    \item Lord, we gotta keep the brand!
-    \item Lord, we gotta keep the brand!
-    \item Lord, we gotta keep the brand!
+    \item Die Marke und ihr Prestige sind zentral
+    \item Nicht das Rad neu erfinden; fragen Sie jemanden, der sich damit auskennt
+    \item Sinnvoller Fußabdruck/\textit{Lean Startup}
   \end{itemize}
 }
- 
-%\setcounter{framenumber}{\thelastpagemainpart}
+
+\frame{\frametitle{Zurück zu den Preisen}
+\begin{block}{Was preislich mit Community-based-Ansätzen möglich ist:}
+Ein Buch kostet bei Language Science Press im Durchschnitt ca. 3500€. (100--1000+ Seiten).
+\begin{itemize}
+\item Linguistische Veröffentlichungen sind vergleichsweise anspruchsvoll herzustellen.
+\item Sammelbände sind wesentlich aufwändiger und wir haben einige davon.
+\item Bei community-externen Verlagen liegen die OA-BPC eher bei 7000--10000€ und es können Aufpreise schon ab 300 Seiten hinzukommen.
+\item In \textit{Nature} liegen die OA-APC für einen Artikel (1--10 Seiten) bei 4380€.
+\end{itemize}
+\end{block}
+}
+
+\frame{\frametitle{Zurück zu den Preisen}
+\begin{block}{Wie ist es möglich, dass...}
+\begin{itemize}
+\item wir in allen Hinsichten ein gleichwertiges oder sogar besseres Produkt (Textsatz, Zugriff) als community-externe Verlage liefern
+\item und der wissenschaftlichen Community etwas zurückgeben
+\item aber trotzdem viel weniger kosten?
+\end{itemize}
+\end{block}
+}
+
+\frame{\frametitle{OpenAire \textit{Full disclosure}}
+
+\begin{block}{Download unter \url{langsci-press.org/opendata}}
+\hbox{}\hfill\includegraphics[width=.35\textwidth]{businessmodel.png}\hfill\includegraphics[width=.35\textwidth]{cookbook.png}\hfill\hbox{}
+\end{block}
+}
 \end{document}
