@@ -1,7 +1,7 @@
 \documentclass{beamer}
 \useoutertheme{lsp}
 
-\usepackage{fontspec,lsptitle,fontawesome,xspace,multicol,booktabs,tikz,eurosym}
+\usepackage{fontspec,lsptitle,fontawesome,xspace,multicol,booktabs,tikz,eurosym,pgfplots,newtxmath}
 \usepackage[normalem]{ulem}
 \usetikzlibrary{graphs,arrows,arrows.meta}
 
@@ -86,7 +86,7 @@ $t_n$& \faBicycle & → & \faWrench & = & €€€€€\\
   Schreiben     &    Druck             \\
   Formatieren   &    Vertrieb          \\
   Begutachten   &    Archivierung      \\
-                &    Rechnungslegung   \\
+                &    Rechnungslegung  \\
                 &    Steuer            \\
                 &    Marketing         \\
 \end{tabular}
@@ -98,10 +98,10 @@ $t_n$& \faBicycle & → & \faWrench & = & €€€€€\\
 \begin{block}{}
 \centering
 \begin{tabular}{lll}
-\multicolumn{2}{c}{\bfseries Wiss. Community} & \bfseries Ext. Dienstl. \\\midrule
+\bfseries Wiss. Community & \bfseries Community-based publ. & \bfseries Ext. Dienstl. \\\midrule
   Konzipieren   &    Korrektorat     & Druck       \\
   Forschen      &    Satz            & Vertrieb    \\
-  Schreiben     &    Rechnungslegung & Archivierung \\
+  Schreiben     &    (Rechnungslegung) & Archivierung \\
   Formatieren   &    Steuer            \\
   Begutachten   &    Marketing         \\
 \end{tabular}
@@ -129,7 +129,7 @@ $t_n$& \faBicycle & → & \faWrench & = & €€€€€\\
 }
 
 \section{Die Marke}
-\frame{\frametitle{Stragie: Substituierbarkeit}
+\frame{\frametitle{Substituierbarkeit}
 \begin{block}{Die Wissenschaft sollte nur dann Arbeitsschritte an Dienstleister auslagern, wenn diese \textbf{substituierbar} sind.}
 
 \begin{itemize}
@@ -210,7 +210,7 @@ $t_n$& \faBicycle & → & \faWrench & = & €€€€€\\
 
 \frame{\frametitle{Fazit}
   \begin{itemize}
-    \item Dienstleister sind gut 
+    \item Dienstleister sind gut, müssen aber substituierbar sein
     \item Die Marke und ihr Prestige sind zentral
     \item Nicht das Rad neu erfinden; fragen Sie jemanden, der sich damit auskennt
     \item Sinnvoller Fußabdruck/\textit{Lean Startup}
@@ -218,15 +218,35 @@ $t_n$& \faBicycle & → & \faWrench & = & €€€€€\\
 }
 
 \frame{\frametitle{Zurück zu den Preisen}
-\begin{block}{Was preislich mit Community-based-Ansätzen möglich ist:}
-Ein Buch kostet bei Language Science Press im Durchschnitt ca. 3500€. (100--1000+ Seiten).
-\begin{itemize}
-\item Linguistische Veröffentlichungen sind vergleichsweise anspruchsvoll herzustellen.
-\item Sammelbände sind wesentlich aufwändiger und wir haben einige davon.
-\item Bei community-externen Verlagen liegen die OA-BPC eher bei 7000--10000€ und es können Aufpreise schon ab 300 Seiten hinzukommen.
-\item In \textit{Nature} liegen die OA-APC für einen Artikel (1--10 Seiten) bei 4380€.
-\end{itemize}
-\end{block}
+% \begin{block}{Was preislich mit Community-based-Ansätzen möglich ist:}
+% Ein Buch kostet bei Language Science Press im Durchschnitt ca. 3500€. (100--1000+ Seiten).
+% \begin{itemize}
+% \item Linguistische Veröffentlichungen sind vergleichsweise anspruchsvoll herzustellen.
+% \item Sammelbände sind wesentlich aufwändiger und wir haben einige davon.
+% \item Bei community-externen Verlagen liegen die OA-BPC eher bei 7000--10000€ und es können Aufpreise schon ab 300 Seiten hinzukommen.
+% \item In \textit{Nature} liegen die OA-APC für einen Artikel (1--10 Seiten) bei 4380€.
+% \end{itemize}
+% \end{block}
+\centering
+\begin{tikzpicture}
+    \begin{axis}[
+    ybar,
+    ymin=0,
+    disabledatascaling,
+    ylabel=Tausende €/Publikation,
+    xtick={0,1,2},
+    enlarge x limits={0.25},
+    width=.75\linewidth,
+    height=5cm,
+    xticklabels={LSP, \textit{Nature}, Verlage},
+    nodes near coords,
+    axis lines*=left,
+    tickwidth=0pt,,
+    ]
+    \addplot+ [lsDarkBlue,fill=lsMidDarkBlue] coordinates {(0,3.5) (1,4.380) (2,7.000)};
+    \addplot+ [lsDarkBlue,fill=lsMidDarkBlue] coordinates {(2,11.000)};
+    \end{axis}
+\end{tikzpicture}
 }
 
 \frame{\frametitle{Zurück zu den Preisen}
