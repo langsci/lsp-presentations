@@ -1,0 +1,200 @@
+\documentclass[handout]{beamer}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{fontspec} 
+\usepackage{booktabs}
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{Language Science Press business model}
+% \institute{FU Berlin}
+\author[LangSci]{Sebastian Nordhoff}
+
+
+
+\begin{document}
+\lspbeamertitle
+
+\section{Introduction}
+\frame{
+\frametitle{Introduction LangSci Press}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  founded 2014
+    \item Diamond OA
+    \item only books, only linguistics, only CC-BY
+    \item 150 books published (1\,000+ authors)
+    \begin{itemize}
+        \item 1\,187\,932 downloads as of January 2021
+      \item top books at 60k downloads
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Introduction LangSci Press}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  discipline-specific
+    \item international
+    \item values: excellence, transparency, community
+    \item initial grant had a position for an economist
+    \item read the Cookbook for Open Access books (\url{https://zenodo.org/record/1286925}) and our annotated business model (\url{https://zenodo.org/record/1286972})
+  \end{itemize}
+}
+
+\section{Revenue}
+\frame{
+\frametitle{Revenue 2020}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item 113k€ revenue
+    \begin{itemize}
+      \item 105k€ consortial funding via Knowledge Unlatched
+      \item 8k€ varia
+      \begin{itemize}
+        \item  print margin, donations, BPCs
+      \end{itemize}
+    \end{itemize}
+    \item funding 2018-2020:                 105 institutions (1\,000€/year)
+    \item funding 2021-2023:                 115 institutions (1\,000€/year)
+  \end{itemize}
+}
+
+\section{Costs}
+\frame{
+\frametitle{Costs}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  120k€
+    \begin{itemize}
+      \item   90k€ salaries
+      \item   6k€ rent
+      \item   20k€ service providers
+    \end{itemize}
+  \end{itemize}
+}
+
+\section{Legal issues}
+\frame{
+\frametitle{Legal form}
+\large
+\begin{tabular}{ll|p{3cm}|p{6cm}}
+&  &\multicolumn{2}{c}{\textbf{commercial}}\\
+&  & \multicolumn{1}{c}{+} & \multicolumn{1}{c}{--}\\
+  \hline
+\multirow{2}{*}{\begin{sideways}{\textbf{flexible}~~~~~~~}\end{sideways}}
+&-- & & Uni\newline~\newline Verein ($\approx$association) \\
+\cline{3-4}
+&+ & GmbH ($\approx$Ltd.)\newline~\newline \mbox{UG ($\approx$micro-Ltd)} &  \textbf{gUG ($\approx$charitable micro-Ltd)}\\
+  \end{tabular}
+}
+
+\frame{
+\frametitle{Brand}
+  \begin{itemize}
+    \item we have registered our trademark/logo
+    \item secure your brand
+    \item don't sell your brand
+  \end{itemize}
+}
+
+\section{Workflows}
+\frame{
+\frametitle{Workflows: production}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  community based
+    \begin{itemize}
+      \item 29 autonomous series (peer review)
+      \item 400 community proofreaders
+    \end{itemize}
+    \item streamlined and automated workflow
+    \begin{itemize}
+      \item standard templates (docx and tex)
+      \item no XML
+      \item docx$\to$tex conversion pipeline
+      \item \LaTeX $\to$ pdf
+      \item collaborative production on Overleaf
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Automation}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+We automate most processes as far as we can
+      \begin{itemize}
+        \item doc2tex conversion
+        \item adherence to guidelines
+        \item upload to Zenodo
+        \item upload to print-on-demand
+        \item report generation
+      \end{itemize}
+}
+
+
+ \frame{
+\frametitle{Dissemination}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item   Zenodo ->        OMP
+    \item   KU -> DOAB
+    \item   GitHub
+    \item   Paperhive
+    \item   VLB
+    \item   Amazon
+    \item   GoogleBooks
+    \item   EBSCO
+    \item Scopus
+  \end{itemize}
+}
+
+\frame{
+\frametitle{KOALA}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item project at the Technische Informationsbibliothek Hannover
+    \item  Koala = \textbf{K}onsortiale \textbf{OA} \textbf{L}ösungen \textbf{a}ufbauen
+    \item  = establishing consortial OA solutions
+    \item goal: provide a blueprint for consortial funding for scholar-led presses
+    \item looking for: presses interested in becoming a pilot project
+    \item \url{https://projects.tib.eu/koala}
+    \item sebastian.nordhoff@tib.eu
+  \end{itemize}
+}
+
+\end{document}
