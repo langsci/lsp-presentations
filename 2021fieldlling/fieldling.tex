@@ -46,13 +46,6 @@
 \begin{document}
 \lspbeamertitle
 
-\section{Introduction}
-
-\frame{
-\frametitle{Outline}
-\tableofcontents
-}
-
 \frame{
 \frametitle{Sebastian Nordhoff}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
@@ -117,7 +110,7 @@
   \item       speakers
   \item       general public
 \end{itemize}
-  \item   How can we achieve this goal?
+  \item   How can we achieve these goals?
  \end{itemize}
 }
 
@@ -125,10 +118,10 @@
 \frametitle{The FAIR principles}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item  Findable
-    \item Accessible
-    \item Interoperable
-    \item Reusable
+    \item  \textbf{F}indable
+    \item \textbf{A}ccessible
+    \item \textbf{I}nteroperable
+    \item \textbf{R}eusable
   \end{itemize}
 }
 
@@ -154,43 +147,52 @@
     \item  no paywalls
     \item no complicated access protocols
 
-  \includegraphics[height=.2\textheight]{stefanmuellerpaywall.png}
+  \includegraphics[height=.5\textheight]{stefanmuellerpaywall.png}
   \end{itemize}
 }
 
 \frame{
 \frametitle{Interoperable}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-  \begin{itemize}
-    \item  file formats should be
+\begin{itemize}
+    \item Documents come in different formats (pdf, jpg, mov)
+    \item For your work to be accessible to others, you should use fileformats which are
     \begin{itemize}
-      \item standardised
-      \item open
-      \item well-suited for the purpose
+    \item  standardized
+    \begin{itemize}
+      \item a skilled and motivated person should be able to write an application to read and write the format
+      \item otherwise, your file risks ending up in a data graveyard
     \end{itemize}
+    \item   open
+    \begin{itemize}
+      \item royalty-free
+    \end{itemize}
+    \item   suited for tasks
+    \begin{itemize}
+      \item eg, do not use jpg for texts
+    \end{itemize}
+    \end{itemize}
+    \item \url{https://en.wikipedia.org/wiki/List_of_open_formats}
   \end{itemize}
+
 }
 
 \frame{
-\frametitle{Interoperability}
-   \includegraphics[height=.2\textheight]{sampletable_oo.png}
- }
+\frametitle{Sample table}
+\begin{itemize}
+  \item what an easy table looks like to humans
+\end{itemize}
 
-\frame{
-\frametitle{Interoperability PDF }
-   \includegraphics[height=.2\textheight]{sampletable_pdf.png}
- }
+\includegraphics[height=.2\textheight]{sampletable_oo.png}
 
-\frame{
-\frametitle{Interoperability ODT/XML}
-   \includegraphics[height=.2\textheight]{sampletable_xml.png}
- }
-
-
-\frame{
-\frametitle{Interoperability CSV}
-   \includegraphics[height=.2\textheight]{sampletable_csv.png}
- }
+\begin{itemize}
+  \item what an easy table looks like to computers
+\only<2>{\textbf{png}:\\ \includegraphics[height=4cm]{sampletable_png.png}}
+\only<3>{\textbf{pdf}:\\ \includegraphics[height=4cm]{sampletable_pdf.png}}
+\only<4>{\textbf{LibreOffice XML}:\\\includegraphics[height=8cm]{sampletable_xml.png}}
+\only<5>{\textbf{csv}:\\ \includegraphics[height=3cm]{sampletable_csv.png}}
+\end{itemize}
+}
 
  \frame{
 \frametitle{Reusable}
@@ -210,36 +212,56 @@
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
     \item  Use a Creative Commons License
-    \item good: CC-BY, CC-BY-SA
-    \item bad: CC-BY-ND (no translations, no excerpts, no cropping, no recomposition)
-    \item very bad: CC-BY-NC: no blogs with ads, no language schools, no exhibitions with fees.
-    \item the worst: CC-BY-NC-ND
+    \item \textbf{good:} CC-BY, CC-BY-SA
+    \item \textbf{bad:} CC-BY-ND (no translations, no excerpts, no cropping, no recomposition)
+    \item \textbf{very bad:} CC-BY-NC: no blogs with ads, no language schools, no exhibitions with fees.
+    \item \textbf{the worst:} CC-BY-NC-ND
+  \end{itemize}
+  \url{https://www.wikimedia.de/w/images.homepage/1/15/CC-NC_Leitfaden_2013_engl.pdf}
+}
+
+ \frame{
+\frametitle{The Bad Guys: plagiarists}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Plagiarists
+    \begin{itemize}
+        \item Plagiarists take their work and pretend it is theirs
+        \item They do this regardless of copyright status
+        \item The punishment for plagiarism is exclusion from the scientific community, not some civil lawsuit
+    \end{itemize}
   \end{itemize}
 }
 
  \frame{
-\frametitle{The Bad Guys}
+\frametitle{The Bad Guys: Pirates}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item Plagiarists and pirates
-    \item Neither of them are stopped by (c) or restrictive licenses
-    \item They know that what they do is illegal
+    \item Pirates
+    \begin{itemize}
+      \item Pirates make your work available (possibly for a fee) without your consent
+      \item They do this regardless of copyright status
+      \item Every copyrighted movie, every copyrighted song, and every copyrighted trade book can be found on pirate sites on the internet
+      \item The idea that a pirate would somehow be interested in legal provisions is very funny.
+    \end{itemize}
 
+    \item Both plagiarists and pirates know that what they do is illegal
+    \item Piracy is in general not a big deal in science, but plagiarism can be.
   \end{itemize}
 }
 
 \frame{
 \frametitle{Data, code, text}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+\begin{columns}
+  \column{6cm}
   \begin{itemize}
     \item  Clearly separate your raw data, the code you use to analyze the data, and the write-up
     \item Different repositories exist for each
   \end{itemize}
-}
-
-\frame{
-\frametitle{Frametitle3}
-\includegraphics[width=\textwidth]{pngR2.png}
+  \column{4cm}
+\includegraphics[height=1.2\textheight]{pngR.png}
+\end{columns}
 }
 
 \frame{
@@ -259,9 +281,14 @@
 \frametitle{Code repositories}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item  GitHub
-    \item GitLab
+    \item  GitHub \includegraphics[height=2cm]{github1.png}
+    \item  GitLab \includegraphics[height=2cm]{gitlab.png}
   \end{itemize}
+}
+
+\frame{
+\frametitle{GitHub repositories}
+  \includegraphics[height=\textheight]{bodowinter.png}
 }
 
 \frame{
@@ -271,8 +298,13 @@
     \item  Paradisec
     \item ELAR
     \item AILLA
-    \item TLA
+    \item TLA Nijmegen
   \end{itemize}
+}
+
+\frame{
+\frametitle{Paradisec}
+  \hspace*{-.5cm}\includegraphics[height=\textheight]{paradisec.png}
 }
 
 \frame{
@@ -280,17 +312,14 @@
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
     \item TROLLing
-    \item figshare
+%     \item figshare
     \item GitHub/GitLab
     \item  Zenodo (also as a general fallback)
     \item GitHub-Zenodo bridge to integrate versioning and archiving
   \end{itemize}
 }
 
-\frame{
-\frametitle{figshare}
-   \includegraphics[height=\textheight]{figshare.png}
-}
+
 
 \frame{
 \frametitle{Trolling}
@@ -305,11 +334,12 @@
 
 
 \frame{
-\frametitle{Repositories for texts: Preprint servers}
+\frametitle{Repositories for texts:\\ Preprint servers}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item
-    \item
+    \item LingBuzz
+    \item semanticsarchive
+    \item Rutgers Optimality Archive
   \end{itemize}
 }
 \frame{
@@ -348,7 +378,7 @@
 }
             
 \frame{
-\frametitle{And now, finally: publications!}
+\frametitle{And now, finally:\\ publications!}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
     \item  raw data + code + write-up = publication
@@ -412,19 +442,24 @@
 \includegraphics[width=\textwidth]{brillnordhoff.png}
  }
 
+ \frame{
+\frametitle{How much money will I make?}
+  \includegraphics[width=\textwidth]{royalty.pdf}
+}
+
 \frame{
 \frametitle{Open Access colour codes}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item green
+    \item \textbf{green}
     \begin{itemize}
       \item Normal copyrighted publication with a publisher, but copy is archived in an institutional repository
     \end{itemize}
-    \item gold
+    \item \textbf{gold}
     \begin{itemize}
       \item publication is made openly available against a fee (Article Processing Charge, Book Processing Charge)
     \end{itemize}
-    \item diamond
+    \item \textbf{diamond}
     \begin{itemize}
       \item like Gold OA, but without a fee
     \end{itemize}
@@ -439,33 +474,81 @@
   \end{itemize}
 }
 
-\frame{
-\frametitle{Articles}
+
+ \frame{
+\frametitle{Publisher selection}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-  \begin{itemize}
-    \item  FAIR open access principles
-    <https://www.fairopenaccess.org/the-fair-open-access-principles/>
-    \begin{itemize}
-      \item The journal has a transparent ownership structure, and is controlled by and responsive to the scholarly community.
-      \item Authors of articles in the journal retain copyright.
-      \item All articles are published open access and an explicit open access licence is used.
-      \item Submission and publication is not conditional in any way on the payment of a fee from the author or their employing institution, or on membership of an institution or society.
-      \item Any fees paid on behalf of the journal to publishers are low, transparent, and in proportion to the work carried out.
-    \end{itemize}
-    \item Directory of Open Access Journals
-    \item oaling.wordpress.com
-  \end{itemize}
+\begin{itemize}
+  \item Fair Open Access Principles (\url{https://www.fairopenaccess.org/the-fair-open-access-principles})
+\end{itemize}
+\begin{enumerate}
+\item    The journal has a \textbf{transparent ownership structure}, and is \textbf{controlled by} and responsive to the \textbf{scholarly community}.
+\item     Authors of articles in the journal \textbf{retain copyright}.
+\item    All articles are published open access and an \textbf{explicit open access licence} is used.
+\item    \textbf{Submission and publication is not conditional} in any way on \textbf{the payment of a fee} from the author or their employing institution, or on membership of an institution or society.
+\item    Any \textbf{fees} paid on behalf of the journal to publishers \textbf{are low, transparent, and in proportion} to the work carried out.
+\end{enumerate}
 }
+
 
 \frame{
 \frametitle{Directory of Open Access Books (DOAB)}
-%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \includegraphics[height=\textheight]{doab.png}
   \begin{itemize}
     \item  \url{https://directory.doabooks.org/browse?type=classification_text&value=linguistics}
-    \item
   \end{itemize}
 }
 
+
+
+\frame{
+\frametitle{Directory of Open Access Journals (DOAJ)}
+  \includegraphics[height=\textheight]{doaj.png}
+  \begin{itemize}
+    \item  \url{https://directory.doabooks.org/browse?type=classification_text&value=linguistics}
+  \end{itemize}
+}
+
+\frame{
+\frametitle{The Green Road: Sherpa Romeo}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Can I deposit my article via the Green Road?
+    \item Publisher policies vary
+    \begin{itemize}
+      \item which version
+      \item which embargo period
+      \item which repository
+    \end{itemize}
+    \item Sherpa Romeo is a webservice which gives overviews of different publishers' policies.
+    \item \url{https://v2.sherpa.ac.uk/romeo}
+    \item There is a trick with the Rights Retention Strategy
+    \begin{itemize}
+      \item Before handing in your revised version to the publisher, release it under a Creative Commons license. Then, you  ``re-use'' your own work ``with attribution''. Like that, the copyright does not get transferred.
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+\frametitle{The Golden Road}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Choose your journal
+    \item Pay Article processing chargers of 500-3000€.
+    \item Your article is available as Open  Access
+  \end{itemize}
+}
+
+\frame{
+\frametitle{The Diamond Road}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  Choose your journal
+    \item Pay 0€
+    \item Your article is available as Open Access
+    \item \url{oaling.wordpress.com} has a list of Diamond OA journals
+  \end{itemize}
+}
 
 
 \frame{
