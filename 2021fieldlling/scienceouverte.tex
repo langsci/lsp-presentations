@@ -124,37 +124,55 @@
 %   \end{enumerate}
 % }
 
+ \frame{
+\frametitle{Outline of this talk}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{enumerate}
+    \item  Open Science
+    \item  Workflow of a scientific manuscript
+    \item How can each step in the workflow be made more open?
+  \end{enumerate}
+}
 
 \frame{
 \frametitle{Goals of open science}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-  \begin{itemize}
+\begin{columns}
+\column{4cm}
+  \begin{enumerate}
     \item replicable/reliable
     \item inclusive
     \item participative
     \item collaborative
     \item transparent
     \item reusable
+  \end{enumerate}
+  \begin{itemize}
+    \item $\to$ allow other people to stand on your shoulders
   \end{itemize}
+
+  \column{5cm}
+  \includegraphics[height=.9\textheight]{shouldersofgiants.jpg}
+\end{columns}
 }
 
 \frame{
 \frametitle{Scientific workflow}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{enumerate}
-    \item gathering of data
+    \item \textbf{gathering of data}
     \begin{itemize}
-      \item eg recordings, questionnaire
+      \item eg recordings, questionnaires
     \end{itemize}
-    \item transformation
+    \item \textbf{transformation}
     \begin{itemize}
       \item cut, crop, cleanse
     \end{itemize}
-    \item enrichment
+    \item \textbf{enrichment}
     \begin{itemize}
       \item link to other data, analyze
     \end{itemize}
-    \item publication
+    \item \textbf{publication}
     \begin{itemize}
       \item make available
     \end{itemize}
@@ -191,10 +209,17 @@
     \item scripts/processes/methods
     \item texts
    \end{itemize}
-   \item Do keep them separate
+   \item Do \textbf{keep them separate}
+      \item allow for \textbf{modular changes}
   \end{itemize}
+        \begin{itemize}
+    \item the image to the right was created with R, but the data was hard coded in the file.
+    \item there are 100 images like that; for each one, the script was changed
+    \item $\to$ impossible to recreate the 100 files with legible colours.
+  \end{itemize}
+
   \column{3cm}
-  \includegraphics[height=\textheight]{pngR.png}
+  \includegraphics[height=1.2 \textheight]{pngR.png}
 \end{columns}
 }
 
@@ -202,11 +227,13 @@
 \frametitle{Pre-submission: formats}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
+    \item Documents come in different formats (pdf, jpg, mov)
     \item For your work to be accessible to others, you should use fileformats which are
     \begin{itemize}
     \item  standardized
     \begin{itemize}
       \item a skilled and motivated person should be able to write an application to read and write the format
+      \item otherwise, your file risks ending up in a data graveyard
     \end{itemize}
     \item   open
     \begin{itemize}
@@ -231,9 +258,10 @@
 
 \begin{itemize}
   \item what an easy table looks like to computers
-\only<2>{\textbf{pdf}:\\ \includegraphics[height=4cm]{sampletable_pdf.png}}
-\only<3>{\textbf{LibreOffice XML}:\\\includegraphics[height=8cm]{sampletable_xml.png}}
-\only<4>{\textbf{csv}:\\ \includegraphics[height=3cm]{sampletable_csv.png}}
+\only<2>{\textbf{png}:\\ \includegraphics[height=4cm]{sampletable_png.png}}
+\only<3>{\textbf{pdf}:\\ \includegraphics[height=4cm]{sampletable_pdf.png}}
+\only<4>{\textbf{LibreOffice XML}:\\\includegraphics[height=8cm]{sampletable_xml.png}}
+\only<5>{\textbf{csv}:\\ \includegraphics[height=3cm]{sampletable_csv.png}}
 \end{itemize}
 }
 
@@ -252,8 +280,171 @@
        \item semanticsarchive
        \item Rutgers Optimality Archive
      \end{itemize}
+     \item repositories
+     \item publishers
   \end{itemize}
 }
+
+
+\frame{
+\frametitle{Repositories}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item Repositories collect documents and research data
+      \begin{itemize}
+        \item \textbf{discipline-specific} or \textbf{general purpose}
+        \item \textbf{preprint} or \textbf{postprint}
+        \item \textbf{text} or \textbf{data}
+      \end{itemize}
+  \end{itemize}
+}
+
+% \frame{
+% \frametitle{figshare}
+%    \includegraphics[height=\textheight]{figshare.png}
+% }
+
+% \frame{
+%    \includegraphics[height=\textheight]{dryad.png}
+% }
+
+\frame{
+\frametitle{Trolling}
+   \includegraphics[height=\textheight]{trolling.png}
+}
+
+\frame{
+\frametitle{LingBuzz}
+   \includegraphics[height=\textheight]{lingbuzz.png}
+}
+
+\frame{
+\frametitle{semanticsarchive.net}
+   \includegraphics[height=\textheight]{semanticsarchive.png}
+}
+
+\frame{
+\frametitle{Rutgers Optimality Archive}
+   \includegraphics[height=\textheight]{roa.png}
+}
+
+
+\frame{
+\frametitle{Endangered Languages\\ Archive}
+   \includegraphics[height=\textheight]{elar.png}
+}
+
+
+\frame{
+\frametitle{Zenodo}
+   \includegraphics[height=\textheight]{zenodo.png}
+}
+
+
+
+\frame{
+\frametitle{Academia and Researchgate}
+  \begin{itemize}
+    \item  Academia.edu and researchgate are NOT repositories
+    \item both make money from restricting access
+    \end{itemize}
+}
+
+\frame{
+\frametitle{A note on scooping}
+  \begin{itemize}
+    \item  Scooping means that someone ``steals'' your research while you are still finalising it
+    \item that fear is by and large unwarranted
+    \item you can count yourself happy if anybody IS actually interested in your data!
+    \item most research actually struggles a lot more with a lack of interest to outsiders rather than scooping
+    \item preprint servers allow you to register your data and establish primacy
+  \end{itemize}
+}
+
+
+% \frame{
+% \frametitle{Legal sustainability}
+%   \includegraphics[height=\textheight]{justitia.png}
+% }
+
+\frame{
+\frametitle{Intellectual Property Rights}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  ``Copyright'' in the Anglo-Saxon countries
+    \item  ``Urheberrecht'' in continental Europe
+    \item These are different!
+    \item Once you create somehting, you can decide who can use it and how
+    \item Choose wisely and be explicit!
+  \end{itemize}
+}
+
+\frame{
+\frametitle{License}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  Usage rights can be differentiated as follows
+    \begin{itemize}
+      \item geographical restriction (e.g. \textit{only for Germany})
+      \item type restrictions (e.g. \textit{only for print})
+      \item exclusive (no-one else has the right) vs. non-exclusive (other people may also get the rights)
+      \item copyright transfer agreement (Anglo-Saxon culture)
+      \item total buy-out
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Copyright transfer agreement}
+\includegraphics[width=\textwidth]{copyrighttransfer.pdf}
+}
+
+\frame{
+\frametitle{Contracts}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  Publisher contracts restrict everybody, including yourself
+    \item once you sign away your copyright, you have no longer the right to use your own material
+    \item to reuse tables or graphics in subsequent works of yours, you must first ask the new rights holder for permission
+    \item chasing rights is incredibly annoying
+    \item publishers will put your content behind a paywall, meaning that it can actually be more difficult to access once it is officially published than before
+    \item publisher vary as to whether and when they allow books to be hosted in repositories
+  \end{itemize}
+    }
+
+\frame{
+\frametitle{Availability of Nordhoff (ed.) (2012)}
+\includegraphics[width=\textwidth]{brillnordhoff.png}
+ }
+
+
+\frame{
+\frametitle{Open Access colour codes}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item green
+    \begin{itemize}
+      \item Normal copyrighted publication with a publisher, but copy is archived in an institutional repository
+    \end{itemize}
+    \item gold
+    \begin{itemize}
+      \item publication is made openly available against a fee (Article Processing Charge, Book Processing Charge)
+    \end{itemize}
+    \item diamond
+    \begin{itemize}
+      \item like Gold OA, but without a fee
+    \end{itemize}
+      \item (black)
+    \begin{itemize}
+      \item a copyrighted publication is available via pirate sites/shadow libraries like SciHub or LibGen
+    \end{itemize}
+    \item (bronze)
+    \begin{itemize}
+      \item fake open access, not respecting the Berlin Declaration
+    \end{itemize}
+  \end{itemize}
+}
+
 
  \frame{
 \frametitle{Publisher selection}
@@ -305,10 +496,10 @@
       \item influences decision to accept Y/N
       \item review text openly available/hidden
     \end{itemize}
-    \begin{itemize}
       \item Code/Workflow review
+    \begin{itemize}
       \item If there are quantitative arguments in the paper, are data and computer code available so that interested readers can try to replicate and evaluate the findings?
-      \item How to Share Data and Code when Submitting Papers to a Journal: Practical Questions \url{https://calc.hypotheses.org/2782}
+      \item H\textit{ow to Share Data and Code when Submitting Papers to a Journal: Practical Questions} \url{https://calc.hypotheses.org/2782}
     \end{itemize}
   \end{itemize}
 }
@@ -317,10 +508,10 @@
 \frametitle{Revision}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
 \begin{itemize}
-  \item So your manuscript is accept with major revisions. What next?
+  \item So your manuscript is accepted with major revisions. What next?
   \begin{itemize}
-    \item  content revision: fine-tune argumentation
-    \item  formal revision: make sure all guidelines are met and tables and figures look good
+    \item  \textbf{content revision}: fine-tune argumentation
+    \item  \textbf{formal revision}: make sure all guidelines are met and tables and figures look good
     \item  Overleaf.com allows for a separation of labour:
     \begin{itemize}
       \item author does the content revision
@@ -420,8 +611,8 @@
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
     \item Special mechanisms have been devised to make sure that cease of operation of publishers does not entail that the works published by them are lost
-    \item   CLOCKSS
-    \item trigger events
+    \item   CLOCKSS (\textit{Lots of Copies Keep Stuff Safe}) for legacy publishers
+     \item trigger events
     \begin{itemize}
       \item eg bankruptcy
     \end{itemize}
@@ -533,81 +724,6 @@
 % % }
 %
 %
-% \frame{
-% \frametitle{Repositories}
-% %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-%   \begin{itemize}
-%     \item Repositories collect documents and research data
-%       \begin{itemize}
-%         \item \textbf{discipline-specific} or \textbf{general purpose}
-%         \item \textbf{preprint} or \textbf{postprint}
-%         \item \textbf{text} or \textbf{data}
-%       \end{itemize}
-%   \end{itemize}
-% }
-%
-% \frame{
-% \frametitle{figshare}
-%    \includegraphics[height=\textheight]{figshare.png}
-% }
-%
-% % \frame{
-% %    \includegraphics[height=\textheight]{dryad.png}
-% % }
-%
-% \frame{
-% \frametitle{Trolling}
-%    \includegraphics[height=\textheight]{trolling.png}
-% }
-%
-% \frame{
-% \frametitle{LingBuzz}
-%    \includegraphics[height=\textheight]{lingbuzz.png}
-% }
-%
-% \frame{
-% \frametitle{semanticsarchive.net}
-%    \includegraphics[height=\textheight]{semanticsarchive.png}
-% }
-%
-% \frame{
-% \frametitle{Rutgers Optimality Archive}
-%    \includegraphics[height=\textheight]{roa.png}
-% }
-%
-%
-% \frame{
-% \frametitle{Endangered Languages\\ Archive}
-%    \includegraphics[height=\textheight]{elar.png}
-% }
-%
-%
-% \frame{
-% \frametitle{Zenodo}
-%    \includegraphics[height=\textheight]{zenodo.png}
-% }
-%
-%
-%
-% \frame{
-% \frametitle{Academia and Researchgate}
-%   \begin{itemize}
-%     \item  Academia.edu and researchgate are NOT repositories
-%     \item both make money from restricting access
-%     \end{itemize}
-% }
-%
-% \frame{
-% \frametitle{A note on scooping}
-%   \begin{itemize}
-%     \item  Scooping means that someone ``steals'' your research while you are still finalising it
-%     \item that fear is by and large unwarranted
-%     \item you can count yourself happy if anybody IS actually interested in your data!
-%     \item most research actually struggles a lot more with a lack of interest to outsiders rather than scooping
-%     \item preprint servers allow you to register your data and establish primacy
-%   \end{itemize}
-% }
-%
 %
 % \frame{
 % \frametitle{Recommendations for\\ technical sustainability}
@@ -633,62 +749,7 @@
 %
 %
 % \section{Legal aspects}
-%
-% \frame{
-% \frametitle{Legal sustainability}
-%   \includegraphics[height=\textheight]{justitia.png}
-% }
-%
-% \frame{
-% \frametitle{Intellectual Property Rights}
-% %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-%   \begin{itemize}
-%     \item  ``Copyright'' in the Anglo-Saxon countries
-%     \item  ``Urheberrecht'' in continental Europe
-%     \item These are different!
-%     \item Once you create somehting, you can decide who can use it and how
-%     \item Choose wisely and be explicit!
-%   \end{itemize}
-% }
-%
-% \frame{
-% \frametitle{License}
-% %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-%   \begin{itemize}
-%     \item  Usage rights can be differentiated as follows
-%     \begin{itemize}
-%       \item geographical restriction (e.g. \textit{only for Germany})
-%       \item type restrictions (e.g. \textit{only for print})
-%       \item exclusive (no-one else has the right) vs. non-exclusive (other people may also get the rights)
-%       \item copyright transfer agreement (Anglo-Saxon culture)
-%       \item total buy-out
-%     \end{itemize}
-%   \end{itemize}
-% }
-%
-% \frame{
-% \frametitle{Copyright transfer agreement}
-% \includegraphics[width=\textwidth]{copyrighttransfer.pdf}
-% }
-%
-% \frame{
-% \frametitle{Contracts}
-% %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-%   \begin{itemize}
-%     \item  Publisher contracts restrict everybody, including yourself
-%     \item once you sign away your copyright, you have no longer the right to use your own material
-%     \item to reuse tables or graphics in subsequent works of yours, you must first ask the new rights holder for permission
-%     \item chasing rights is incredibly annoying
-%     \item publishers will put your content behind a paywall, meaning that it can actually be more difficult to access once it is officially published than before
-%     \item publisher vary as to whether and when they allow books to be hosted in repositories
-%   \end{itemize}
-%     }
-%
-% \frame{
-% \frametitle{Availability of Nordhoff (ed.) (2012)}
-% \includegraphics[width=\textwidth]{brillnordhoff.png}
-%  }
-%
+
 % \frame{
 % \frametitle{Recommendations for legal sustainability}
 %   \begin{itemize}
@@ -978,25 +1039,25 @@
 % % }
 %
 %
-% \frame{
-% \frametitle{Wrap-up: recommendations\\ \mbox{for sustainable book publications}}
-% %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-%   \begin{itemize}
-%   \highlight
-%     \item separate data, code, and text
+\frame{
+\frametitle{Wrap-up: recommendations}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+  \highlight
+    \item separate data, code, and text
 %     \item use a versioning system
 %     \item backup\\~
-%     \item publish all your data in appropriate repositories
-%     \item use preprint servers\\~
-%     \item use the CC-0 license for data and the CC-BY license for text
-%     \item do not sign away your copyright\\~
-%     \item care for your discipline, go for scholar-led community-owned publishers
-%   \end{itemize}
-% }
-%
-% \frame{
-% \frametitle{Thank you}
-%   \includegraphics[width=\textwidth]{nebrija.jpg}
-% }
+    \item publish all your data in appropriate repositories
+    \item use preprint servers\\~
+    \item use the CC-0 license for data and the CC-BY license for text
+    \item do not sign away your copyright\\~
+    \item care for your discipline, go for scholar-led community-owned publishers
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Thank you}
+  \includegraphics[width=\textwidth]{nebrija.jpg}
+}
 
 \end{document}
