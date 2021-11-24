@@ -5,5 +5,5 @@
 \beamer@subsectionintoc {2}{2}{Zeitschrift \glqq Language\grqq }{11}{0}{2}
 \beamer@subsectionintoc {2}{3}{Zeitschrift für Sprachwissenschaft}{12}{0}{2}
 \beamer@subsectionintoc {2}{4}{Language Science Press}{14}{0}{2}
-\beamer@sectionintoc {3}{Warum die Sprachwissenschaft?}{16}{0}{3}
-\beamer@sectionintoc {4}{Community-based Publishing}{19}{0}{4}
+\beamer@sectionintoc {3}{Warum die\\ Sprachwissenschaft?}{17}{0}{3}
+\beamer@sectionintoc {4}{Community-based Publishing}{21}{0}{4}

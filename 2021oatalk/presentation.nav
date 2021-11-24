@@ -42,26 +42,28 @@
 \headcommand {\beamer@framepages {14}{14}}
 \headcommand {\slideentry {2}{4}{2}{15/15}{LangSci Press}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\beamer@sectionpages {5}{15}}
-\headcommand {\beamer@subsectionpages {14}{15}}
-\headcommand {\sectionentry {3}{Warum die Sprachwissenschaft?}{16}{Warum die Sprachwissenschaft?}{0}}
-\headcommand {\slideentry {3}{0}{1}{16/16}{}{0}}
+\headcommand {\slideentry {2}{4}{3}{16/16}{LangSci Press}{0}}
 \headcommand {\beamer@framepages {16}{16}}
-\headcommand {\slideentry {3}{0}{2}{17/17}{}{0}}
+\headcommand {\beamer@sectionpages {5}{16}}
+\headcommand {\beamer@subsectionpages {14}{16}}
+\headcommand {\sectionentry {3}{Warum die\\ Sprachwissenschaft?}{17}{Warum die\\ Sprachwissenschaft?}{0}}
+\headcommand {\slideentry {3}{0}{1}{17/17}{}{0}}
 \headcommand {\beamer@framepages {17}{17}}
-\headcommand {\slideentry {3}{0}{3}{18/18}{}{0}}
+\headcommand {\slideentry {3}{0}{2}{18/18}{}{0}}
 \headcommand {\beamer@framepages {18}{18}}
-\headcommand {\beamer@sectionpages {16}{18}}
-\headcommand {\beamer@subsectionpages {16}{18}}
-\headcommand {\sectionentry {4}{Community-based Publishing}{19}{Community-based Publishing}{0}}
-\headcommand {\slideentry {4}{0}{1}{19/19}{}{0}}
+\headcommand {\slideentry {3}{0}{3}{19/19}{}{0}}
 \headcommand {\beamer@framepages {19}{19}}
-\headcommand {\slideentry {4}{0}{2}{20/20}{}{0}}
+\headcommand {\slideentry {3}{0}{4}{20/20}{}{0}}
 \headcommand {\beamer@framepages {20}{20}}
-\headcommand {\slideentry {4}{0}{3}{21/21}{}{0}}
+\headcommand {\beamer@sectionpages {17}{20}}
+\headcommand {\beamer@subsectionpages {17}{20}}
+\headcommand {\sectionentry {4}{Community-based Publishing}{21}{Community-based Publishing}{0}}
+\headcommand {\slideentry {4}{0}{1}{21/21}{}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\beamer@partpages {1}{21}}
-\headcommand {\beamer@subsectionpages {19}{21}}
-\headcommand {\beamer@sectionpages {19}{21}}
-\headcommand {\beamer@documentpages {21}}
-\headcommand {\gdef \inserttotalframenumber {21}}
+\headcommand {\slideentry {4}{0}{2}{22/22}{}{0}}
+\headcommand {\beamer@framepages {22}{22}}
+\headcommand {\beamer@partpages {1}{22}}
+\headcommand {\beamer@subsectionpages {21}{22}}
+\headcommand {\beamer@sectionpages {21}{22}}
+\headcommand {\beamer@documentpages {22}}
+\headcommand {\gdef \inserttotalframenumber {22}}
