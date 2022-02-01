@@ -1,0 +1,7 @@
+\babel@toc {german}{}\relax 
+\beamer@sectionintoc {1}{Bücher}{2}{0}{1}
+\beamer@sectionintoc {2}{Language Science Press}{3}{0}{2}
+\beamer@sectionintoc {3}{Finanzierungsmodelle}{4}{0}{3}
+\beamer@sectionintoc {4}{Setup}{8}{0}{4}
+\beamer@sectionintoc {5}{Werte}{10}{0}{5}
+\beamer@sectionintoc {6}{Ausblick}{13}{0}{6}
