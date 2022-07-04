@@ -1,7 +1,9 @@
 \documentclass[handout]{beamer}
 \usepackage{booktabs}
 \usepackage{langsci-optional}
-\usepackage{fontspec} 
+\usepackage{fontspec}
+
+\usepackage{tipa}
 % \usepackage{lsp-makros}
 \useoutertheme{lsp}
 
@@ -33,8 +35,8 @@
 
 \date{\today}
 
-\usepackage{eurosym}  
- 
+\usepackage{eurosym}
+
 \renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
 
 
@@ -60,10 +62,9 @@
 \begin{document}
 \lspbeamertitle
 
-
-raasa vs. rasa Sinhala
-kuuda vs kudhai Tamil
-moraic restriction save the day kudda or rassa would not match Sinh/Tam
+%  todo
+% IPA
+% Sinhala
 
 
 
@@ -109,24 +110,27 @@ moraic restriction save the day kudda or rassa would not match Sinh/Tam
 
 \frame{
 \vspace*{1cm}
-\frametitle{Contact-induced reversal}
-  \includegraphics[width=\textwidth]{contactreversal.pdf}\vfill ~
+\frametitle{Contact-induced reversal:\\cover-up\strut}
+  \includegraphics[width=\textwidth]{contactreversal.pdf}
+
+\vspace*{-10mm}
+  \begin{itemize}
+    \item A loandword (green) is borrowed
+    \item becomes phonologically integrated (blue) when contact ceases
+    \item upon renewed contact, the phonological integration is undone
+  \end{itemize}\vfill ~
 }
 
 \section{The setting}
 
 \frame{
 \frametitle{The setting}
-  \includegraphics[height=.6\textheight]{BayofBengal.png}
-  {\tiny \url{https://upload.wikimedia.org/wikipedia/commons/a/a0/Bay_of_Bengal_map_1800s.png}
-    User:NormanEinstein made the original map, User:Ruhrfisch removed modern state borders, two cities, and changed three country names so it is suitable for 19th century articles., CC BY-SA 3.0 <http://creativecommons.org/licenses/by-sa/3.0/>, via Wikimedia Commons
-}
+  \includegraphics[width=\textwidth]{bayofbengal.png}
 }
 
 \frame{
 \frametitle{The setting}
  \begin{itemize}
-    \item Monsoon Asia
     \item Either side of the Bay of Bengal
     \item In the West: South Asian Sprachbund \citep{Masica1976}
     \item In the East: the Malysian peninsula and archipelago
@@ -145,7 +149,7 @@ moraic restriction save the day kudda or rassa would not match Sinh/Tam
 
 \section{Comparison}
 \frame{
-\frametitle{comparison}
+\frametitle{Phonological comparison}
 \begin{tabular}{ll}
 \toprule
 Indian sprachbund & Malay world \\
@@ -165,6 +169,12 @@ Indian sprachbund & Malay world \\
 
 
 \section{Indian loanwords in Malay}
+
+\frame{
+\frametitle{Indian loanwords in Malay}
+  \includegraphics[width=\textwidth]{bayofbengal1000.pdf}
+}
+
 \frame{
 \frametitle{Indian loanwords in Malay}
  \begin{itemize}
@@ -190,6 +200,8 @@ Indian sprachbund & Malay world \\
 
 
 
+
+
 \section{Sri Lanka Malay}
 \frame{
 \frametitle{Sri Lanka Malay}
@@ -201,26 +213,46 @@ Indian sprachbund & Malay world \\
     \item   brought between roughly 1650 and 1850
     \begin{itemize}
       \item colonial powers of the Dutch and the British
+      \item exiles
+      \item mercenaries
+      \item slaves
     \end{itemize}
-    \item   contact languages Sinhala (IA) and Tamil (Dravidian)
+    \item   contact languages Sinhala (Indo-Aryan) and Tamil (Dravidian)
     \item   important language change with phenomenal speed ensues
     \item \citet{Nordhoff2009,Nordhoff2012ed}
   \end{itemize}
 }
 
 \frame{
+\frametitle{\mbox{Migration of Malays to Sri Lanka}}
+  \includegraphics[width=\textwidth]{bayofbengal300.pdf}
+}
+
+
+
+\frame{
 \frametitle{Language contact:\\ new features}
   \begin{itemize}
-    \item       Case clitics
-    \item       SOV word order
-    \item       Postpositions
-    \item       participles, infinitives
-    \item       dental/retroflex distinction
-    \item       vowel length/consonant lenght
+    \item syntax
+    \begin{itemize}
+      \item       SOV word order
+      \item       Postpositions
+    \end{itemize}
+      \item morphology
+      \begin{itemize}
+      \item       Case clitics
+      \item       participles, infinitives
+      \end{itemize}
+    \item phonology
+      \begin{itemize}
+      \item       dental/retroflex distinction
+      \item       vowel length/consonant length
       \begin{itemize}
       \item           depends on analysis, one is sufficient to account for the other
       \end{itemize}
     \item       prenasalized consonants
+    \end{itemize}
+    \item all of this is about as far away from a well behaved Malay variety as it gets
  \end{itemize}
 }
 
@@ -251,13 +283,9 @@ Indian sprachbund & Malay world \\
 
 
 
-
-
-
-
-\section{regular sound change}
+\section{Phonological change}
 \frame{
-\frametitle{regular sound change}
+\frametitle{Regular sound change: Vowel lengthening{\slash}gemination}
  \begin{itemize}
     \item     \textit{nasi} $\to$ \textit{naasi} `rice'
     \item     \textit{cuci} $\to$ \textit{cuuci} `wash'
@@ -270,9 +298,8 @@ Indian sprachbund & Malay world \\
 
 
 
-\section{exceptions}
 \frame{
-\frametitle{exceptions}
+\frametitle{Exceptions to regular sound change}
  \begin{itemize}
     \item   expected
     \begin{itemize}
@@ -290,15 +317,14 @@ Indian sprachbund & Malay world \\
 }
 
 
-\section{similar phonological environments}
 \frame{
-\frametitle{similar phonological environments}
+\frametitle{No phonological cues}
  \begin{itemize}
-    \item  \textit{topi/sopi}
-    \item  \textit{drapa/kapal}
-    \item  \textit{katil/mati}
+    \item  \textit{topi/sopi} would be expected to behave alike
+    \item  \textit{drapa/kapal} would be expected to behave alike
+    \item  \textit{katil/mati} would be expected to behave alike
     \item  phonological conditioning unlikely
-    \item  lexically specified
+    \item  lexical specification
     \begin{itemize}
     \item      reason:  cognates in contact languages
     \item Tamil \textit{toppi, kappal, kaṭṭil}
@@ -309,30 +335,30 @@ Indian sprachbund & Malay world \\
 }
 
 
-\section{Other types of cover-up}
 \frame{
-\frametitle{other types}
+\frametitle{Cover-up beyond\\ vowel lengthening}
  \begin{itemize}
     \item The preceding examples have been chosen because they are easy to grasp
     \item Could be explained as a straight new act of borrowing
     \item unlikely for high frequency concepts like BOAT, HAT, and BED
     \begin{itemize}
       \item no evidence for lexical gaps or functional differentiation
+      \item one would have to argue that the word \textit{kapal} `boat' was temporarily lost on an island nation surrounded by sea, only to be subsequently reborrowed as \textit{kappal}
     \end{itemize}
     \item other, more involved domains of cover-up to be discussed now:
     \begin{enumerate}
-    \item  syllabification of ng
-    \item  heterosyllabic NC clusters
+    \item  syllabification of ŋ
+    \item  heterosyllabic N\textsubwedge{C} clusters
     \item  re-fronting of voiced coronal stop
-    \item unlengthening  of /u/
+%     \item unlengthening  of /u/
     \end{enumerate}
     \end{itemize}
     }
 
 \frame{
-\frametitle{Syllabification of ng}
+\frametitle{Syllabification of ŋ}
 \begin{itemize}
-  \item Malay varieties can have syllable initial {\ng}
+  \item Malay varieties can have syllable initial ŋ
   \item So can Sri Lanka Malay
   \begin{itemize}
     \item      \textit{iŋat} $\to$ \textit{iiŋat̪} `to think'
@@ -354,9 +380,9 @@ Indian sprachbund & Malay world \\
 }
 
 \frame{
-\frametitle{N ̬C clusters}
+\frametitle{N\textsubwedge{C} clusters}
  \begin{itemize}
-    \item   NC clusters with a voiced stop predicably have tautosyllabic rendering in SLM  (V.NCV)
+    \item   N\textsubwedge{C} clusters with a voiced stop predictably have tautosyllabic rendering in SLM  (V.N\textsubwedge{C}V)
     \begin{itemize}
     \item       \textit{gam.bar} $\to$ \textit{gaa.mbar} `picture'
   \end{itemize}
@@ -369,49 +395,88 @@ Indian sprachbund & Malay world \\
   \begin{itemize}
     \item Tamil \textit{cam.bal}, Sinhala \textit{sam.bol} have heterosyllabic clusters
     \begin{itemize}
-      \item NB: all Tamil clusters are heterosyllabic, but Sinhala has words with tautosyllabic clusters.
+      \item NB: all Tamil NC clusters are always heterosyllabic, but Sinhala has words with tautosyllabic clusters.
     \end{itemize}
+    \item rest of the phonology is untouched
   \end{itemize}
  \end{itemize}
 }
 
 \frame{
-\frametitle{other types}
+\frametitle{Fronting of d}
  \begin{itemize}
-    \item  dental d
-    \item      kalde $\to$ * kalde
-    \item      kalde $\to$ kaldhe
-    \item      kaLudhai
+    \item  alveolar d becomes (post)alveolar d in Sri Lanka Malay
+    \begin{itemize}
+      \item \textit{ade}  $\to$ \textit{aade} `younger sibling'
+    \end{itemize}
+    \item exception:
+    \begin{itemize}
+    \item      \textit{kalde} $\to$ *\textit{kalde} `donkey'
+    \item      \textit{kalde} $\to$ \textit{kal\textsubbridge{d}e}
+    \end{itemize}
+    \item explanation:
+    \begin{itemize}
+    \item Tamil   \textit{ka\textsubdot{l}u\textsubbridge{d}ai}  has a dental \textsubbridge{d} as well
+    \item rest of the phonology is untouched
+    \end{itemize}
  \end{itemize}
 }
 
-\frame{
-\frametitle{other types}
- \begin{itemize}
-    \item   (guru)
-    \item       guru $\to$ *guuru
-    \item       guru $\to$ guru
- \end{itemize}
-}
+% \frame{
+% \frametitle{other types}
+%  \begin{itemize}
+%     \item   (guru)
+%     \item       guru $\to$ *guuru
+%     \item       guru $\to$ guru
+%  \end{itemize}
+% }
 
-\section{metalinguistic awareness}
+\section{Metalinguistic awareness}
 \frame{
-\frametitle{metalinguistic awareness}
+\frametitle{Metalinguistic awareness}
  \begin{itemize}
     \item  speakers are highly multilingual and are also able to identify cognates
-    \item  buumi
-    \item  Speakers
+    \item  in order to verify my hearing of length, I regularly use Sinhala script
+    \item would the word for `earth' be {\sffamily   බුමි} (short vowel) or {\sffamily   බූමි} (long vowel)?
+    \begin{itemize}
+      \item ``No, you can't write like that, it has to be {\sffamily   භූමි}{}'' (bh\=umi, aspirated bh, long vowel) (Sinhala has a cognate word written {\sffamily   භූම} <bhuuma>, pronounced [buumə])
+    \end{itemize}
+    \end{itemize}
+    }
+
+\frame{
+\frametitle{Metalinguistic awareness}
+ \begin{itemize}
+    \item Speaker has internalized Sinhala prescriptivism regarding aspirate graphemes for certain words of Sanskrit etymology
+    \begin{itemize}
+      \item NB: In distinction to many other IA languages, Sinhala has no contrast in aspiration
+    \end{itemize}
+    \item That prescriptivism is transposed to Sri Lanka Malay as well
+    \begin{itemize}
+      \item There is even less reason to use a grapheme for an aspirated consonant in Sri Lanka Malay
+    \end{itemize}
+    \item This anecdote might not be the best evidence, but it shows that speakers transpose ``etymological well-behavedness'' from one language to another.
+    \item similar social/cognitive processes might be at work during cover-up
  \end{itemize}
 }
 
 
 
-\section{counter examples}
+\section{Counter examples}
 \frame{
-\frametitle{counter examples}
+\frametitle{Counter examples}
  \begin{itemize}
-    \item  rasa
-    \item     kuda
+    \item  There are a couple of loanwords which escape cover up
+    \item \textit{raasa} `tasty'
+    \begin{itemize}
+    \item \textit{rasa} $\to$ \textit{raasa}
+    \item \textit{rasa} $\to$ *\textit{rasa}
+    \item even if Sinhala has \textit{rasa}
+    \end{itemize}
+    \item but \textit{rasa} is not a well formed word
+    \item extrametricality of the final syllable (\textit{ra.<sa>})
+    \item the remainder (\textit{ra}) is not sufficient to form a bimoraic foot
+    \item phonological well-formedness seems to trump cover-up
  \end{itemize}
 }
 
@@ -420,10 +485,14 @@ Indian sprachbund & Malay world \\
 \frame{
 \frametitle{Summary}
  \begin{itemize}
-    \item  contact-induced reversal
-    \item  speakers' metalinguistic awareness
-    \item  "conscious" language change
-    \item  phonological well-formedness helps
+    \item  I have shown 4 different cases of contact-induced reversal in the domain of phonology
+    \item New undescribed type of language change
+    \item  Evidence for speakers' metalinguistic awareness
+    \item ``Don't say X, that would sound silly, say Y like in the other languages''
+    \begin{itemize}
+      \item but only if Y is phonologically well-formed
+    \end{itemize}
+    \item  ``conscious'' language change
  \end{itemize}
 }
 
@@ -432,12 +501,28 @@ Indian sprachbund & Malay world \\
 \frame{
 \frametitle{Outlook}
  \begin{itemize}
-    \item   What about other Sprachbund phenomena
-    \item   Sinhala lost and recreated gemination several times during its history
-    \item   German never created (and never lost) gemination
-    \item   Is "inertia" in Sprachbunds also some kind of contact-induced non-change
-    \item   crabs bucket
+    \item   What about other Sprachbund phenomena?
+    \item   Sinhala lost  certain retroflex phonemes several times during its history
+    \item   German never created (and never lost) retroflexion
+    \begin{itemize}
+      \item true for most of Standard Average European
+    \end{itemize}
+    \item   Is ``inertia'' in Sprachbunds (eg retroflexion in South Asia) also some kind of cover-up?
+    \begin{itemize}
+      \item Languages might develop a new feature, but are ``pulled back into the areal norm'' by multilingual speakers who notice the deviation
+    \end{itemize}
+
  \end{itemize}
 }
+
+
+\frame{
+\frametitle{Thank you}
+\LARGE
+  terima kasih $\to$ (\textsubbridge{t}ri$_\mu$i$_\mu$)<ma> (ka$_\mu$a$_\mu$)<si>
+
+  `thank you'
+}
+
 
 \end{document}
