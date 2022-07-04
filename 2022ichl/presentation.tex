@@ -1,0 +1,319 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+ 
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{Titel}
+\institute{Language Science Press}
+\author[Nordhoff]{Sebastian Nordhoff}
+
+
+
+\begin{document}
+\lspbeamertitle
+
+https://www.jstor.org/stable/41561311
+Hindustani, Tamil, Sanskrit and other loan words in Malay
+
+raasa vs. rasa Sinhala
+kuuda vs kudhai Tamil
+moraic restriction save the day kudda or rassa would not match Sinh/Tam
+
+
+
+\section{Language change}
+\frame{
+\frametitle{Language change}
+ \begin{itemize}
+    \item   no change
+    \item   regular change
+    \item   contact-induced change
+    \item       contact event
+    \item   contact-induced non-change
+    \item       contact event
+    \item   contact-induced reversal
+    \item       contact event
+ \end{itemize}
+}
+
+
+\section{The setting}
+\frame{
+\frametitle{The setting}
+ \begin{itemize}
+    \item Monsoon Asia
+    \item Either side of the Bay of Bengal
+    \item In the West: South Asian Sprachbund
+    \item     Masica
+    \item In the East: Nusantara
+    \item     Malay speaking wolrd
+    \item long standing trade relations
+    \item precolonial language contact
+    \item loanwords from
+    \item     Hindi
+    \item         1911
+    \item     Tamil
+    \item         2015
+    \item     Pali, other Indian languages
+  \end{itemize}
+}
+
+
+
+\section{comparison}
+\frame{
+\frametitle{comparison}
+ \begin{itemize}
+    \item    Indian Sprachbund
+    \item        two coronal places of articulation
+    \item            dental
+    \item            retroflex
+    \item        vowel length
+    \item        geminate consonants
+    \item        aspirated consonants
+    \item    Malay world
+    \item        one coronal place of articulation
+    \item        no distinctive vowel length
+    \item        no distinctive consonant length
+    \item        no aspirated consonants
+ \end{itemize}
+}
+
+
+\section{Indian loanwords in Malay}
+\frame{
+\frametitle{Indian loanwords in Malay}
+ \begin{itemize}
+    \item     predictably lose their Indian features
+    \item     phonological integration
+    \item     kathā -> kata
+    \item     bhāṣā -> bahasa
+    \item     kaTTil -> katil
+    \item     jstor
+    \item     brill
+ \end{itemize}
+}
+
+
+
+\section{Sri Lanka Malay}
+\frame{
+\frametitle{Sri Lanka Malay}
+ \begin{itemize}
+    \item   language of the ethnic group of Malays in Sri Lanka
+    \item   46k
+    \item   0,3%
+    \item   brought between roughly 1650 and 1850
+    \item       Dutch
+    \item       British
+    \item   contact languages Sinhala (IA) and Tamil (Dravidian)
+    \item   important language change with phenomenal speed ensues
+    \item       Case
+    \item       SOV
+    \item       Postpositions
+    \item       participles, infinitives
+    \item       dental/retroflex distinction
+    \item       vowel length/consonant lenght
+    \item           depends on analysis
+    \item       prenasalized consonants
+    \item   a couple of phonologically integrated loanwords "return home"
+    \item   Nordhoff 2009, 2012
+ \end{itemize}
+}
+
+
+
+\section{The SLM word}
+\frame{
+\frametitle{The SLM word}
+ \begin{itemize}
+    \item CVVCV(C)
+    \item CVCCV(C)
+    \item CVXCV(C)
+    \item C(VX)<CV>
+    \item Nordhoff 2009
+ \end{itemize}
+}
+
+
+
+
+
+
+
+\section{regular sound change}
+\frame{
+\frametitle{regular sound change}
+ \begin{itemize}
+    \item     nasi -> naasi
+    \item     cuci -> cuuci
+    \item     sopi -> soopi
+    \item     derapa -> draapa
+    \item     b@sar -> bIssar
+    \item
+    \item
+    \item
+ \end{itemize}
+}
+
+
+
+
+
+
+
+\section{exceptions}
+\frame{
+\frametitle{exceptions}
+ \begin{itemize}
+    \item   expected
+    \item       kapal -> *kaapal
+    \item       topi -> *toopi
+    \item       katil -> *kaatil
+    \item   found
+    \item       kapal -> kappal
+    \item       topi -> toppi
+    \item       katil -> kaTTil
+ \end{itemize}
+}
+
+
+\section{similar phonological environments}
+\frame{
+\frametitle{similar phonological environments}
+ \begin{itemize}
+    \item  topi/sopi
+    \item  drapa/kapal
+    \item  katil/mati
+    \item  phonological conditioning unlikely
+    \item  lexically specified
+    \item      reason
+    \item          cognates in contact languages
+    \item  "phonological cover-up"
+ \end{itemize}
+}
+
+
+\section{other types}
+\frame{
+\frametitle{other types}
+ \begin{itemize}
+    \item  syllabification of ng
+    \item      ingath --> iingath
+    \item      singa -> * siinga
+    \item      singa -> singga
+ \end{itemize}
+}
+
+\frame{
+\frametitle{other types}
+ \begin{itemize}
+    \item   NC clusters
+    \item       sambal ->  *saambal
+    \item       gambar -> gaambar
+    \item       sambal -> sambal
+    \item       cambal
+    \item       sambol
+ \end{itemize}
+}
+
+\frame{
+\frametitle{other types}
+ \begin{itemize}
+    \item  dental d
+    \item      kalde -> * kalde
+    \item      kalde -> kaldhe
+    \item      kaLudhai
+ \end{itemize}
+}
+
+\frame{
+\frametitle{other types}
+ \begin{itemize}
+    \item   (guru)
+    \item       guru -> *guuru
+    \item       guru -> guru
+ \end{itemize}
+}
+
+\section{metalinguistic awareness}
+\frame{
+\frametitle{metalinguistic awareness}
+ \begin{itemize}
+    \item  speakers are highly multilingual and are also able to identify cognates
+    \item  buumi
+    \item  Speakers
+ \end{itemize}
+}
+
+
+
+\section{counter examples}
+\frame{
+\frametitle{counter examples}
+ \begin{itemize}
+    \item  rasa
+    \item     kuda
+ \end{itemize}
+}
+
+
+\section{Summary}
+\frame{
+\frametitle{Summary}
+ \begin{itemize}
+    \item  contact-induced reversal
+    \item  speakers' metalinguistic awareness
+    \item  "conscious" language change
+    \item  phonological well-formedness helps
+ \end{itemize}
+}
+
+
+\section{Outlook}
+\frame{
+\frametitle{Outlook}
+ \begin{itemize}
+    \item   What about other Sprachbund phenomena
+    \item   Sinhala lost and recreated gemination several times during its history
+    \item   German never created (and never lost) gemination
+    \item   Is "inertia" in Sprachbunds also some kind of contact-induced non-change
+    \item   crabs bucket
+ \end{itemize}
+}
+
+\end{document}
