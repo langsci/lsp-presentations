@@ -32,7 +32,7 @@
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer1" />
+     inkscape:current-layer="layer8" />
   <defs
      id="defs50057" />
   <g
@@ -40,7 +40,7 @@
      inkscape:groupmode="layer"
      id="layer1"
      transform="translate(302.67245,313.4592)"
-     style="opacity:0.42954542">
+     style="opacity:0.429545">
     <image
        width="767.99725"
        height="540.80835"
@@ -54,38 +54,24 @@
   <g
      inkscape:groupmode="layer"
      id="layer5"
-     inkscape:label="arrows">
-    <path
-       style="opacity:0.194958;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 225.17388,144.03442 c -14.70276,6.43302 -6.34519,14.70944 -13.05367,15.50064 -12.16554,1.43481 -23.44489,7.49556 -26.99755,15.38465 -0.35853,0.79616 -2.16866,0.66779 -2.07894,1.50298 2.80115,26.07663 0.14474,39.34099 -6.69171,62.51913 -1.32058,4.47726 3.09978,13.50471 3.5226,13.55357 118.47027,13.68978 178.77627,49.88793 249.88644,103.2458 48.36929,36.29414 64.31136,106.3319 113.4702,141.54925 72.77403,52.13524 224.44085,99.53031 252.44519,91.64448 L 781.77933,267.41959 C 780.39662,266.05523 571.12029,371.62443 478.59013,326.46584 391.64898,284.03492 440.10306,107.78952 353.34398,65.710858 334.77427,56.70444 345.05459,82.662391 292.9187,79.213883 c -9.13242,-0.604061 -12.12292,7.242556 -11.89099,21.702567 0.0205,1.27677 -2.07071,1.67886 -3.3292,1.89513 -17.6998,3.04174 -39.45284,29.74742 -39.5574,29.42823"
-       id="path50435"
-       sodipodi:nodetypes="cssssssaccsasssc" />
-    <path
-       id="rect60193"
-       style="overflow:visible;opacity:0.194958;fill:#ff0000;stroke-width:0.264583px;stop-color:#000000"
-       transform="rotate(28.620936)"
-       d="m 289.29771,139.78614 239.96572,12.51347 c 0,0 8.7189,-0.0845 12.85863,-1.27385 4.37783,-1.25776 12.23958,-6.07614 12.23958,-6.07614 l 87.58683,-61.411939 c 0,0 1.20877,-4.767704 3.06347,-6.070595 2.4023,-1.687575 8.74268,-1.066024 8.74268,-1.066024 0,0 7.93324,2.049065 7.96777,5.224919 0.0399,3.669661 -9.0732,6.236108 -9.0732,6.236108 l -94.02324,64.623171 c 0,0 184.32865,0.15995 186.96239,-0.76515 10.7492,-3.77566 42.11815,-15.65989 57.48058,-22.83334 44.43152,-20.74721 128.60507,-71.429639 128.60507,-71.429639 l 14.79453,58.109559 c 0,0 -135.60443,34.58825 -204.75913,44.28349 -141.3717,19.81981 -427.34204,28.06809 -427.34204,28.06809 0.15536,0.27533 6.22543,-1.97914 10.08994,-8.06815 1.07781,-1.6982 2.64812,-3.10078 3.65596,-4.84295 1.26738,-2.19083 1.53309,-6.8763 0.8954,-8.01652 -1.96473,-3.51306 -3.31542,-8.6457 -7.54227,-10.63069 -10.21907,-4.79901 -16.83835,-14.17618 -32.16867,-16.57382 z"
-       sodipodi:nodetypes="ccaccacaccssccacssssc" />
-  </g>
+     inkscape:label="arrows" />
   <g
      inkscape:groupmode="layer"
      id="layer6"
-     inkscape:label="text">
+     inkscape:label="text" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer8"
+     inkscape:label="300"
+     style="display:none">
+    <path
+       id="rect60193"
+       style="overflow:visible;opacity:0.194958;fill:#ff0000;stroke-width:0.264583px;stop-color:#000000"
+       d="m 186.98852,261.28265 204.64972,125.93104 c 0,0 7.69399,4.10229 11.89759,5.04125 4.44538,0.99297 13.65455,0.52923 13.65455,0.52923 L 523.4919,380.83148 c 0,0 3.34486,-3.60611 5.59703,-3.86138 2.91713,-0.33063 8.18503,3.25209 8.18503,3.25209 0,0 5.98234,5.59881 4.49137,8.40314 -1.72279,3.24037 -10.9517,1.12793 -10.9517,1.12793 l -113.48967,11.68841 c 0,0 161.72855,88.43616 164.4836,88.8857 11.24432,1.8347 44.47293,6.42875 61.39437,7.49063 48.94052,3.0712 147.10626,-1.09805 147.10626,-1.09805 l -14.84846,58.0958 c 0,0 -135.60286,-34.59439 -200.95155,-59.20981 C 440.91703,445.2851 185.93895,315.5421 185.93895,315.5421 c 0.004,0.3161 6.41276,1.24475 12.72177,-2.24908 1.75957,-0.97441 3.80986,-1.45341 5.52907,-2.49993 2.16195,-1.31604 4.63959,-5.3017 4.626,-6.60806 -0.0418,-4.02492 1.2311,-9.17739 -1.52843,-12.94455 -6.67159,-9.10767 -7.99027,-20.50974 -20.29884,-29.95783 z"
+       sodipodi:nodetypes="ccaccacaccssccacssssc" />
     <text
        xml:space="preserve"
-       style="font-size:31.0444px;line-height:125%;font-family:Arimo;-inkscape-font-specification:Arimo;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;opacity:1;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="271.60648"
-       y="-45.422237"
-       id="text51961"
-       transform="rotate(42.236689)"><tspan
-         sodipodi:role="line"
-         id="tspan51959"
-         style="font-size:31.0444px;fill:#000000;stroke:none;stroke-width:0.264583px"
-         x="271.60648"
-         y="-45.422237">1000+ years ago 🡲 </tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:31.0444px;line-height:125%;font-family:Arimo;-inkscape-font-specification:Arimo;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;opacity:1;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:31.0444px;line-height:125%;font-family:Arimo;-inkscape-font-specification:Arimo;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000"
        x="325.4216"
        y="183.18903"
        id="text80484"
@@ -95,5 +81,28 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:31.0444px;line-height:125%;font-family:Arimo;-inkscape-font-specification:Arimo;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-variant-east-asian:normal;font-feature-settings:normal;font-variation-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;text-transform:none;writing-mode:lr-tb;direction:ltr;text-orientation:mixed;dominant-baseline:auto;baseline-shift:baseline;white-space:normal;vector-effect:none;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;-inkscape-stroke:none;stop-color:#000000;stop-opacity:1"
          x="325.4216"
          y="183.18903">🡰 300 years ago</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer7"
+     inkscape:label="1000"
+     style="display:inline">
+    <path
+       style="opacity:0.194958;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 225.17388,144.03442 c -14.70276,6.43302 -6.34519,14.70944 -13.05367,15.50064 -12.16554,1.43481 -23.44489,7.49556 -26.99755,15.38465 -0.35853,0.79616 -2.16866,0.66779 -2.07894,1.50298 2.80115,26.07663 0.14474,39.34099 -6.69171,62.51913 -1.32058,4.47726 3.09978,13.50471 3.5226,13.55357 118.47027,13.68978 178.77627,49.88793 249.88644,103.2458 48.36929,36.29414 64.31136,106.3319 113.4702,141.54925 72.77403,52.13524 224.44085,99.53031 252.44519,91.64448 L 781.77933,267.41959 C 780.39662,266.05523 571.12029,371.62443 478.59013,326.46584 391.64898,284.03492 440.10306,107.78952 353.34398,65.710858 334.77427,56.70444 345.05459,82.662391 292.9187,79.213883 c -9.13242,-0.604061 -12.12292,7.242556 -11.89099,21.702567 0.0205,1.27677 -2.07071,1.67886 -3.3292,1.89513 -17.6998,3.04174 -39.45284,29.74742 -39.5574,29.42823"
+       id="path50435"
+       sodipodi:nodetypes="cssssssaccsasssc" />
+    <text
+       xml:space="preserve"
+       style="font-size:31.0444px;line-height:125%;font-family:Arimo;-inkscape-font-specification:Arimo;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;stroke:#000000;stroke-width:0.264583px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="271.60648"
+       y="-45.422237"
+       id="text51961"
+       transform="rotate(42.236689)"><tspan
+         sodipodi:role="line"
+         id="tspan51959"
+         style="font-size:31.0444px;fill:#000000;stroke:none;stroke-width:0.264583px"
+         x="271.60648"
+         y="-45.422237">1000+ years ago 🡲 </tspan></text>
   </g>
 </svg>
