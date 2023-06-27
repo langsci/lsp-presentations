@@ -81,10 +81,10 @@
 \frametitle{Existing platforms}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item  TILA
-    \item pangloss
-    \item doreco
-    \item eopas
+    \item  \textbf{TILA}: \url{https://www.americanlinguistics.org/?page_id=1830} (closed access)
+    \item \textbf{pangloss}: \url{https://pangloss.cnrs.fr/} (eclectic, manual workflow)
+    \item \textbf{doreco}: \url{https://doreco.huma-num.fr} (transcribed audio, finished project?)
+%     \item eopas:
   \end{itemize}
 }
 
@@ -92,10 +92,13 @@
 \frametitle{Open Text Collections}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
+    \item Platform to start in 2023
+    \begin{itemize}
     \item      open
     \item   prestigious
     \item   interoperable
     \item   start 2023-09-15
+    \end{itemize}
   \end{itemize}
 }
 \section{guiding principles}
@@ -103,13 +106,15 @@
 \frametitle{Guiding principles}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item  texts
-    \item  edited
-    \item  curated
-    \item  data first
-    \item  community
-    \item  openness
-    \item  prestige
+    \item  \textbf{texts}, not audio
+    \item  \textbf{edited}, not naturalistic
+    \item  \textbf{curated}, not eclectic
+    \item \textbf{peer reviewed}, not legacy or opportunistic\medskip
+    \item  \textbf{availability first}: no paywalls, registration, waiting times, click rallyes
+    \item  \textbf{community}
+    \item  \textbf{openness}
+    \item  \textbf{prestige}: seasoned editors
+
   \end{itemize}
 }
 \section{input}
@@ -117,12 +122,12 @@
 \frame{
 \frametitle{Import}
 \begin{tikzpicture}
-  \node(backend)[rectangle,draw]{backend};
-  \node(elan)[circle,draw,left =3cm of backend]{elan};
+  \node(backend)[rectangle,draw,minimum height=2cm]{\huge backend};
+  \node(elan)[circle,draw,left =2cm of backend]{elan};
   \node(flex)[circle,draw,above = 7mm of elan]{FLEx};
   \node(tex)[circle,draw,below = 7mm of elan]{\TeX};
   \node(xlsx)[circle,draw,below = 7mm of tex]{xlsx};
-  \node(pod)[circle,draw,right = 3cm of backend]{pod};
+  \node(pod)[circle,draw,right = 2cm of backend]{pod};
   \node(pdf)[circle,draw,above = 4mm of pod]{pdf};
   \node(html)[circle,draw,above =4mm of pdf]{html};
   \node(json)[circle,draw,below = 4mm of pod]{json};
@@ -145,7 +150,7 @@
   \begin{itemize}
     \item  For a project at ZAS Berlin, I analyzed 20,000 ELAN files culled from various endangered language archives
     \item Take home message: everybody does what they want with ELAN
-    \item tier cd -names and structures vary wildly
+    \item tier names and structures vary wildly
     \item it is possible to build an API to access glossed material in language archives, but it is painful.
   \end{itemize}
   \includegraphics[width=.5\textwidth]{tiertypetreemap-all.png}
@@ -159,13 +164,13 @@
     \item CSV for the web (CSVW)
     \item text-based
     \item simple
-    \item expandable
+    \item extensible
     \item easy to version
   \end{itemize}
 }
 
 \frame{
-\frametitle{Frametitle3}
+\frametitle{CSVW}
   \includegraphics[width=\textwidth]{backend_csv.png}
   \begin{itemize}
     \item three obligatory columns
@@ -205,7 +210,7 @@
 \begin{columns}
 \column{4.5cm}
   \begin{itemize}
-    \item  preparation on GitHub
+    \item  every text collection is prepared on GitHub
     \item  DOI via the GitHub-Zenodo bridge
     \item review via GitHub issues
     \item collections approved by the regional boards get a new release (1.0), archived on Zenodo, and are accepted in the relevant Zenodo communities.
@@ -219,7 +224,7 @@
 \frametitle{Quality assurance}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item technical review
+    \item technical review (automated, probably via GitHub actions)
     \begin{itemize}
       \item number of words match between vernacular and glosses
       \item number and type of morphemes match between vernacular and glosses
@@ -229,6 +234,7 @@
     \begin{itemize}
       \item regional boards with area specialists
       \item precise setup to be debated
+      \item can use GitHub Issues
     \end{itemize}
   \end{itemize}
 }
@@ -304,7 +310,7 @@
               no paywalls
     \item
           \textbf{interoperable}:
-              many different formats
+              many different well-defined and open formats
     \item
           \textbf{reusable}:
               open license
@@ -327,11 +333,11 @@
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
     \item
-      Mandana
+      \textbf{Mandana Seyfeddinipur}, Director ELDP/ELAR at BBAW
     \item
-      Christian
+      \textbf{Christian Döhler}, Papuanist, holder of the \textit{Gabelentz Award} for the best published grammar (A grammar of Komnzo)
     \item
-      Sebastian
+      Sebastian Nordhoff, managing director for Language Science Press, extensive experience in Open Access publishing and Linked Data
     \item
         student assistants
   \end{itemize}
@@ -345,6 +351,7 @@
     \item \textbf{Eurasia} Michael Rießler (Joensuu)
     \item \textbf{South America} Matt Coler (Groningen), Nick Emle (Groningen)
     \item \textbf{Caucasus} Diana Forker (Jena)
+    \item further board probably via cooption
   \end{itemize}
 }
 \section{content}
@@ -372,5 +379,26 @@
   \end{itemize}
   \end{multicols}
 }
+
+\frame{
+\frametitle{Thank you}
+
+\Large Thank you for your attention.
+\medskip
+
+
+\url{http://opentextcollections.org}
+\medskip
+
+Mastodon \url{https://fedihum.org/@otc}
+\medskip
+
+
+\url{https://twitter.com/OpenTextColl}
+
+\includegraphics[height=\textheight]{logo.pdf}
+
+}
+
 %\setcounter{framenumber}{\thelastpagemainpart}
 \end{document}
