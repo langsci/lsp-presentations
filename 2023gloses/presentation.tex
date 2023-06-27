@@ -7,6 +7,8 @@
 \usepackage{lsptitle}
 \usepackage{tikz}
 \usetikzlibrary{positioning}
+\usepackage{multicol}
+\usetikzlibrary{fit}
 \def\two@digits#1{\ifnum#1<10 0\fi\number#1}
 \def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
 
@@ -53,8 +55,8 @@
 \frame{
 \frametitle{Introduction}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-  \includegraphics[height=\textheight]{jldc2008.png}
-  \includegraphics[height=\textheight]{ldc.png}
+  \includegraphics[width=.5\textwidth]{jldc2008.png}%
+  \includegraphics[height=.5\textheight]{ldc.png}
   \begin{itemize}
     \item work on grammaticography since 2007
     \item Language Science Press since 2014
@@ -68,13 +70,11 @@
 \frame{
 \frametitle{Boasian Trilogy:\\ publication options}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-  \begin{itemize}
-    \item
-    \item
-  \end{itemize}
-      herleitung
-          wörterbuch
-          grammatik
+  \begin{enumerate}
+    \item \textbf{Dictionaries}: many outlets
+    \item \textbf{Grammatical descriptions}: many outlets
+    \item \textbf{Text collections}: no significant outlets
+  \end{enumerate}
 }
 
 \frame{
@@ -95,7 +95,7 @@
     \item      open
     \item   prestigious
     \item   interoperable
-    \item   start 15.9.
+    \item   start 2023-09-15
   \end{itemize}
 }
 \section{guiding principles}
@@ -116,18 +116,17 @@
 
 \frame{
 \frametitle{Import}
-%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
 \begin{tikzpicture}
   \node(backend)[rectangle,draw]{backend};
   \node(elan)[circle,draw,left =3cm of backend]{elan};
-  \node(flex)[circle,draw,above = 1cm of elan]{FLEx};
-  \node(tex)[circle,draw,below = 1cm of elan]{\TeX};
-  \node(xlsx)[circle,draw,below = 1cm of tex]{xlsx};
+  \node(flex)[circle,draw,above = 7mm of elan]{FLEx};
+  \node(tex)[circle,draw,below = 7mm of elan]{\TeX};
+  \node(xlsx)[circle,draw,below = 7mm of tex]{xlsx};
   \node(pod)[circle,draw,right = 3cm of backend]{pod};
-  \node(pdf)[circle,draw,above = 5mm of pod]{pdf};
-  \node(html)[circle,draw,above = 5mm of pdf]{html};
-  \node(json)[circle,draw,below = 5mm of pod]{json};
-  \node(csv)[circle,draw,below = 5mm of json]{csv dump};
+  \node(pdf)[circle,draw,above = 4mm of pod]{pdf};
+  \node(html)[circle,draw,above =4mm of pdf]{html};
+  \node(json)[circle,draw,below = 4mm of pod]{json};
+  \node(csv)[circle,draw,below = 3mm of json]{csv dump};
 \draw[-latex](elan)->(backend);
 \draw[-latex](flex)->(backend);
 \draw[-latex](tex) ->(backend);
@@ -138,47 +137,48 @@
 \draw[-latex](backend)->(json);
 \draw[-latex](backend)->(csv);
 \end{tikzpicture}
-
-
-  \begin{itemize}
-    \item
-    \item
-  \end{itemize}
-      import routine
-          ELAN
-              spracharchive
-                  consistency
-          FLEX
-          tex
-
-
 }
 
 
 \frame{
-\frametitle{Consistency}
-%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+\frametitle{Consistency on input files}
   \begin{itemize}
-    \item  20000 files under the sea
-    \item
+    \item  For a project at ZAS Berlin, I analyzed 20,000 ELAN files culled from various endangered language archives
+    \item Take home message: everybody does what they want with ELAN
+    \item tier cd -names and structures vary wildly
+    \item it is possible to build an API to access glossed material in language archives, but it is painful.
   \end{itemize}
+  \includegraphics[width=.5\textwidth]{tiertypetreemap-all.png}
 }
 
 \section{backend}
 
 \frame{
 \frametitle{Backend}
-%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item
-    \item
+    \item CSV for the web (CSVW)
+    \item text-based
+    \item simple
+    \item expandable
+    \item easy to version
   \end{itemize}
-      csv
 }
 
 \frame{
 \frametitle{Frametitle3}
-  \includegraphics[height=.2\textheight]{backend_csv.png}
+  \includegraphics[width=\textwidth]{backend_csv.png}
+  \begin{itemize}
+    \item three obligatory columns
+    \begin{itemize}
+      \item vernacular
+      \item glosses
+      \item translation
+    \end{itemize}
+    \item can be expanded by further columns as necessary
+    \item Leipzig Glossing Rules
+    \item correspondences and constraints between cells in the same row
+  \end{itemize}
+
 }
 
 \section{output}
@@ -186,99 +186,140 @@
 \frametitle{Output formats}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item
-    \item
+    \item dump (csv, json-ld, nq, rdf)
+    \item pdf
+    \begin{itemize}
+       \item printed pdf = book
+     \end{itemize}
+    \item html
+    \item query interface
+    \begin{itemize}
+      \item see \href{imtvault.org}{https://imtvault.org/?q=coconut}
+    \end{itemize}
   \end{itemize}
-      dump
-          rdf
-          json
-      book
-          pdf
-              Amazon
-          pod
-      html
-      querying
-          imtvault
 }
 
 \section{workflow}
-
 \frame{
-\frametitle{GitHub}
-%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+\frametitle{Workflow}
+\begin{columns}
+\column{4.5cm}
   \begin{itemize}
-    \item
-    \item
+    \item  preparation on GitHub
+    \item  DOI via the GitHub-Zenodo bridge
+    \item review via GitHub issues
+    \item collections approved by the regional boards get a new release (1.0), archived on Zenodo, and are accepted in the relevant Zenodo communities.
   \end{itemize}
+\column{5.5cm}
+  \includegraphics[width=1.1\textwidth]{zenodo_otc.png}
+\end{columns}
 }
 
 \frame{
-\frametitle{Zenodo}
+\frametitle{Quality assurance}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item
-    \item
+    \item technical review
+    \begin{itemize}
+      \item number of words match between vernacular and glosses
+      \item number and type of morphemes match between vernacular and glosses
+      \item abbreviations are either Leipzig Glossing Rules or listed in separate document
+    \end{itemize}
+    \item content review
+    \begin{itemize}
+      \item regional boards with area specialists
+      \item precise setup to be debated
+    \end{itemize}
   \end{itemize}
-}
-
-\frame{
-\frametitle{quality assurance}
-%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-  \begin{itemize}
-    \item
-    \item
-  \end{itemize}
-          technical review
-          regional boards
 }
 
 \section{technical}
 \frame{
 \frametitle{Data model}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-  \begin{itemize}
-    \item
-    \item
-  \end{itemize}
-      Data model
-          three main tiers
-              additional tiers
-              CSVW
-          csv
-          json
-          rdf
-          Linked Data
+
+\begin{tikzpicture}
+  \node(m1)[rectangle, draw]{m};
+  \node(g1)[rectangle, draw, below=1mm of m1]{g};
+  \node(mg1)[fit=(m1)(g1), draw] {};
+
+  \node(m2)[right=2mm of m1,rectangle, draw]{m};
+  \node(g2)[rectangle, draw, below=1mm of m2]{g};
+  \node(mg2)[fit=(m2)(g2), draw] {};
+
+  \node(m3)[right=2mm of m2,rectangle, draw]{m};
+  \node(g3)[rectangle, draw, below=1mm of m3]{g};
+  \node(mg3)[fit=(m3)(g3), draw] {};
+
+ \node(w1)[fit=(mg1)(mg2)(mg3), draw] {};
+ \node(w1label)[below=2mm of g3,xshift=4mm]{w};
+
+
+  \node(m4)[rectangle, draw,right=of m3]{m};
+  \node(g4)[rectangle, draw, below=1mm of m4]{g};
+  \node(mg4)[fit=(m4)(g4), draw] {};
+
+  \node(m5)[right=2mm of m4,rectangle, draw]{m};
+  \node(g5)[rectangle, draw, below=1mm of m5]{g};
+  \node(mg5)[fit=(m5)(g5), draw] {};
+
+
+ \node(w2)[fit=(mg4)(mg5), draw] {};
+ \node(w2label)[below=2mm of g5,xshift=4mm]{w};
+ \node(translation)[rectangle, draw, below=6mm of w1,xshift=9mm]{`translation'~~~~~~~~~~~~~~~~~~};
+
+  \node(wblock)[fit=(w1)(w2label), draw] {};
+
+  \node(ex)[fit=(wblock)(translation), draw] {};
+
+ \node(exlabel)[below=15mm of g5,xshift=5mm]{ex};
+
+ \node(ex1)[draw,rectangle,right = 3cm of m5]{ex ... ~~~~~};
+ \node(ex2)[draw,rectangle,below = 1mm of ex1]{ex ... ~~~~~};
+ \node(ex3)[draw,rectangle,below = 1mm of ex2]{ex ... ~~~~~};
+ \node(ex4)[draw,rectangle,below = 1mm of ex3]{ex ... ~~~~~};
+ \node(intro)[draw,rectangle,below = 1cm of ex4]{intro};
+ \node(abbr)[draw,rectangle,below = 1mm of intro]{abbreviations};
+  \node(text)[fit=(ex1)(abbr), draw] {};
+\node(w2label)[below=1mm of abbr,xshift=6mm]{collection};
+
+\draw[dashed](ex.north east)--(ex1.north west);
+\draw[dashed](ex.south east)--(ex1.south west);
+
+
+\end{tikzpicture}
+
 }
+
 
 \frame{
 \frametitle{FAIR}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
     \item
-    \item
-  \end{itemize}
-          findable
+          \textbf{findable}:
               registered, linked, metadata
-          accessible
+    \item
+          \textbf{accessible}:
               no paywalls
-          interoperable
+    \item
+          \textbf{interoperable}:
               many different formats
-          reusable
+    \item
+          \textbf{reusable}:
               open license
+  \end{itemize}
 }
 
 \section{funding model}
 
 \frame{
-\frametitle{Fundin}
+\frametitle{Funding}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item
-    \item
+    \item 3 year grant from DFG, 2023-2026, 1.5 FTE
+    \item after that consortial funding via Language Science Press
   \end{itemize}
-      seed funding
-          DFG
-      consortial funding
 }
 \section{people}
 \frame{
@@ -286,30 +327,50 @@
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
     \item
-    \item
-  \end{itemize}
       Mandana
+    \item
       Christian
+    \item
       Sebastian
-      SHKs
+    \item
+        student assistants
+  \end{itemize}
 }
 \frame{
 \frametitle{Regional boards}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
   \begin{itemize}
-    \item
-    \item
+    \item \textbf{Oceania} Christian Döhler, Kilu von Prince (Düsseldorf)
+    \item \textbf{Africa}  Alena Witzlack-Makarevich (Jerusalem), Jeff Good (Buffalo)
+    \item \textbf{Eurasia} Michael Rießler (Joensuu)
+    \item \textbf{South America} Matt Coler (Groningen), Nick Emle (Groningen)
+    \item \textbf{Caucasus} Diana Forker (Jena)
   \end{itemize}
-      regional boards
 }
 \section{content}
 \frame{
 \frametitle{Planned text collections}
 %   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
-  \begin{itemize}
-    \item
-    \item
+
+\begin{multicols}{2}
+\begin{itemize}
+    \item Komnzo
+    \item Bine
+    \item Daakaka
+    \item Dalkalaen
+    \item Muylaque Aymara
+    \item Iquito
+    \item two Amazonian languages
+    \item Kawesqar
+    \item Hinuq
+    \item Sanzhi
+    \item Chirag Dargwa
+    \item  Tabasaran
+    \item Gawarbati
+    \item Palula
+    \item Saek
   \end{itemize}
+  \end{multicols}
 }
 %\setcounter{framenumber}{\thelastpagemainpart}
 \end{document}
