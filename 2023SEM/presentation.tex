@@ -1,0 +1,282 @@
+\documentclass[handout]{beamer}
+
+\usepackage{fontspec} 
+% \usepackage{lsp-makros}
+\useoutertheme{lsp}
+
+\usepackage{lsptitle}
+
+\def\two@digits#1{\ifnum#1<10 0\fi\number#1}
+\def\mytoday{\two@digits{\number\day}.\two@digits{\number\month}.\number\year}
+
+
+\usepackage{xspace,multicol}
+\newcommand{\latex}{\LaTeX\xspace}
+\usepackage{tikz}
+
+
+\newcounter{lastpagemainpart}
+\footnotesep0pt
+\renewcommand{\footnoterule}{}
+\usefootnotetemplate{
+  \noindent
+  \insertfootnotemark\insertfootnotetext}
+
+\let\beamerfn=\footnote
+\renewcommand{\footnote}[1]{%
+\let\oldfnsize=\footnotesize%
+\let\footnotesize=\tiny%
+\beamerfn<\thebeamerpauses->{#1}%
+\let\footnotesize=\oldfnsize}
+
+
+\date{\today}
+
+\usepackage{eurosym}  
+\usepackage{multicol}
+\renewcommand{\centerline}[1]{\hfill#1\hfill\hfill\mbox{}}
+
+
+\title{LangSci Series Editors Meeting 2023}
+\institute{2023-11-17, HU Berlin}
+\author[LangSci]{LangSci}
+
+
+
+\begin{document}
+\lspbeamertitle
+
+\section{Funding}
+\frame{
+\frametitle{Funding}
+%   \includegraphics[height=.2\textheight]{./path/to/graphicsfile}
+  \begin{itemize}
+    \item  First funding round  2018--2020
+    \begin{itemize}
+      \item \textbf{105} institutions * \textbf{1000} EUR
+    \end{itemize}
+    \item Second funding round 2021--2023
+    \begin{itemize}
+      \item \textbf{116} institutions * \textbf{1000} EUR
+    \end{itemize}
+    \item Target third founding round 2024--2026
+    \begin{itemize}
+      \item \textbf{100} institutions * \textbf{1300} EUR
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Countries}
+  \begin{itemize}
+    \item  Lion's share
+    \begin{itemize}
+      \item \textbf{Germany}
+    \end{itemize}
+    \item  well represented
+    \begin{itemize}
+      \item \textbf{Netherlands}, \textbf{Switzerland}, \textbf{Belgium}
+    \end{itemize}
+    \item OK
+    \begin{itemize}
+      \item  \textbf{Sweden}, \textbf{Norway}, \textbf{Finland}, \textbf{Austria}
+    \end{itemize}
+    \item can do better
+    \begin{itemize}
+      \item \textbf{UK}, \textbf{US}, \textbf{Australia}, \textbf{France}
+    \end{itemize}
+    \item  low representation
+    \begin{itemize}
+      \item \textbf{Spain}, \textbf{Eastern Europe}
+    \end{itemize}
+      \item no representation
+      \begin{itemize}
+        \item \textbf{Asia}, \textbf{Africa}, \textbf{Middle East}, \textbf{Latin America}, \textbf{Denmark}, \textbf{Ireland}, \textbf{New Zealand}, \textbf{Italy}, \textbf{Portugal}
+      \end{itemize}
+  \end{itemize}
+}
+\section{Series evolution}
+\frame{
+\frametitle{Series evolution}
+\begin{itemize}
+  \item currently 35 series
+  \item two more series accepted
+  \begin{itemize}
+    \item \textit{Current Issues in Celtic Linguistics}
+    \item \textit{Frame-Based Approaches to Semantics}
+  \end{itemize}
+  \item rejected
+  \begin{itemize}
+    \item series on translation practices (not linguistic enough)
+  \end{itemize}
+  \item in preparation
+  \begin{itemize}
+    \item Papuan linguistics
+  \end{itemize}
+  \item decommissioned
+  \begin{itemize}
+    \item \textit{Morphological Investigations}
+    \item \textit{Topics at the Grammar-Discourse Interface}
+    \item \textit{Studies in Diversity Linguistics}
+  \end{itemize}
+  \item dormant
+  \begin{itemize}
+    \item \textit{Computational Models of Language Evolution}
+    \item \textit{Classics in Linguistics}
+  \end{itemize}
+\end{itemize}
+}
+
+\section{Books}
+
+\frame{
+\frametitle{List of forthcoming books 2024 (33)}
+\begin{multicols}{3}
+\textcolor{lsLightOrange}{Childs ALGAD}\\
+\textcolor{lsLightOrange}{Jenks ALGAD}\\
+\textcolor{lsMidWine}{Green CAL}\\
+\textcolor{lsMidWine}{Essegbey CAL}\\
+\textcolor{lsRed}{Serrelli CAM}\\
+\textcolor{lsLightGreen}{PutnamPolinsky CIB}\\
+\textcolor{lsNightBlue}{Payne COGL}\\
+\textcolor{lsNightBlue}{Terhart COGL}\\
+\textcolor{lsMidDarkBlue}{Dyck ELA}\\
+\textcolor{lsMidBlue}{Gibson EOTMS}\\
+\textcolor{lsMidBlue}{Winckel EOTMS}\\
+\textcolor{black}{Herkel HPLS}\\
+\textcolor{black}{Stockigt HPLS}\\
+\textcolor{lsDarkWine}{Andreassen LV}\\
+\textcolor{lsDarkWine}{Wagner LV}\\
+\textcolor{lsMidDarkBlue}{Bech OGL}\\
+\textcolor{lsDarkWine}{Favaro ORL}\\
+\textcolor{lsDarkWine}{Rosemeyer ORL}\\
+\textcolor{lsDarkWine}{Howe ORL}\\
+\textcolor{lsMidGreen}{Zimmermann OSL}\\
+\textcolor{lsLightBlue}{Giouli PMWE}\\
+\textcolor{lsDarkOrange}{Miestamo RCG}\\
+\textcolor{lsDarkOrange}{Bartens  SCL}\\
+\textcolor{lsRichGreen}{Enke SIDL}\\
+\textcolor{lsLightWine}{Ahn SILP}\\
+\textcolor{lsLightWine}{Fuchs SILP}\\
+\textcolor{lsYellow}{Brunner TBLS}\\
+\textcolor{lsYellow}{Neacsu TBLS}\\
+\textcolor{lsYellow}{Vaissiere TBLS}\\
+\textcolor{lsDarkBlue}{Tallman TPD}\\
+\textcolor{lsDarkBlue}{Bracks TPD}\\
+\textcolor{lsDarkBlue}{Nikulin TPD}\\
+\textcolor{lsDarkBlue}{Kuznetsova TPD}\\
+\end{multicols}
+}
+
+
+\frame{
+\frametitle{List of forthcoming books 2025 (14+)}
+\begin{multicols}{3}
+\textcolor{lsRed}{Auer AHL}\\
+\textcolor{lsRed}{Haig CAM}\\
+\textcolor{lsRed}{Lamberti CAM}\\
+\textcolor{lsRed}{Stoynova CAM}\\
+\textcolor{lsRed}{Schroeder CAM}\\
+\textcolor{lsLightGreen}{Soesman CIB}\\
+\textcolor{lsNightBlue}{Niinaga COGL}\\
+\textcolor{lsNightBlue}{Zahrer COGL}\\
+\textcolor{lsNightBlue}{Rohleder COGL}\\
+\textcolor{lsMidBlue}{Krifka EOTMS}\\
+\textcolor{lsMidBlue}{Kuelpmann EOTMS}\\
+\textcolor{lsDarkOrange}{Sinnemäki RCG}\\
+\textcolor{lsDarkOrange}{Faller RCG}\\
+\textcolor{lsYellow}{Richter TBLS}\\
+\end{multicols}
+}
+
+\frame{
+\frametitle{Priorisation of submissions}
+\begin{itemize}
+  \item In the next funding period 2024--2026, we will produce 33 books a year
+  \item We will have 31 productive series, with 2 more accepted series
+  \item $\sim 1$ book/year per series
+  \item How to resolve competition for scarce slots?
+  \begin{itemize}
+    \item  proposal: series with less books in a given year goes first
+  \end{itemize}
+\end{itemize}
+}
+
+\frame{
+\frametitle{Book policies}
+\begin{itemize}
+  \item We have been opposed to festschrifts from the beginning, but somewhat lenient
+  \item We have suffered, and we have learned from our mistakes
+  \item Festschrifts are by and large a nightmare
+  \begin{itemize}
+    \item  Stefan and Felix can attest to that
+  \end{itemize}
+  \item We will not publish anything which resembles a festschrift from now on. Period.
+\end{itemize}
+}
+
+\frame{
+\frametitle{Quality of submissions}
+\begin{itemize}
+  \item In general, the technical quality of submissions has significantly improved
+  \item People use our templates, and series provide guidance to authors about what is expected from them
+  \begin{itemize}
+    \item CAL has workshops at their annual meetings and some kind of LaTeX response team.
+  \end{itemize}
+   \end{itemize}
+   }
+
+
+\frame{
+\frametitle{Quality of submissions}
+\begin{columns}
+\column{5.8cm}
+\begin{itemize}
+  \item One submission with very shoddy papers
+  \item We cannot assure publication with the resources we have at our disposal.
+  \item Cavalier disregard of any and all guidelines, which we cannot compensate.
+  \item Volume editors will have to rework the papers, but they do not have the resources either
+  \item Book stalled and unlikely to be published any time soon, or even at all.
+\end{itemize}
+\column{4.5cm}
+~~\includegraphics[width=.8\textwidth]{bookinalley.png}
+\begin{itemize}
+  \item Given the increased output and workload, we will have less time for ``rescue missions'' for manuscripts in distress.
+\end{itemize}
+
+\end{columns}
+}
+
+\section{Open Text Collections}
+\frame{
+\frametitle{Open Text Collections }
+  \begin{itemize}
+    \item  New project joining the \textit{Berlin-Brandenburg Academy of Sciences}, the \textit{Endangered Language Documentation Programme}, and \textit{Language Science Press}
+    \item Get interlinearized texts in a structured format, treating them as research data
+    \item Generate HTML pages, PDFs, but also NLP-compatible formats like JSON or CSV
+    \item Print-on-demand books to be published via LangSci
+    \item All costs covered until 2026, marginal costs after that
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Open questions}
+  \begin{itemize}
+    \item
+    \item
+  \end{itemize}
+}
+
+\section{Open Science}
+\frame{
+\frametitle{Frametitle1}
+  \begin{itemize}
+    \item
+  \end{itemize}
+} 
+
+
+
+
+%\setcounter{framenumber}{\thelastpagemainpart}
+\end{document}
