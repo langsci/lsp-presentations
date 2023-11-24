@@ -53,15 +53,15 @@
   \begin{itemize}
     \item  First funding round  2018--2020
     \begin{itemize}
-      \item \textbf{105} institutions * \textbf{1000} EUR
+      \item \textbf{105} institutions * \textbf{1000} EUR = 100k€
     \end{itemize}
     \item Second funding round 2021--2023
     \begin{itemize}
-      \item \textbf{116} institutions * \textbf{1000} EUR
+      \item \textbf{116} institutions * \textbf{1000} EUR = 116k€
     \end{itemize}
     \item Target third founding round 2024--2026
     \begin{itemize}
-      \item \textbf{100} institutions * \textbf{1300} EUR
+      \item \textbf{100} institutions * \textbf{1300} EUR = 130k€
     \end{itemize}
   \end{itemize}
 }
@@ -159,7 +159,7 @@
 \textcolor{lsLightWine}{Ahn SILP}\\
 \textcolor{lsLightWine}{Fuchs SILP}\\
 \textcolor{lsYellow}{Brunner TBLS}\\
-\textcolor{lsYellow}{Neacsu TBLS}\\
+\textcolor{lsYellow}{Neacşu TBLS}\\
 \textcolor{lsYellow}{Vaissiere TBLS}\\
 \textcolor{lsDarkBlue}{Tallman TPD}\\
 \textcolor{lsDarkBlue}{Bracks TPD}\\
@@ -222,6 +222,7 @@
   \item People use our templates, and series provide guidance to authors about what is expected from them
   \begin{itemize}
     \item CAL has workshops at their annual meetings and some kind of LaTeX response team.
+    \item please share the experiences of your series
   \end{itemize}
    \end{itemize}
    }
@@ -260,20 +261,174 @@
 }
 
 \frame{
-\frametitle{Open questions}
+\frametitle{Room for open questions}
   \begin{itemize}
-    \item
     \item
   \end{itemize}
 }
 
 \section{Open Science}
 \frame{
-\frametitle{Frametitle1}
+In the context of a new series proposal, the advisory board raised the question of Open Science.
+\frametitle{Open Science}
   \begin{itemize}
-    \item
+    \item       \url{https://github.com/langsci/guidelines/issues/2}
   \end{itemize}
 } 
+
+\frame{
+\frametitle{Open Science }
+  \begin{itemize}
+    \item  LangSci is Open Access, we should probably Open Science as well
+    \item We already have
+    \begin{itemize}
+      \item open source software
+      \item source code of the books available
+      \item bibliographies on Glottolog
+      \item examples in IMTVault
+      \item editable graphics
+    \end{itemize}
+    \item we kind of have
+    \begin{itemize}
+      \item a data/ folder on the GitHub repositories where tabular data can be stored
+      \item this is currently not well supported, nor used a lot
+  \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Issues in the field of Open Science}
+  \begin{enumerate}
+    \item  Replicability.
+    \begin{itemize}
+      \item Researchers should be able to redo the analysis (or parts thereof) and verify the results
+      \item Full chain of scientific argumentation
+    \end{itemize}
+    \item Reuse
+    \begin{itemize}
+      \item Data once collected should be available for further/other/different research down the road
+    \end{itemize}
+  \end{enumerate}
+  \begin{itemize}
+    \item Discuss whether replicability or reuse is our main focus.
+  \end{itemize}
+
+}
+
+\frame{
+\frametitle{FAIR Principles}
+The first step in (re)using data is to find them. Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services, so this is an essential component of the FAIRification process.
+  \begin{itemize}
+    \item In the domain of reuse, the FAIR principles are a common yardstick
+    \begin{itemize}
+      \item Findable
+      \item Accessible
+      \item Interoperable
+      \item Reusable
+    \end{itemize}
+
+    \item
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Findable}
+  \begin{itemize}
+    \item[F1.] (Meta)data are assigned a globally unique and persistent identifier
+    \item[F2.] Data are described with rich metadata (defined by R1 below)
+    \item[F3.] Metadata clearly and explicitly include the identifier of the data they describe
+    \item[F4.] (Meta)data are registered or indexed in a searchable resource
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Accessible}
+Once the user finds the required data, they need to know how the data can be accessed, possibly including authentication and authorisation.
+  \begin{itemize}
+    \item[A1.] (Meta)data are retrievable by their identifier using a standardised communications protocol
+    \begin{itemize}
+      \item[A1.1] The protocol is open, free, and universally implementable
+      \item[A1.2] The protocol allows for an authentication and authorisation procedure, where necessary
+    \end{itemize}
+    \item[A2.] Metadata are accessible, even when the data are no longer available
+  \end{itemize}
+}
+
+
+
+\frame{
+\frametitle{Interoperable}
+The data usually need to be integrated with other data. In addition, the data need to interoperate with applications or workflows for analysis, storage, and processing.
+  \begin{itemize}
+    \item[I1.] (Meta)data use a formal, accessible, shared, and broadly applicable language for knowledge representation.
+    \item[I2.] (Meta)data use vocabularies that follow FAIR principles
+    \item[I3.] (Meta)data include qualified references to other (meta)data
+  \end{itemize}
+}
+
+
+
+\frame{
+\frametitle{Reusable}
+The ultimate goal of FAIR is to optimise the reuse of data. To achieve this, metadata and data should be well-described so that they can be replicated and/or combined in different settings.
+  \begin{itemize}
+    \item[R1.] (Meta)data are richly described with a plurality of accurate and relevant attributes
+    \begin{itemize}
+    \item[R1.1.] (Meta)data are released with a clear and accessible data usage license
+    \item[R1.2.] (Meta)data are associated with detailed provenance
+    \item[R1.3.] (Meta)data meet domain-relevant community standards
+    \end{itemize}
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Additional considerations}
+  \begin{itemize}
+    \item  third party copyrights
+    \item personality rights
+    \begin{itemize}
+      \item audio
+      \item video
+      \item children
+    \end{itemize}
+
+  \end{itemize}
+}
+
+\frame{
+\frametitle{Take-home messages?}
+\begin{columns}
+\column{5cm}
+\begin{itemize}
+  \item What does this mean for your subfield?
+  \item What existing strucures can we use?
+  \begin{itemize}
+    \item Zenodo
+    \item OSF
+    \item Trolling
+    \item DELAMAN
+    \item ...
+  \end{itemize}
+\end{itemize}
+\column{5cm}
+  \begin{itemize}
+    \item What should be recommend to authors?
+    \item What should we recommend to future series?
+    \item What should we recommend to existing series?
+  \end{itemize}
+\end{columns}
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
